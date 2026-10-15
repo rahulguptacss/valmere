@@ -80,27 +80,64 @@ export interface SuiteSectionData {
   image_secondary: string;
 }
 
+export interface RoomInfoItem {
+  label: string;
+  value: string;
+  icon: string;
+}
+
+export interface RoomFeatureCard {
+  title: string;
+  description: string;
+  icon: string;
+}
+
+export interface RoomAmenityItem {
+  label: string;
+  icon: string;
+}
+
+export interface RoomSupportItem {
+  label: string;
+  value: string;
+  href?: string;
+  icon: string;
+}
+
 export interface RoomItem {
   id: number;
-  slug: string;
-  category: string;
-  title_line1: string;
-  title_line2: string;
+  slug?: string;
+  category?: string;
+  title_line1?: string;
+  title_line2?: string;
   title: string;
-  watermark: string;
-  price: string;
-  period: string;
-  description: string;
-  features: { icon: string; label: string }[];
-  button: { text: string; href: string };
-  image_main: string;
-  image_secondary: string;
+  location?: string;
+  watermark?: string;
+  price?: string;
+  period?: string;
+  description?: string;
+  features?: { icon: string; label: string }[];
+  button?: { text: string; href: string };
+  image_main?: string;
+  image_secondary?: string;
+  image?: string;
+  sidebar_image?: string;
+  rating?: number;
+  reviews?: string;
+  href?: string;
   capacity?: string;
   size?: string;
   bed?: string;
   view?: string;
   gallery?: string[];
-  amenities?: string[];
+  information?: RoomInfoItem[];
+  included?: string[];
+  features_grid?: RoomFeatureCard[];
+  amenities?: (string | RoomAmenityItem)[];
+  need_help?: {
+    title: string;
+    support: RoomSupportItem[];
+  };
 }
 
 export interface RoomsSectionData {
@@ -116,9 +153,11 @@ export interface RoomDetailsData {
 
 export interface TestimonialItem {
   id: number;
+  image?: string;
   quote: string;
   author: string;
-  role: string;
+  role?: string;
+  location?: string;
   avatar: string;
   rating?: number;
 }
@@ -127,6 +166,7 @@ export interface TestimonialsSectionData {
   eyebrow: string;
   title_line1: string;
   title_highlight: string;
+  description?: string;
   items: TestimonialItem[];
 }
 
@@ -210,9 +250,25 @@ export interface ThankYouSectionData {
   };
 }
 
+export interface WhyChooseUsItem {
+  number: string;
+  title: string;
+  description: string;
+}
+
+export interface WhyChooseUsSectionData {
+  eyebrow: string;
+  title_line1: string;
+  title_highlight: string;
+  image_left: string;
+  image_right: string;
+  items: WhyChooseUsItem[];
+}
+
 export interface BreadcrumbData {
   title: string;
   items: LinkType[];
+  image?: string;
 }
 
 export interface PageComponent {

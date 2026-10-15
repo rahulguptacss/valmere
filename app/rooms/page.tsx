@@ -3,7 +3,7 @@ import Header from '../../components/sections/Header';
 import Footer from '../../components/sections/Footer';
 import Breadcrumb from '../../components/sections/Breadcrumb';
 import Rooms from '../../components/sections/Rooms';
-import Faq from '../../components/sections/Faq';
+import Cta from '../../components/sections/Cta';
 import BackToTop from '../../components/ui/BackToTop';
 import { common, pages, sections, type PageComponent } from '../../components/types';
 
@@ -16,7 +16,7 @@ export default function RoomsPage() {
   const sectionMap: Record<string, ReactNode> = {
     Breadcrumb: <Breadcrumb data={pages.rooms.breadcrumb!} />,
     Rooms: <Rooms data={sections.rooms} />,
-    Faq: <Faq data={sections.faq} />,
+    Cta: <Cta data={sections.cta} />,
   };
 
   return (

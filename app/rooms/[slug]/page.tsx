@@ -28,16 +28,7 @@ export default async function RoomPage({ params }: { params: Promise<{ slug: str
 
   const breadcrumb = pages.room_details.breadcrumb!;
   const sectionMap: Record<string, ReactNode> = {
-    Breadcrumb: (
-      <Breadcrumb
-        data={{
-          ...breadcrumb,
-          items: (breadcrumb.items as LinkType[]).map((link: LinkType, index: number) =>
-            index === breadcrumb.items.length - 1 ? { ...link, name: item.title, href: `/rooms/${item.slug}` } : link
-          ),
-        }}
-      />
-    ),
+    Breadcrumb: <Breadcrumb data={pages.room_details.breadcrumb!} />,
     RoomDetails: <RoomDetails data={item} />,
     Faq: <Faq data={sections.faq} />,
   };

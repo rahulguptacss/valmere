@@ -3,6 +3,7 @@ import Header from '../../components/sections/Header';
 import Footer from '../../components/sections/Footer';
 import Breadcrumb from '../../components/sections/Breadcrumb';
 import About from '../../components/sections/About';
+import WhyChooseUs from '../../components/sections/WhyChooseUs';
 import Testimonials from '../../components/sections/Testimonials';
 import Faq from '../../components/sections/Faq';
 import BackToTop from '../../components/ui/BackToTop';
@@ -16,7 +17,8 @@ export const metadata = {
 export default function AboutPage() {
   const sectionMap: Record<string, ReactNode> = {
     Breadcrumb: <Breadcrumb data={pages.about.breadcrumb!} />,
-    About: <About data={sections.about} />,
+    About: <About data={sections.about} showButton={false} />,
+    WhyChooseUs: <WhyChooseUs data={sections.why_choose_us} />,
     Testimonials: <Testimonials data={sections.testimonials} />,
     Faq: <Faq data={sections.faq} />,
   };

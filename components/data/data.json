@@ -12,10 +12,13 @@
           "href": "/rooms",
           "children": [
             { "name": "All Rooms & Suites", "href": "/rooms" },
-            { "name": "Deluxe Room Suite", "href": "/rooms/deluxe-room-suite" },
-            { "name": "Premier Room Suite", "href": "/rooms/premier-room-suite" },
-            { "name": "Presidential Ocean Suite", "href": "/rooms/presidential-ocean-suite" },
-            { "name": "Royal Garden Villa", "href": "/rooms/royal-garden-villa" }
+            { "name": "Rooms Details", "href": "/rooms-details" },
+            { "name": "Ocean View Suite", "href": "/rooms/ocean-view-suite" },
+            { "name": "Garden Pool Villa", "href": "/rooms/garden-pool-villa" },
+            { "name": "Presidential Beachfront Villa", "href": "/rooms/presidential-beachfront-villa" },
+            { "name": "Sunset Horizon Penthouse", "href": "/rooms/sunset-horizon-penthouse" },
+            { "name": "Royal Lagoon Residence", "href": "/rooms/royal-lagoon-residence" },
+            { "name": "Overwater Panoramic Suite", "href": "/rooms/overwater-panoramic-suite" }
           ]
         },
         { "name": "GALLERY", "href": "/gallery" },
@@ -87,6 +90,7 @@
               },
               "breadcrumb": {
                 "title": "About Us",
+                "image": "/img/breadcrumb.png",
                 "items": [
                   { "name": "Home", "href": "/" },
                   { "name": "About Us", "href": "/about" }
@@ -95,49 +99,47 @@
               "components": [
                 { "key": "BreadcrumbSection", "component": "Breadcrumb" },
                 { "key": "AboutSection", "component": "About" },
-                { "key": "TestimonialsSection", "component": "Testimonials" },
-                { "key": "FaqSection", "component": "Faq" }
+                { "key": "WhyChooseUsSection", "component": "WhyChooseUs" }
               ]
             },
             "rooms": {
-              "title": "Rooms & Suites",
-              "pageName": "Rooms & Suites",
+              "title": "Rooms & Suits",
+              "pageName": "Rooms & Suits",
               "metadata": {
-                "title": "Rooms & Suites | Valmere Luxury Resort",
+                "title": "Rooms & Suits | Valmere Luxury Resort",
                 "description": "Discover our handpicked collection of sea view suites, private villas and oceanfront retreats."
               },
               "breadcrumb": {
-                "title": "Rooms & Suites",
+                "title": "Rooms & Suits",
+                "image": "/img/breadcrumb.png",
                 "items": [
                   { "name": "Home", "href": "/" },
-                  { "name": "Rooms & Suites", "href": "/rooms" }
+                  { "name": "Rooms & Suits", "href": "/rooms" }
                 ]
               },
               "components": [
                 { "key": "BreadcrumbSection", "component": "Breadcrumb" },
-                { "key": "RoomsSection", "component": "Rooms" },
-                { "key": "FaqSection", "component": "Faq" }
+                { "key": "RoomsSection", "component": "Rooms" }
               ]
             },
             "room_details": {
-              "title": "Suite Details",
-              "pageName": "Suite Details",
+              "title": "Rooms Details",
+              "pageName": "Rooms Details",
               "metadata": {
-                "title": "Suite Details | Valmere Resort",
-                "description": "Experience unparalleled comfort in our luxurious resort suites."
+                "title": "Rooms Details | Valmere Luxury Resort",
+                "description": "Experience unparalleled comfort in our luxurious resort suites and villas."
               },
               "breadcrumb": {
-                "title": "Suite Details",
+                "title": "Rooms Details",
+                "image": "/img/breadcrumb.png",
                 "items": [
                   { "name": "Home", "href": "/" },
-                  { "name": "Rooms & Suites", "href": "/rooms" },
-                  { "name": "Details", "href": "/rooms/deluxe-room-suite" }
+                  { "name": "Rooms Details", "href": "/rooms-details" }
                 ]
               },
               "components": [
                 { "key": "BreadcrumbSection", "component": "Breadcrumb" },
-                { "key": "RoomDetailsSection", "component": "RoomDetails" },
-                { "key": "FaqSection", "component": "Faq" }
+                { "key": "RoomDetailsSection", "component": "RoomDetails" }
               ]
             },
             "gallery": {
@@ -161,14 +163,15 @@
               ]
             },
             "testimonials": {
-              "title": "Guest Reviews",
+              "title": "Testimonials",
               "pageName": "Testimonials",
               "metadata": {
                 "title": "Testimonials | Valmere Luxury Resort",
-                "description": "Read what our cherished guests have to say about their unforgettable holidays."
+                "description": "Read what our cherished guests have to say about their unforgettable stays at Valmere."
               },
               "breadcrumb": {
-                "title": "Guest Reviews",
+                "title": "Testimonials",
+                "image": "/img/breadcrumb.png",
                 "items": [
                   { "name": "Home", "href": "/" },
                   { "name": "Testimonials", "href": "/testimonials" }
@@ -176,8 +179,7 @@
               },
               "components": [
                 { "key": "BreadcrumbSection", "component": "Breadcrumb" },
-                { "key": "TestimonialsSection", "component": "Testimonials" },
-                { "key": "FaqSection", "component": "Faq" }
+                { "key": "TestimonialsSection", "component": "Testimonials" }
               ]
             },
             "contact": {
@@ -259,6 +261,35 @@
               "image_top_right": "/img/about-s1.png",
               "image_bottom_right": "/img/about-s2.png"
             },
+            "why_choose_us": {
+              "eyebrow": "WHY CHOOSE US",
+              "title_line1": "What Makes Us",
+              "title_highlight": "Different",
+              "image_left": "/img/why-choose-1.jpg",
+              "image_right": "/img/why-choose-2.jpg",
+              "items": [
+                {
+                  "number": "01.",
+                  "title": "Private Beach Access",
+                  "description": "Enjoy exclusive access to pristine beaches with breathtaking views and peaceful surroundings."
+                },
+                {
+                  "number": "02.",
+                  "title": "Concierge Service",
+                  "description": "Our dedicated concierge team is always ready to assist with your every need."
+                },
+                {
+                  "number": "03.",
+                  "title": "Fine Dining Restaurant",
+                  "description": "Savour world-class cuisine crafted by our expert chefs in an elegant setting."
+                },
+                {
+                  "number": "04.",
+                  "title": "Luxury Suites",
+                  "description": "Experience unmatched comfort in our beautifully designed suites with stunning views."
+                }
+              ]
+            },
             "suites": {
               "eyebrow": "ROOMS & SUITES",
               "watermark": "LUXURY HOTEL",
@@ -317,161 +348,63 @@
               "items": [
                 {
                   "id": 1,
-                  "slug": "deluxe-room-suite",
-                  "category": "ROOMS & SUITES",
-                  "title_line1": "Deluxe",
-                  "title_line2": "Room Suite",
-                  "title": "Deluxe Room Suite",
-                  "watermark": "LUXURY HOTEL",
-                  "price": "$480",
-                  "period": "per night",
-                  "description": "Experience unparalleled comfort in our Deluxe Room Suite with sea view, cozy living area, private terrace, and amenities designed for effortless luxury.",
-                  "features": [
-                    { "icon": "Car", "label": "Pick & Drop Service" },
-                    { "icon": "Compass", "label": "City Tour Guide" },
-                    { "icon": "Waves", "label": "Swimming Pool" },
-                    { "icon": "Wifi", "label": "Fiber Internet" }
-                  ],
-                  "button": {
-                    "text": "RESERVE NOW",
-                    "href": "/reservation?room=deluxe-room-suite"
-                  },
-                  "image_main": "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=900&q=80",
-                  "image_secondary": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=600&q=80",
-                  "capacity": "2 Adults, 1 Child",
-                  "size": "75 m² / 807 ft²",
-                  "bed": "1 King Bed",
-                  "view": "Panoramic Ocean View",
-                  "amenities": [
-                    "Private Balcony with Sunbed",
-                    "Marble Bathroom with Rain Shower",
-                    "Complimentary High-Speed Wi-Fi",
-                    "24-Hour In-Suite Dining",
-                    "Nespresso Coffee Machine",
-                    "Organic Luxury Spa Toiletries"
-                  ],
-                  "gallery": [
-                    "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=900&q=80",
-                    "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=600&q=80",
-                    "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80"
-                  ]
+                  "slug": "ocean-view-suite",
+                  "title": "Ocean View Suite",
+                  "location": "Maldives, Indian Ocean",
+                  "image": "/rooms/1.png",
+                  "rating": 5,
+                  "reviews": "14 Reviews",
+                  "href": "/rooms/ocean-view-suite"
                 },
                 {
                   "id": 2,
-                  "slug": "premier-room-suite",
-                  "category": "ROOMS & SUITES",
-                  "title_line1": "Premier",
-                  "title_line2": "Room Suite",
-                  "title": "Premier Room Suite",
-                  "watermark": "LUXURY HOTEL",
-                  "price": "$620",
-                  "period": "per night",
-                  "description": "Spacious and refined suites offering modern amenities, stunning panoramic views, bespoke concierge service, and an exceptional retreat for our valued guests.",
-                  "features": [
-                    { "icon": "Car", "label": "Pick & Drop Service" },
-                    { "icon": "Compass", "label": "City Tour Guide" },
-                    { "icon": "Waves", "label": "Swimming Pool" },
-                    { "icon": "Wifi", "label": "Fiber Internet" }
-                  ],
-                  "button": {
-                    "text": "RESERVE NOW",
-                    "href": "/reservation?room=premier-room-suite"
-                  },
-                  "image_main": "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=900&q=80",
-                  "image_secondary": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=600&q=80",
-                  "capacity": "3 Adults",
-                  "size": "95 m² / 1022 ft²",
-                  "bed": "1 King Bed + Daybed",
-                  "view": "Sunset Oceanfront View",
-                  "amenities": [
-                    "Expansive Private Sun Deck",
-                    "Deep Soaking Freestanding Tub",
-                    "Complimentary Champagne on Arrival",
-                    "Personal Butler Service",
-                    "State-of-the-Art Sound System",
-                    "Evening Turn-Down Service with Aromatherapy"
-                  ],
-                  "gallery": [
-                    "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=900&q=80",
-                    "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=600&q=80",
-                    "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=80"
-                  ]
+                  "slug": "garden-pool-villa",
+                  "title": "Garden Pool Villa",
+                  "location": "Ubud, Bali",
+                  "image": "/rooms/2.png",
+                  "rating": 5,
+                  "reviews": "19 Reviews",
+                  "href": "/rooms/garden-pool-villa"
                 },
                 {
                   "id": 3,
-                  "slug": "presidential-ocean-suite",
-                  "category": "ROOMS & SUITES",
-                  "title_line1": "Presidential",
-                  "title_line2": "Ocean Suite",
-                  "title": "Presidential Ocean Suite",
-                  "watermark": "LUXURY HOTEL",
-                  "price": "$950",
-                  "period": "per night",
-                  "description": "Our crowning achievement in island architecture featuring a private infinity plunge pool, wrap-around sundeck, and expansive living quarters.",
-                  "features": [
-                    { "icon": "Car", "label": "Chauffeur Transfer" },
-                    { "icon": "Compass", "label": "Private Island Tour" },
-                    { "icon": "Waves", "label": "Private Plunge Pool" },
-                    { "icon": "Wifi", "label": "Ultra-Fast Wi-Fi" }
-                  ],
-                  "button": {
-                    "text": "RESERVE NOW",
-                    "href": "/reservation?room=presidential-ocean-suite"
-                  },
-                  "image_main": "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=900&q=80",
-                  "image_secondary": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80",
-                  "capacity": "4 Guests",
-                  "size": "140 m² / 1506 ft²",
-                  "bed": "2 Master King Beds",
-                  "view": "360° Ocean & Island View",
-                  "amenities": [
-                    "Private Heated Infinity Pool",
-                    "Full Kitchen & Private Chef on Request",
-                    "VIP Yacht Marina Access",
-                    "In-Suite Spa Treatment Room",
-                    "Complimentary Minibar Restocked Daily"
-                  ],
-                  "gallery": [
-                    "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=900&q=80",
-                    "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80"
-                  ]
+                  "slug": "presidential-beachfront-villa",
+                  "title": "Presidential Beachfront Villa",
+                  "location": "Bora Bora, French Polynesia",
+                  "image": "/rooms/1.png",
+                  "rating": 5,
+                  "reviews": "24 Reviews",
+                  "href": "/rooms/presidential-beachfront-villa"
                 },
                 {
                   "id": 4,
-                  "slug": "royal-garden-villa",
-                  "category": "ROOMS & SUITES",
-                  "title_line1": "Royal",
-                  "title_line2": "Garden Villa",
-                  "title": "Royal Garden Villa",
-                  "watermark": "LUXURY HOTEL",
-                  "price": "$820",
-                  "period": "per night",
-                  "description": "Secluded amidst lush tropical flora, this standalone villa blends serene natural landscapes with lavish modern comforts.",
-                  "features": [
-                    { "icon": "Car", "label": "Airport VIP Welcome" },
-                    { "icon": "Compass", "label": "Botanical Garden Guide" },
-                    { "icon": "Waves", "label": "Garden Plunge Pool" },
-                    { "icon": "Wifi", "label": "Fiber Internet" }
-                  ],
-                  "button": {
-                    "text": "RESERVE NOW",
-                    "href": "/reservation?room=royal-garden-villa"
-                  },
-                  "image_main": "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=900&q=80",
-                  "image_secondary": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=600&q=80",
-                  "capacity": "4 Guests",
-                  "size": "120 m² / 1291 ft²",
-                  "bed": "1 King Bed + 2 Twin Beds",
-                  "view": "Private Tropical Garden View",
-                  "amenities": [
-                    "Private Courtyard with Outdoor Rain Shower",
-                    "Sunken Lounge Seating",
-                    "Dedicated Golf Cart for Island Transit",
-                    "Complimentary Sunset Cocktails"
-                  ],
-                  "gallery": [
-                    "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=900&q=80"
-                  ]
+                  "slug": "sunset-horizon-penthouse",
+                  "title": "Sunset Horizon Penthouse",
+                  "location": "Santorini, Greece",
+                  "image": "/rooms/2.png",
+                  "rating": 5,
+                  "reviews": "18 Reviews",
+                  "href": "/rooms/sunset-horizon-penthouse"
+                },
+                {
+                  "id": 5,
+                  "slug": "royal-lagoon-residence",
+                  "title": "Royal Lagoon Residence",
+                  "location": "Phuket, Thailand",
+                  "image": "/rooms/1.png",
+                  "rating": 5,
+                  "reviews": "16 Reviews",
+                  "href": "/rooms/royal-lagoon-residence"
+                },
+                {
+                  "id": 6,
+                  "slug": "overwater-panoramic-suite",
+                  "title": "Overwater Panoramic Suite",
+                  "location": "Fiji Islands, South Pacific",
+                  "image": "/rooms/2.png",
+                  "rating": 5,
+                  "reviews": "27 Reviews",
+                  "href": "/rooms/overwater-panoramic-suite"
                 }
               ]
             },
@@ -479,85 +412,431 @@
               "items": [
                 {
                   "id": 1,
-                  "slug": "deluxe-room-suite",
-                  "category": "ROOMS & SUITES",
-                  "title_line1": "Deluxe",
-                  "title_line2": "Room Suite",
-                  "title": "Deluxe Room Suite",
-                  "watermark": "LUXURY HOTEL",
-                  "price": "$480",
-                  "period": "per night",
-                  "description": "Experience unparalleled comfort in our Deluxe Room Suite with sea view, cozy living area, private terrace, and amenities designed for effortless luxury.",
-                  "features": [
-                    { "icon": "Car", "label": "Pick & Drop Service" },
-                    { "icon": "Compass", "label": "City Tour Guide" },
-                    { "icon": "Waves", "label": "Swimming Pool" },
-                    { "icon": "Wifi", "label": "Fiber Internet" }
-                  ],
-                  "button": {
-                    "text": "RESERVE NOW",
-                    "href": "/reservation?room=deluxe-room-suite"
-                  },
-                  "image_main": "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=900&q=80",
-                  "image_secondary": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=600&q=80",
-                  "capacity": "2 Adults, 1 Child",
-                  "size": "75 m² / 807 ft²",
-                  "bed": "1 King Bed",
-                  "view": "Panoramic Ocean View",
-                  "amenities": [
-                    "Private Balcony with Sunbed",
-                    "Marble Bathroom with Rain Shower",
-                    "Complimentary High-Speed Wi-Fi",
-                    "24-Hour In-Suite Dining",
-                    "Nespresso Coffee Machine",
-                    "Organic Luxury Spa Toiletries"
-                  ],
+                  "slug": "ocean-view-suite",
+                  "category": "Suite",
+                  "title": "Ocean View Suite",
+                  "location": "Maldives, Indian Ocean",
+                  "description": "Experience the perfect blend of luxury and nature in our Ocean View Suite. Designed with elegance and comfort in mind, this suite offers stunning ocean views, spacious interiors, and modern amenities for a truly relaxing stay.",
+                  "price": "$520",
+                  "period": "night",
                   "gallery": [
-                    "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=900&q=80",
-                    "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=600&q=80",
-                    "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80"
-                  ]
+                    "/rooms/1.png",
+                    "/img/why-choose-1.jpg",
+                    "/rooms/2.png",
+                    "/img/testimonials/bedroom-balcony.jpg"
+                  ],
+                  "sidebar_image": "/rooms/1.png",
+                  "information": [
+                    { "label": "Guests", "value": "4 (2 Adults + 2 Children)", "icon": "Users" },
+                    { "label": "View", "value": "Ocean View", "icon": "Eye" },
+                    { "label": "Size", "value": "850 ft²", "icon": "Maximize2" },
+                    { "label": "Bed Type", "value": "King Bed", "icon": "Bed" },
+                    { "label": "Category", "value": "Suite", "icon": "Grid" },
+                    { "label": "Bedrooms", "value": "2", "icon": "BedDouble" },
+                    { "label": "Bathrooms", "value": "2", "icon": "Bath" },
+                    { "label": "Location", "value": "Maldives, Indian Ocean", "icon": "MapPin" }
+                  ],
+                  "included": [
+                    "King-size bed with premium linens",
+                    "Air-conditioning and heating",
+                    "High-speed WiFi",
+                    "Daily housekeeping service",
+                    "Private balcony with ocean view",
+                    "Complimentary breakfast",
+                    "Smart TV with streaming channels",
+                    "In-room safe",
+                    "Mini bar",
+                    "Luxurious bathroom with rain shower",
+                    "24/7 room service",
+                    "Concierge assistance"
+                  ],
+                  "features_grid": [
+                    {
+                      "title": "Ocean View",
+                      "description": "Breathtaking sea views from your private balcony",
+                      "icon": "Waves"
+                    },
+                    {
+                      "title": "Spacious Room",
+                      "description": "Generous living space with modern interiors",
+                      "icon": "Bed"
+                    },
+                    {
+                      "title": "Premium Bedding",
+                      "description": "Ultra-comfortable beds & pillows",
+                      "icon": "Sparkles"
+                    },
+                    {
+                      "title": "Private Balcony",
+                      "description": "Relax with panoramic ocean views",
+                      "icon": "Sun"
+                    },
+                    {
+                      "title": "Luxury Bathroom",
+                      "description": "Rain shower & premium toiletries",
+                      "icon": "Bath"
+                    },
+                    {
+                      "title": "Complimentary Breakfast",
+                      "description": "Start your day with delicious meals",
+                      "icon": "Coffee"
+                    }
+                  ],
+                  "amenities": [
+                    { "label": "100% Eco Friendly", "icon": "Leaf" },
+                    { "label": "24/7 Elevator Services", "icon": "ArrowUpDown" },
+                    { "label": "24/7 Security", "icon": "ShieldCheck" },
+                    { "label": "Fireplace For Atmosphere", "icon": "Flame" },
+                    { "label": "Comfortable Seating", "icon": "Armchair" },
+                    { "label": "Work Desk", "icon": "Laptop" }
+                  ],
+                  "need_help": {
+                    "title": "Need Help?",
+                    "support": [
+                      { "label": "Customer Support", "value": "+960 1234 5678", "href": "tel:+96012345678", "icon": "Phone" },
+                      { "label": "Email Us", "value": "info@thevalmere.com", "href": "mailto:info@thevalmere.com", "icon": "Mail" },
+                      { "label": "Live Support", "value": "24/7 Assistance", "icon": "Headphones" }
+                    ]
+                  }
                 },
                 {
                   "id": 2,
-                  "slug": "premier-room-suite",
-                  "category": "ROOMS & SUITES",
-                  "title_line1": "Premier",
-                  "title_line2": "Room Suite",
-                  "title": "Premier Room Suite",
-                  "watermark": "LUXURY HOTEL",
-                  "price": "$620",
-                  "period": "per night",
-                  "description": "Spacious and refined suites offering modern amenities, stunning panoramic views, bespoke concierge service, and an exceptional retreat for our valued guests.",
-                  "features": [
-                    { "icon": "Car", "label": "Pick & Drop Service" },
-                    { "icon": "Compass", "label": "City Tour Guide" },
-                    { "icon": "Waves", "label": "Swimming Pool" },
-                    { "icon": "Wifi", "label": "Fiber Internet" }
-                  ],
-                  "button": {
-                    "text": "RESERVE NOW",
-                    "href": "/reservation?room=premier-room-suite"
-                  },
-                  "image_main": "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=900&q=80",
-                  "image_secondary": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=600&q=80",
-                  "capacity": "3 Adults",
-                  "size": "95 m² / 1022 ft²",
-                  "bed": "1 King Bed + Daybed",
-                  "view": "Sunset Oceanfront View",
-                  "amenities": [
-                    "Expansive Private Sun Deck",
-                    "Deep Soaking Freestanding Tub",
-                    "Complimentary Champagne on Arrival",
-                    "Personal Butler Service",
-                    "State-of-the-Art Sound System",
-                    "Evening Turn-Down Service with Aromatherapy"
-                  ],
+                  "slug": "garden-pool-villa",
+                  "category": "Villa",
+                  "title": "Garden Pool Villa",
+                  "location": "Ubud, Bali",
+                  "description": "Immerse yourself in lush tropical seclusion with your own private plunge pool, open-air sun deck, and serene garden pavilion crafted for tranquil relaxation.",
+                  "price": "$640",
+                  "period": "night",
                   "gallery": [
-                    "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=900&q=80",
-                    "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=600&q=80",
-                    "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=80"
-                  ]
+                    "/rooms/2.png",
+                    "/rooms/1.png",
+                    "/img/why-choose-1.jpg",
+                    "/img/testimonials/bedroom-balcony.jpg"
+                  ],
+                  "sidebar_image": "/rooms/2.png",
+                  "information": [
+                    { "label": "Guests", "value": "3 (2 Adults + 1 Child)", "icon": "Users" },
+                    { "label": "View", "value": "Tropical Garden & Pool View", "icon": "Eye" },
+                    { "label": "Size", "value": "920 ft²", "icon": "Maximize2" },
+                    { "label": "Bed Type", "value": "King Bed", "icon": "Bed" },
+                    { "label": "Category", "value": "Villa", "icon": "Grid" },
+                    { "label": "Bedrooms", "value": "1", "icon": "BedDouble" },
+                    { "label": "Bathrooms", "value": "2", "icon": "Bath" },
+                    { "label": "Location", "value": "Ubud, Bali", "icon": "MapPin" }
+                  ],
+                  "included": [
+                    "Private infinity plunge pool",
+                    "Botanical garden sun terrace",
+                    "High-speed WiFi",
+                    "Daily organic breakfast buffet",
+                    "Indoor and outdoor rain showers",
+                    "Floating pool breakfast on request",
+                    "Smart home entertainment system",
+                    "In-room espresso machine",
+                    "Custom aromatherapy pillow menu",
+                    "24-Hour dedicated villa butler",
+                    "Bespoke turn-down amenities",
+                    "Private yoga deck"
+                  ],
+                  "features_grid": [
+                    {
+                      "title": "Garden View",
+                      "description": "Lush tropical scenery right outside your pavilion",
+                      "icon": "Leaf"
+                    },
+                    {
+                      "title": "Plunge Pool",
+                      "description": "Private infinity pool nestled in nature",
+                      "icon": "Waves"
+                    },
+                    {
+                      "title": "Premium Bedding",
+                      "description": "Custom organic mattresses and fine linens",
+                      "icon": "Sparkles"
+                    },
+                    {
+                      "title": "Private Terrace",
+                      "description": "Peaceful sun loungers and dining gazebo",
+                      "icon": "Sun"
+                    },
+                    {
+                      "title": "Open-Air Bath",
+                      "description": "Freestanding stone tub and rain showers",
+                      "icon": "Bath"
+                    },
+                    {
+                      "title": "Chef Breakfast",
+                      "description": "Artisan morning culinary experience daily",
+                      "icon": "Coffee"
+                    }
+                  ],
+                  "amenities": [
+                    { "label": "100% Eco Friendly", "icon": "Leaf" },
+                    { "label": "Private Golf Buggy", "icon": "ArrowUpDown" },
+                    { "label": "24/7 Security", "icon": "ShieldCheck" },
+                    { "label": "Fireplace For Atmosphere", "icon": "Flame" },
+                    { "label": "Comfortable Seating", "icon": "Armchair" },
+                    { "label": "Work Desk", "icon": "Laptop" }
+                  ],
+                  "need_help": {
+                    "title": "Need Help?",
+                    "support": [
+                      { "label": "Customer Support", "value": "+960 1234 5678", "href": "tel:+96012345678", "icon": "Phone" },
+                      { "label": "Email Us", "value": "info@thevalmere.com", "href": "mailto:info@thevalmere.com", "icon": "Mail" },
+                      { "label": "Live Support", "value": "24/7 Assistance", "icon": "Headphones" }
+                    ]
+                  }
+                },
+                {
+                  "id": 3,
+                  "slug": "presidential-beachfront-villa",
+                  "category": "Villa",
+                  "title": "Presidential Beachfront Villa",
+                  "location": "Bora Bora, French Polynesia",
+                  "description": "Our crowning beachfront retreat featuring an expansive private sundeck, direct lagoon access, and opulent living spaces designed for high-profile getaways.",
+                  "price": "$980",
+                  "period": "night",
+                  "gallery": [
+                    "/rooms/1.png",
+                    "/rooms/2.png",
+                    "/img/why-choose-1.jpg",
+                    "/img/testimonials/bedroom-balcony.jpg"
+                  ],
+                  "sidebar_image": "/rooms/1.png",
+                  "information": [
+                    { "label": "Guests", "value": "6 (4 Adults + 2 Children)", "icon": "Users" },
+                    { "label": "View", "value": "Beachfront Lagoon & Sunset", "icon": "Eye" },
+                    { "label": "Size", "value": "1,450 ft²", "icon": "Maximize2" },
+                    { "label": "Bed Type", "value": "2 King Beds", "icon": "Bed" },
+                    { "label": "Category", "value": "Presidential", "icon": "Grid" },
+                    { "label": "Bedrooms", "value": "2", "icon": "BedDouble" },
+                    { "label": "Bathrooms", "value": "3", "icon": "Bath" },
+                    { "label": "Location", "value": "Bora Bora, French Polynesia", "icon": "MapPin" }
+                  ],
+                  "included": [
+                    "Direct private beachfront access",
+                    "Private heated infinity pool",
+                    "High-speed satellite WiFi",
+                    "Full gourmet kitchen & private chef",
+                    "Complimentary vintage champagne",
+                    "Chauffeured luxury island transfers",
+                    "Smart home sound and lighting",
+                    "Walk-in dressing rooms",
+                    "Personal 24-hour butler",
+                    "Daily sunset canapés and cocktails",
+                    "In-villa spa massage suite",
+                    "Private boat docking jetty"
+                  ],
+                  "features_grid": [
+                    { "title": "Lagoon View", "description": "Uninterrupted vistas across turquoise waters", "icon": "Waves" },
+                    { "title": "Private Pool", "description": "Large private pool overlooking the white sand beach", "icon": "Sun" },
+                    { "title": "Master Suite", "description": "Expansive rooms with floor-to-ceiling glass", "icon": "Bed" },
+                    { "title": "Private Beach", "description": "Your own secluded stretch of pristine shore", "icon": "Sparkles" },
+                    { "title": "Spa Tub", "description": "Deep oceanfront hydrotherapy soaking tub", "icon": "Bath" },
+                    { "title": "Gourmet Dining", "description": "Custom dining menu prepared by executive chefs", "icon": "Coffee" }
+                  ],
+                  "amenities": [
+                    { "label": "100% Eco Friendly", "icon": "Leaf" },
+                    { "label": "Private Elevator", "icon": "ArrowUpDown" },
+                    { "label": "24/7 Security", "icon": "ShieldCheck" },
+                    { "label": "Fireplace For Atmosphere", "icon": "Flame" },
+                    { "label": "Comfortable Seating", "icon": "Armchair" },
+                    { "label": "Work Desk", "icon": "Laptop" }
+                  ],
+                  "need_help": {
+                    "title": "Need Help?",
+                    "support": [
+                      { "label": "Customer Support", "value": "+960 1234 5678", "href": "tel:+96012345678", "icon": "Phone" },
+                      { "label": "Email Us", "value": "info@thevalmere.com", "href": "mailto:info@thevalmere.com", "icon": "Mail" },
+                      { "label": "Live Support", "value": "24/7 Assistance", "icon": "Headphones" }
+                    ]
+                  }
+                },
+                {
+                  "id": 4,
+                  "slug": "sunset-horizon-penthouse",
+                  "category": "Penthouse",
+                  "title": "Sunset Horizon Penthouse",
+                  "location": "Santorini, Greece",
+                  "description": "Perched high above the cliffside, this extraordinary penthouse offers panoramic Aegean sunsets, private hot tub, and sleek modern island architecture.",
+                  "price": "$780",
+                  "period": "night",
+                  "gallery": [
+                    "/rooms/2.png",
+                    "/rooms/1.png",
+                    "/img/why-choose-2.jpg",
+                    "/img/testimonials/bedroom-balcony.jpg"
+                  ],
+                  "sidebar_image": "/rooms/2.png",
+                  "information": [
+                    { "label": "Guests", "value": "4 (2 Adults + 2 Guests)", "icon": "Users" },
+                    { "label": "View", "value": "Panoramic Caldera Sunset", "icon": "Eye" },
+                    { "label": "Size", "value": "1,100 ft²", "icon": "Maximize2" },
+                    { "label": "Bed Type", "value": "King Bed", "icon": "Bed" },
+                    { "label": "Category", "value": "Penthouse", "icon": "Grid" },
+                    { "label": "Bedrooms", "value": "2", "icon": "BedDouble" },
+                    { "label": "Bathrooms", "value": "2", "icon": "Bath" },
+                    { "label": "Location", "value": "Santorini, Greece", "icon": "MapPin" }
+                  ],
+                  "included": [
+                    "Panoramic rooftop sun deck",
+                    "Private heated outdoor Jacuzzi",
+                    "Complimentary Greek wine and fruit basket",
+                    "High-speed WiFi throughout",
+                    "Daily artisan breakfast served on terrace",
+                    "Luxury bathroom with organic amenities",
+                    "Bang & Olufsen sound system",
+                    "Personal concierge service",
+                    "VIP airport and port pick-up",
+                    "Sunset cocktail hour service"
+                  ],
+                  "features_grid": [
+                    { "title": "Sunset View", "description": "Unrivaled vantage point for famous golden sunsets", "icon": "Sun" },
+                    { "title": "Rooftop Deck", "description": "Private terrace with heated Jacuzzi and daybeds", "icon": "Waves" },
+                    { "title": "Caldera Vistas", "description": "Sweeping views across volcanic island cliffs", "icon": "Sparkles" },
+                    { "title": "King Suite", "description": "Sculpted cave-style luxury bedroom suite", "icon": "Bed" },
+                    { "title": "Marble Bath", "description": "Rain shower with caldera window view", "icon": "Bath" },
+                    { "title": "Artisan Dining", "description": "Mediterranean breakfast served under the sun", "icon": "Coffee" }
+                  ],
+                  "amenities": [
+                    { "label": "100% Eco Friendly", "icon": "Leaf" },
+                    { "label": "24/7 Elevator Services", "icon": "ArrowUpDown" },
+                    { "label": "24/7 Security", "icon": "ShieldCheck" },
+                    { "label": "Fireplace For Atmosphere", "icon": "Flame" },
+                    { "label": "Comfortable Seating", "icon": "Armchair" },
+                    { "label": "Work Desk", "icon": "Laptop" }
+                  ],
+                  "need_help": {
+                    "title": "Need Help?",
+                    "support": [
+                      { "label": "Customer Support", "value": "+960 1234 5678", "href": "tel:+96012345678", "icon": "Phone" },
+                      { "label": "Email Us", "value": "info@thevalmere.com", "href": "mailto:info@thevalmere.com", "icon": "Mail" },
+                      { "label": "Live Support", "value": "24/7 Assistance", "icon": "Headphones" }
+                    ]
+                  }
+                },
+                {
+                  "id": 5,
+                  "slug": "royal-lagoon-residence",
+                  "category": "Residence",
+                  "title": "Royal Lagoon Residence",
+                  "location": "Phuket, Thailand",
+                  "description": "Surrounded by tranquil blue waterways and lush coconut palms, the Royal Lagoon Residence blends contemporary Thai craftsmanship with expansive indoor-outdoor living.",
+                  "price": "$720",
+                  "period": "night",
+                  "gallery": [
+                    "/rooms/1.png",
+                    "/rooms/2.png",
+                    "/img/why-choose-1.jpg",
+                    "/img/testimonials/bedroom-balcony.jpg"
+                  ],
+                  "sidebar_image": "/rooms/1.png",
+                  "information": [
+                    { "label": "Guests", "value": "4 (2 Adults + 2 Children)", "icon": "Users" },
+                    { "label": "View", "value": "Emerald Lagoon View", "icon": "Eye" },
+                    { "label": "Size", "value": "980 ft²", "icon": "Maximize2" },
+                    { "label": "Bed Type", "value": "King Bed", "icon": "Bed" },
+                    { "label": "Category", "value": "Residence", "icon": "Grid" },
+                    { "label": "Bedrooms", "value": "2", "icon": "BedDouble" },
+                    { "label": "Bathrooms", "value": "2", "icon": "Bath" },
+                    { "label": "Location", "value": "Phuket, Thailand", "icon": "MapPin" }
+                  ],
+                  "included": [
+                    "Private infinity edge swimming pool",
+                    "Lagoon kayak and paddle board access",
+                    "High-speed WiFi",
+                    "Daily royal Thai breakfast buffet",
+                    "In-suite spa tub with herbal soaks",
+                    "24/7 room service & butler on call",
+                    "Smart 4K television with streaming",
+                    "Spacious teak wood sun deck"
+                  ],
+                  "features_grid": [
+                    { "title": "Lagoon Front", "description": "Steps away from tranquil emerald lagoon waters", "icon": "Waves" },
+                    { "title": "Infinity Pool", "description": "Swim overlooking towering palm trees", "icon": "Sun" },
+                    { "title": "Teak Interior", "description": "Authentic handcrafted wooden furniture", "icon": "Bed" },
+                    { "title": "Sun Pavilion", "description": "Shaded pavilion for relaxation and cocktails", "icon": "Sparkles" },
+                    { "title": "Spa Bathroom", "description": "Deep soaking tub and tropical rainfall shower", "icon": "Bath" },
+                    { "title": "Buffet Breakfast", "description": "Fresh tropical fruits and international fare", "icon": "Coffee" }
+                  ],
+                  "amenities": [
+                    { "label": "100% Eco Friendly", "icon": "Leaf" },
+                    { "label": "24/7 Elevator Services", "icon": "ArrowUpDown" },
+                    { "label": "24/7 Security", "icon": "ShieldCheck" },
+                    { "label": "Fireplace For Atmosphere", "icon": "Flame" },
+                    { "label": "Comfortable Seating", "icon": "Armchair" },
+                    { "label": "Work Desk", "icon": "Laptop" }
+                  ],
+                  "need_help": {
+                    "title": "Need Help?",
+                    "support": [
+                      { "label": "Customer Support", "value": "+960 1234 5678", "href": "tel:+96012345678", "icon": "Phone" },
+                      { "label": "Email Us", "value": "info@thevalmere.com", "href": "mailto:info@thevalmere.com", "icon": "Mail" },
+                      { "label": "Live Support", "value": "24/7 Assistance", "icon": "Headphones" }
+                    ]
+                  }
+                },
+                {
+                  "id": 6,
+                  "slug": "overwater-panoramic-suite",
+                  "category": "Overwater Suite",
+                  "title": "Overwater Panoramic Suite",
+                  "location": "Fiji Islands, South Pacific",
+                  "description": "Suspended directly above crystalline reef waters, this overwater suite features a glass-floor viewing lounge, private ocean plunge net, and endless horizon views.",
+                  "price": "$890",
+                  "period": "night",
+                  "gallery": [
+                    "/rooms/2.png",
+                    "/rooms/1.png",
+                    "/img/why-choose-1.jpg",
+                    "/img/testimonials/bedroom-balcony.jpg"
+                  ],
+                  "sidebar_image": "/rooms/2.png",
+                  "information": [
+                    { "label": "Guests", "value": "2 Adults", "icon": "Users" },
+                    { "label": "View", "value": "360° Reef Ocean Horizon", "icon": "Eye" },
+                    { "label": "Size", "value": "1,050 ft²", "icon": "Maximize2" },
+                    { "label": "Bed Type", "value": "King Bed", "icon": "Bed" },
+                    { "label": "Category", "value": "Overwater", "icon": "Grid" },
+                    { "label": "Bedrooms", "value": "1", "icon": "BedDouble" },
+                    { "label": "Bathrooms", "value": "1", "icon": "Bath" },
+                    { "label": "Location", "value": "Fiji Islands, South Pacific", "icon": "MapPin" }
+                  ],
+                  "included": [
+                    "Direct ladder access to coral reef",
+                    "Overwater sun net over turquoise water",
+                    "Glass floor viewing panel in salon",
+                    "High-speed satellite WiFi",
+                    "Complimentary champagne arrival",
+                    "Private sunset boat safari",
+                    "Nespresso bar & complimentary minibar",
+                    "24/7 in-suite dining service"
+                  ],
+                  "features_grid": [
+                    { "title": "Overwater Net", "description": "Lounge directly suspended above crystal reef", "icon": "Waves" },
+                    { "title": "Reef Access", "description": "Direct stairs leading into the warm ocean waters", "icon": "Sun" },
+                    { "title": "Glass Floor", "description": "Observe marine life right below your living room", "icon": "Eye" },
+                    { "title": "King Suite", "description": "Awake to sunrise over the horizon", "icon": "Bed" },
+                    { "title": "Ocean Tub", "description": "Free-standing tub overlooking the sea", "icon": "Bath" },
+                    { "title": "Gourmet Meals", "description": "Full breakfast delivered via private wooden skiff", "icon": "Coffee" }
+                  ],
+                  "amenities": [
+                    { "label": "100% Eco Friendly", "icon": "Leaf" },
+                    { "label": "Private Jetty Access", "icon": "ArrowUpDown" },
+                    { "label": "24/7 Security", "icon": "ShieldCheck" },
+                    { "label": "Fireplace For Atmosphere", "icon": "Flame" },
+                    { "label": "Comfortable Seating", "icon": "Armchair" },
+                    { "label": "Work Desk", "icon": "Laptop" }
+                  ],
+                  "need_help": {
+                    "title": "Need Help?",
+                    "support": [
+                      { "label": "Customer Support", "value": "+960 1234 5678", "href": "tel:+96012345678", "icon": "Phone" },
+                      { "label": "Email Us", "value": "info@thevalmere.com", "href": "mailto:info@thevalmere.com", "icon": "Mail" },
+                      { "label": "Live Support", "value": "24/7 Assistance", "icon": "Headphones" }
+                    ]
+                  }
                 }
               ]
             },
@@ -588,6 +867,50 @@
                   "author": "Isabella Rossi",
                   "role": "LIFESTYLE BLOGGER",
                   "avatar": "/img/testimonials/isabella.jpg",
+                  "rating": 5
+                }
+              ]
+            },
+            "testimonials_page": {
+              "eyebrow": "GUEST TESTIMONIALS",
+              "title_line1": "What Our",
+              "title_highlight": "Guests Say",
+              "description": "Real experiences from our valued guests who have enjoyed unforgettable stays with us. Their stories inspire us to keep creating exceptional moments.",
+              "items": [
+                {
+                  "id": 1,
+                  "image": "/img/why-choose-1.jpg",
+                  "quote": "Our stay was absolutely magical! The views, the rooms, and the hospitality were beyond our expectations. Every detail was taken care of, and the staff made us feel truly special.",
+                  "author": "Emily Carter",
+                  "location": "London, UK",
+                  "avatar": "/img/testimonials/emily.jpg",
+                  "rating": 5
+                },
+                {
+                  "id": 2,
+                  "image": "/img/testimonials/bedroom-balcony.jpg",
+                  "quote": "Beautiful property with world-class amenities. The rooms are spacious, clean and beautifully designed. We loved the private beach access and the peaceful environment. Highly recommended!",
+                  "author": "James Wilson",
+                  "location": "Sydney, Australia",
+                  "avatar": "/img/testimonials/james.jpg",
+                  "rating": 5
+                },
+                {
+                  "id": 3,
+                  "image": "/img/why-choose-2.jpg",
+                  "quote": "A perfect getaway! The suite was elegant and comfortable with breathtaking views. The food, service and hospitality were excellent. We will definitely be coming back again.",
+                  "author": "Sophia Martinez",
+                  "location": "Toronto, Canada",
+                  "avatar": "/img/testimonials/sophia-m.jpg",
+                  "rating": 5
+                },
+                {
+                  "id": 4,
+                  "image": "/img/testimonials/pool-palms.jpg",
+                  "quote": "From the moment we arrived, everything was exceptional. The location is serene, the suites are luxurious and the staff goes above and beyond to make your stay memorable. Truly a five-star experience!",
+                  "author": "Daniel Kim",
+                  "location": "Los Angeles, USA",
+                  "avatar": "/img/testimonials/daniel.jpg",
                   "rating": 5
                 }
               ]

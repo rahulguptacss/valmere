@@ -9,7 +9,7 @@ import { AboutSectionData } from '../../types';
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
-export default function About({ data }: { data: AboutSectionData }) {
+export default function About({ data, showButton = true }: { data: AboutSectionData; showButton?: boolean }) {
   const containerRef = useRef<HTMLElement>(null);
 
   useGSAP(
@@ -82,33 +82,35 @@ export default function About({ data }: { data: AboutSectionData }) {
             { yPercent: 0, rotate: 0, duration: 1, stagger: 0.13, ease: 'power4.out', clearProps: 'transform' },
             '-=0.6'
           )
-          // Description + button
+          // Description
           .fromTo(
             q('[data-desc]'),
             { y: 22, opacity: 0 },
             { y: 0, opacity: 1, duration: 0.8, clearProps: 'transform,opacity' },
             '-=0.55'
-          )
-          .fromTo(
+          );
+
+        if (showButton && q('[data-btn]').length) {
+          tl.fromTo(
             q('[data-btn]'),
             { y: 22, opacity: 0 },
             { y: 0, opacity: 1, duration: 0.8, clearProps: 'transform,opacity' },
             '-=0.6'
-          )
-          .to(q('[data-btn-arrow]'), {
+          ).to(q('[data-btn-arrow]'), {
             x: 7,
             duration: 0.35,
             yoyo: true,
             repeat: 1,
             ease: 'power1.inOut',
             clearProps: 'transform',
-          })
-          // Botanical leaf lines draw themselves
-          .to(
-            leafPaths,
-            { strokeDashoffset: 0, duration: 2.2, stagger: 0.07, ease: 'power2.inOut' },
-            0.5
-          );
+          });
+        }
+        // Botanical leaf lines draw themselves
+        tl.to(
+          leafPaths,
+          { strokeDashoffset: 0, duration: 2.2, stagger: 0.07, ease: 'power2.inOut' },
+          0.5
+        );
 
         /* ---------- 2. Scroll-linked parallax ---------- */
         const scrub = {
@@ -142,7 +144,7 @@ export default function About({ data }: { data: AboutSectionData }) {
   );
 
   return (
-    <section ref={containerRef} className="relative overflow-hidden bg-white py-10 sm:py-12 lg:py-14">
+    <section ref={containerRef} className="relative overflow-hidden bg-white pt-10 pb-4 sm:pt-12 sm:pb-6 lg:pt-14 lg:pb-6">
       
       {/* Decorative Botanical Leaf Line Art matching screenshot bottom-right corner */}
       <div
@@ -285,31 +287,33 @@ export default function About({ data }: { data: AboutSectionData }) {
             </p>
 
             {/* Warm Ochre Gold Rectangular Button: DISCOVER MORE —> */}
-            <Link
-              data-btn
-              href={data.button?.href || '/about'}
-              className="group inline-flex items-center justify-center gap-4 bg-[#cba372] hover:bg-[#b88e5b] text-white px-7 sm:px-8 py-3.5 rounded-none text-[11.5px] sm:text-[12px] font-semibold tracking-[0.16em] uppercase transition-[background-color,box-shadow] duration-300 shadow-sm hover:shadow-md relative z-20 shrink-0"
-            >
-              <span>{data.button?.text || 'DISCOVER MORE'}</span>
-              <span data-btn-arrow className="inline-flex">
-                <svg
-                  width="24"
-                  height="12"
-                  viewBox="0 0 24 12"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="shrink-0 group-hover:translate-x-1.5 transition-[translate] duration-300"
-                >
-                  <path
-                    d="M0 6H22M22 6L16.5 1M22 6L16.5 11"
-                    stroke="currentColor"
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </span>
-            </Link>
+            {showButton && data.button && (
+              <Link
+                data-btn
+                href={data.button.href || '/about'}
+                className="group inline-flex items-center justify-center gap-4 bg-[#cba372] hover:bg-[#b88e5b] text-white px-7 sm:px-8 py-3.5 rounded-none text-[11.5px] sm:text-[12px] font-semibold tracking-[0.16em] uppercase transition-[background-color,box-shadow] duration-300 shadow-sm hover:shadow-md relative z-20 shrink-0"
+              >
+                <span>{data.button.text || 'DISCOVER MORE'}</span>
+                <span data-btn-arrow className="inline-flex">
+                  <svg
+                    width="24"
+                    height="12"
+                    viewBox="0 0 24 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="shrink-0 group-hover:translate-x-1.5 transition-[translate] duration-300"
+                  >
+                    <path
+                      d="M0 6H22M22 6L16.5 1M22 6L16.5 11"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </span>
+              </Link>
+            )}
 
           </div>
 

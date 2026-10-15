@@ -3,7 +3,7 @@ import Header from '../../components/sections/Header';
 import Footer from '../../components/sections/Footer';
 import Breadcrumb from '../../components/sections/Breadcrumb';
 import Testimonials from '../../components/sections/Testimonials';
-import Faq from '../../components/sections/Faq';
+import Cta from '../../components/sections/Cta';
 import BackToTop from '../../components/ui/BackToTop';
 import { common, pages, sections, type PageComponent } from '../../components/types';
 
@@ -15,8 +15,13 @@ export const metadata = {
 export default function TestimonialsPage() {
   const sectionMap: Record<string, ReactNode> = {
     Breadcrumb: <Breadcrumb data={pages.testimonials.breadcrumb!} />,
-    Testimonials: <Testimonials data={sections.testimonials} />,
-    Faq: <Faq data={sections.faq} />,
+    Testimonials: (
+      <Testimonials
+        data={(sections as any).testimonials_page || sections.testimonials}
+        variant="grid"
+      />
+    ),
+    Cta: <Cta data={sections.cta} />,
   };
 
   return (
