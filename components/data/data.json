@@ -1,0 +1,713 @@
+{
+  "common": {
+    "Header": {
+      "logo": "/logo/logo.png",
+      "logo_text": "VALMERE",
+      "logo_subtext": "HOTELS & RESORTS",
+      "links": [
+        { "name": "HOME", "href": "/", "active": true },
+        { "name": "ABOUT US", "href": "/about" },
+        {
+          "name": "ROOMS & SUITS",
+          "href": "/rooms",
+          "children": [
+            { "name": "All Rooms & Suites", "href": "/rooms" },
+            { "name": "Deluxe Room Suite", "href": "/rooms/deluxe-room-suite" },
+            { "name": "Premier Room Suite", "href": "/rooms/premier-room-suite" },
+            { "name": "Presidential Ocean Suite", "href": "/rooms/presidential-ocean-suite" },
+            { "name": "Royal Garden Villa", "href": "/rooms/royal-garden-villa" }
+          ]
+        },
+        { "name": "GALLERY", "href": "/gallery" },
+        { "name": "TESTIMONIALS", "href": "/testimonials" },
+        { "name": "CONTACT US", "href": "/contact" }
+      ],
+      "button_text": "ENQUIRE NOW",
+      "button_link": "/reservation"
+    },
+    "Footer": {
+      "logo": "/logo/logo.png",
+      "logo_alt": "The Valmere Hotels & Resorts",
+      "headline_line1": "Award-winning",
+      "headline_line2": "resort in the",
+      "headline_highlight": "paradise island",
+      "contact_title": "Contact Info",
+      "contact": {
+        "address": "54 Longbranch Ave.\nBrandon, FL 33510",
+        "phone": "1-800-123-4567",
+        "email": "reservations@example.com"
+      },
+      "reservations_title": "Reservations",
+      "reservations": {
+        "phone": "1-800-123-4567",
+        "email": "reservations@example.com",
+        "hours": "Mon - Sun : 9:00 AM - 8:00 PM"
+      },
+      "copyright_text": "Copyright © 2026. All rights reserved.",
+      "powered_by": {
+        "label": "Powered by",
+        "name": "Lestow",
+        "href": "https://lestow.com"
+      },
+      "socials": [
+        { "name": "Facebook", "href": "https://facebook.com" },
+        { "name": "Instagram", "href": "https://instagram.com" },
+        { "name": "LinkedIn", "href": "https://linkedin.com" },
+        { "name": "YouTube", "href": "https://youtube.com" }
+      ]
+    }
+  },
+  "categories": {
+    "Resort": {
+      "templateComponents": {
+        "template-1": {
+          "pages": {
+            "home": {
+              "title": "Home",
+              "pageName": "Home",
+              "metadata": {
+                "title": "Valmere | Where Every Stay Feels Exceptional",
+                "description": "Award-winning luxury resort and retreat nestled in the paradise island."
+              },
+              "components": [
+                { "key": "HeroSection", "component": "Hero" },
+                { "key": "AboutSection", "component": "About" },
+                { "key": "SuitesSection", "component": "Suites" },
+                { "key": "SuitesReverseSection", "component": "SuitesReverse" },
+                { "key": "TestimonialsSection", "component": "Testimonials" },
+                { "key": "CtaSection", "component": "Cta" }
+              ]
+            },
+            "about": {
+              "title": "About Us",
+              "pageName": "About Us",
+              "metadata": {
+                "title": "About Us | Valmere Luxury Resort",
+                "description": "Redefining hospitality with meaning and timeless island elegance."
+              },
+              "breadcrumb": {
+                "title": "About Us",
+                "items": [
+                  { "name": "Home", "href": "/" },
+                  { "name": "About Us", "href": "/about" }
+                ]
+              },
+              "components": [
+                { "key": "BreadcrumbSection", "component": "Breadcrumb" },
+                { "key": "AboutSection", "component": "About" },
+                { "key": "TestimonialsSection", "component": "Testimonials" },
+                { "key": "FaqSection", "component": "Faq" }
+              ]
+            },
+            "rooms": {
+              "title": "Rooms & Suites",
+              "pageName": "Rooms & Suites",
+              "metadata": {
+                "title": "Rooms & Suites | Valmere Luxury Resort",
+                "description": "Discover our handpicked collection of sea view suites, private villas and oceanfront retreats."
+              },
+              "breadcrumb": {
+                "title": "Rooms & Suites",
+                "items": [
+                  { "name": "Home", "href": "/" },
+                  { "name": "Rooms & Suites", "href": "/rooms" }
+                ]
+              },
+              "components": [
+                { "key": "BreadcrumbSection", "component": "Breadcrumb" },
+                { "key": "RoomsSection", "component": "Rooms" },
+                { "key": "FaqSection", "component": "Faq" }
+              ]
+            },
+            "room_details": {
+              "title": "Suite Details",
+              "pageName": "Suite Details",
+              "metadata": {
+                "title": "Suite Details | Valmere Resort",
+                "description": "Experience unparalleled comfort in our luxurious resort suites."
+              },
+              "breadcrumb": {
+                "title": "Suite Details",
+                "items": [
+                  { "name": "Home", "href": "/" },
+                  { "name": "Rooms & Suites", "href": "/rooms" },
+                  { "name": "Details", "href": "/rooms/deluxe-room-suite" }
+                ]
+              },
+              "components": [
+                { "key": "BreadcrumbSection", "component": "Breadcrumb" },
+                { "key": "RoomDetailsSection", "component": "RoomDetails" },
+                { "key": "FaqSection", "component": "Faq" }
+              ]
+            },
+            "gallery": {
+              "title": "Our Gallery",
+              "pageName": "Gallery",
+              "metadata": {
+                "title": "Gallery | Valmere Luxury Resort",
+                "description": "Immerse yourself in the picturesque beauty, architecture, and lush views of Valmere."
+              },
+              "breadcrumb": {
+                "title": "Our Gallery",
+                "items": [
+                  { "name": "Home", "href": "/" },
+                  { "name": "Gallery", "href": "/gallery" }
+                ]
+              },
+              "components": [
+                { "key": "BreadcrumbSection", "component": "Breadcrumb" },
+                { "key": "GallerySection", "component": "Gallery" },
+                { "key": "FaqSection", "component": "Faq" }
+              ]
+            },
+            "testimonials": {
+              "title": "Guest Reviews",
+              "pageName": "Testimonials",
+              "metadata": {
+                "title": "Testimonials | Valmere Luxury Resort",
+                "description": "Read what our cherished guests have to say about their unforgettable holidays."
+              },
+              "breadcrumb": {
+                "title": "Guest Reviews",
+                "items": [
+                  { "name": "Home", "href": "/" },
+                  { "name": "Testimonials", "href": "/testimonials" }
+                ]
+              },
+              "components": [
+                { "key": "BreadcrumbSection", "component": "Breadcrumb" },
+                { "key": "TestimonialsSection", "component": "Testimonials" },
+                { "key": "FaqSection", "component": "Faq" }
+              ]
+            },
+            "contact": {
+              "title": "Contact Us",
+              "pageName": "Contact Us",
+              "metadata": {
+                "title": "Contact Us | Valmere Luxury Resort",
+                "description": "Reach out to our concierge for booking inquiries, airport transfers, and private reservations."
+              },
+              "breadcrumb": {
+                "title": "Contact Us",
+                "items": [
+                  { "name": "Home", "href": "/" },
+                  { "name": "Contact Us", "href": "/contact" }
+                ]
+              },
+              "components": [
+                { "key": "BreadcrumbSection", "component": "Breadcrumb" },
+                { "key": "ContactSection", "component": "Contact" }
+              ]
+            },
+            "reservation": {
+              "title": "Book Your Stay",
+              "pageName": "Reservation",
+              "metadata": {
+                "title": "Reservations | Valmere Luxury Resort",
+                "description": "Reserve your oceanfront suite or private villa at Valmere Resort."
+              },
+              "breadcrumb": {
+                "title": "Book Your Stay",
+                "items": [
+                  { "name": "Home", "href": "/" },
+                  { "name": "Reservation", "href": "/reservation" }
+                ]
+              },
+              "components": [
+                { "key": "BreadcrumbSection", "component": "Breadcrumb" },
+                { "key": "ReservationSection", "component": "Reservation" }
+              ]
+            },
+            "thank_you": {
+              "title": "Thank You",
+              "pageName": "Thank You",
+              "metadata": {
+                "title": "Thank You | Valmere Luxury Resort",
+                "description": "We have received your reservation request."
+              },
+              "components": [
+                { "key": "ThankYouSection", "component": "ThankYou" }
+              ]
+            }
+          },
+          "sections": {
+            "hero": {
+              "eyebrow": "LUXURY GETAWAYS",
+              "title_line1": "Where",
+              "title_line2": "Every Stay",
+              "title_highlight": "Exceptional.",
+              "description": "Experience effortless tranquility amidst pristine ocean horizons, bespoke hospitality, and architecturally exquisite island suites designed for genuine rejuvenation.",
+              "button": {
+                "text": "EXPLORE SUITES",
+                "href": "/rooms"
+              },
+              "image_main": "/img/luxury-travel-hero-2.png",
+              "image_side": "/img/luxury-travel-hero-3.png",
+              "image_circle": "/img/luxury-travel-hero-1.png"
+            },
+            "about": {
+              "eyebrow": "ABOUT US",
+              "title_line1": "Redefining",
+              "title_line2": "Hospitality",
+              "title_highlight": "with Meaning",
+              "description": "At The Valmere, we create more than just stays.\nWe craft experiences where refined comfort,\ntimeless design and genuine hospitality come together.",
+              "button": {
+                "text": "DISCOVER MORE",
+                "href": "/about"
+              },
+              "image_large": "/img/about.png",
+              "image_top_right": "/img/about-s1.png",
+              "image_bottom_right": "/img/about-s2.png"
+            },
+            "suites": {
+              "eyebrow": "ROOMS & SUITES",
+              "watermark": "LUXURY HOTEL",
+              "title_line1": "Deluxe",
+              "title_line2": "Room Suite",
+              "features": [
+                { "icon": "Leaf", "label": "Pick & Drop Service" },
+                { "icon": "Leaf", "label": "City Tour Guide" },
+                { "icon": "Leaf", "label": "Swimming Pool" },
+                { "icon": "Leaf", "label": "Fibre Internet" }
+              ],
+              "description": "Experience a perfect blend of comfort and elegance with our Deluxe Room Suite, designed to make your stay truly memorable.",
+              "button": {
+                "text": "ENQUIRE",
+                "href": "/reservation"
+              },
+              "image_main": "/img/suite1.png",
+              "image_secondary": "/img/suite2.png"
+            },
+            "suites_premier": {
+              "eyebrow": "ROOMS & SUITES",
+              "watermark": "LUXURY HOTEL",
+              "title_line1": "Premier",
+              "title_line2": "Room Suite",
+              "features": [
+                { "icon": "Leaf", "label": "Pick & Drop Service" },
+                { "icon": "Leaf", "label": "City Tour Guide" },
+                { "icon": "Leaf", "label": "Swimming Pool" },
+                { "icon": "Leaf", "label": "Fibre Internet" }
+              ],
+              "description": "A spacious and refined retreat offering modern amenities, stunning views and an exceptional stay for our valued guests.",
+              "button": {
+                "text": "ENQUIRE",
+                "href": "/reservation"
+              },
+              "image_main": "/img/suite-deluxe-main.jpg",
+              "image_secondary": "/img/suite-deluxe-sec.jpg"
+            },
+            "cta": {
+              "image": "/img/girl.png",
+              "image_alt": "Valmere guest relations concierge",
+              "badge_text": "CALL US ANYTIME",
+              "phone": "+91 98765 43210",
+              "title": "Do You Have",
+              "title_highlight": "Any Questions?",
+              "description": "Our team is always here to assist you with reservations, special requests,\nor any information you need for a memorable stay at The Valmere.",
+              "button": {
+                "text": "GET IN TOUCH",
+                "href": "/contact"
+              }
+            },
+            "rooms": {
+              "eyebrow": "ROOMS & SUITES",
+              "title": "Curated Luxury Living",
+              "description": "Immerse yourself in our meticulously appointed suites with panoramic ocean views, private sundecks, and handcrafted amenities.",
+              "items": [
+                {
+                  "id": 1,
+                  "slug": "deluxe-room-suite",
+                  "category": "ROOMS & SUITES",
+                  "title_line1": "Deluxe",
+                  "title_line2": "Room Suite",
+                  "title": "Deluxe Room Suite",
+                  "watermark": "LUXURY HOTEL",
+                  "price": "$480",
+                  "period": "per night",
+                  "description": "Experience unparalleled comfort in our Deluxe Room Suite with sea view, cozy living area, private terrace, and amenities designed for effortless luxury.",
+                  "features": [
+                    { "icon": "Car", "label": "Pick & Drop Service" },
+                    { "icon": "Compass", "label": "City Tour Guide" },
+                    { "icon": "Waves", "label": "Swimming Pool" },
+                    { "icon": "Wifi", "label": "Fiber Internet" }
+                  ],
+                  "button": {
+                    "text": "RESERVE NOW",
+                    "href": "/reservation?room=deluxe-room-suite"
+                  },
+                  "image_main": "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=900&q=80",
+                  "image_secondary": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=600&q=80",
+                  "capacity": "2 Adults, 1 Child",
+                  "size": "75 m² / 807 ft²",
+                  "bed": "1 King Bed",
+                  "view": "Panoramic Ocean View",
+                  "amenities": [
+                    "Private Balcony with Sunbed",
+                    "Marble Bathroom with Rain Shower",
+                    "Complimentary High-Speed Wi-Fi",
+                    "24-Hour In-Suite Dining",
+                    "Nespresso Coffee Machine",
+                    "Organic Luxury Spa Toiletries"
+                  ],
+                  "gallery": [
+                    "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=900&q=80",
+                    "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=600&q=80",
+                    "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80"
+                  ]
+                },
+                {
+                  "id": 2,
+                  "slug": "premier-room-suite",
+                  "category": "ROOMS & SUITES",
+                  "title_line1": "Premier",
+                  "title_line2": "Room Suite",
+                  "title": "Premier Room Suite",
+                  "watermark": "LUXURY HOTEL",
+                  "price": "$620",
+                  "period": "per night",
+                  "description": "Spacious and refined suites offering modern amenities, stunning panoramic views, bespoke concierge service, and an exceptional retreat for our valued guests.",
+                  "features": [
+                    { "icon": "Car", "label": "Pick & Drop Service" },
+                    { "icon": "Compass", "label": "City Tour Guide" },
+                    { "icon": "Waves", "label": "Swimming Pool" },
+                    { "icon": "Wifi", "label": "Fiber Internet" }
+                  ],
+                  "button": {
+                    "text": "RESERVE NOW",
+                    "href": "/reservation?room=premier-room-suite"
+                  },
+                  "image_main": "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=900&q=80",
+                  "image_secondary": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=600&q=80",
+                  "capacity": "3 Adults",
+                  "size": "95 m² / 1022 ft²",
+                  "bed": "1 King Bed + Daybed",
+                  "view": "Sunset Oceanfront View",
+                  "amenities": [
+                    "Expansive Private Sun Deck",
+                    "Deep Soaking Freestanding Tub",
+                    "Complimentary Champagne on Arrival",
+                    "Personal Butler Service",
+                    "State-of-the-Art Sound System",
+                    "Evening Turn-Down Service with Aromatherapy"
+                  ],
+                  "gallery": [
+                    "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=900&q=80",
+                    "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=600&q=80",
+                    "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=80"
+                  ]
+                },
+                {
+                  "id": 3,
+                  "slug": "presidential-ocean-suite",
+                  "category": "ROOMS & SUITES",
+                  "title_line1": "Presidential",
+                  "title_line2": "Ocean Suite",
+                  "title": "Presidential Ocean Suite",
+                  "watermark": "LUXURY HOTEL",
+                  "price": "$950",
+                  "period": "per night",
+                  "description": "Our crowning achievement in island architecture featuring a private infinity plunge pool, wrap-around sundeck, and expansive living quarters.",
+                  "features": [
+                    { "icon": "Car", "label": "Chauffeur Transfer" },
+                    { "icon": "Compass", "label": "Private Island Tour" },
+                    { "icon": "Waves", "label": "Private Plunge Pool" },
+                    { "icon": "Wifi", "label": "Ultra-Fast Wi-Fi" }
+                  ],
+                  "button": {
+                    "text": "RESERVE NOW",
+                    "href": "/reservation?room=presidential-ocean-suite"
+                  },
+                  "image_main": "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=900&q=80",
+                  "image_secondary": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80",
+                  "capacity": "4 Guests",
+                  "size": "140 m² / 1506 ft²",
+                  "bed": "2 Master King Beds",
+                  "view": "360° Ocean & Island View",
+                  "amenities": [
+                    "Private Heated Infinity Pool",
+                    "Full Kitchen & Private Chef on Request",
+                    "VIP Yacht Marina Access",
+                    "In-Suite Spa Treatment Room",
+                    "Complimentary Minibar Restocked Daily"
+                  ],
+                  "gallery": [
+                    "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=900&q=80",
+                    "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80"
+                  ]
+                },
+                {
+                  "id": 4,
+                  "slug": "royal-garden-villa",
+                  "category": "ROOMS & SUITES",
+                  "title_line1": "Royal",
+                  "title_line2": "Garden Villa",
+                  "title": "Royal Garden Villa",
+                  "watermark": "LUXURY HOTEL",
+                  "price": "$820",
+                  "period": "per night",
+                  "description": "Secluded amidst lush tropical flora, this standalone villa blends serene natural landscapes with lavish modern comforts.",
+                  "features": [
+                    { "icon": "Car", "label": "Airport VIP Welcome" },
+                    { "icon": "Compass", "label": "Botanical Garden Guide" },
+                    { "icon": "Waves", "label": "Garden Plunge Pool" },
+                    { "icon": "Wifi", "label": "Fiber Internet" }
+                  ],
+                  "button": {
+                    "text": "RESERVE NOW",
+                    "href": "/reservation?room=royal-garden-villa"
+                  },
+                  "image_main": "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=900&q=80",
+                  "image_secondary": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=600&q=80",
+                  "capacity": "4 Guests",
+                  "size": "120 m² / 1291 ft²",
+                  "bed": "1 King Bed + 2 Twin Beds",
+                  "view": "Private Tropical Garden View",
+                  "amenities": [
+                    "Private Courtyard with Outdoor Rain Shower",
+                    "Sunken Lounge Seating",
+                    "Dedicated Golf Cart for Island Transit",
+                    "Complimentary Sunset Cocktails"
+                  ],
+                  "gallery": [
+                    "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=900&q=80"
+                  ]
+                }
+              ]
+            },
+            "room_details": {
+              "items": [
+                {
+                  "id": 1,
+                  "slug": "deluxe-room-suite",
+                  "category": "ROOMS & SUITES",
+                  "title_line1": "Deluxe",
+                  "title_line2": "Room Suite",
+                  "title": "Deluxe Room Suite",
+                  "watermark": "LUXURY HOTEL",
+                  "price": "$480",
+                  "period": "per night",
+                  "description": "Experience unparalleled comfort in our Deluxe Room Suite with sea view, cozy living area, private terrace, and amenities designed for effortless luxury.",
+                  "features": [
+                    { "icon": "Car", "label": "Pick & Drop Service" },
+                    { "icon": "Compass", "label": "City Tour Guide" },
+                    { "icon": "Waves", "label": "Swimming Pool" },
+                    { "icon": "Wifi", "label": "Fiber Internet" }
+                  ],
+                  "button": {
+                    "text": "RESERVE NOW",
+                    "href": "/reservation?room=deluxe-room-suite"
+                  },
+                  "image_main": "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=900&q=80",
+                  "image_secondary": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=600&q=80",
+                  "capacity": "2 Adults, 1 Child",
+                  "size": "75 m² / 807 ft²",
+                  "bed": "1 King Bed",
+                  "view": "Panoramic Ocean View",
+                  "amenities": [
+                    "Private Balcony with Sunbed",
+                    "Marble Bathroom with Rain Shower",
+                    "Complimentary High-Speed Wi-Fi",
+                    "24-Hour In-Suite Dining",
+                    "Nespresso Coffee Machine",
+                    "Organic Luxury Spa Toiletries"
+                  ],
+                  "gallery": [
+                    "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=900&q=80",
+                    "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=600&q=80",
+                    "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80"
+                  ]
+                },
+                {
+                  "id": 2,
+                  "slug": "premier-room-suite",
+                  "category": "ROOMS & SUITES",
+                  "title_line1": "Premier",
+                  "title_line2": "Room Suite",
+                  "title": "Premier Room Suite",
+                  "watermark": "LUXURY HOTEL",
+                  "price": "$620",
+                  "period": "per night",
+                  "description": "Spacious and refined suites offering modern amenities, stunning panoramic views, bespoke concierge service, and an exceptional retreat for our valued guests.",
+                  "features": [
+                    { "icon": "Car", "label": "Pick & Drop Service" },
+                    { "icon": "Compass", "label": "City Tour Guide" },
+                    { "icon": "Waves", "label": "Swimming Pool" },
+                    { "icon": "Wifi", "label": "Fiber Internet" }
+                  ],
+                  "button": {
+                    "text": "RESERVE NOW",
+                    "href": "/reservation?room=premier-room-suite"
+                  },
+                  "image_main": "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=900&q=80",
+                  "image_secondary": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=600&q=80",
+                  "capacity": "3 Adults",
+                  "size": "95 m² / 1022 ft²",
+                  "bed": "1 King Bed + Daybed",
+                  "view": "Sunset Oceanfront View",
+                  "amenities": [
+                    "Expansive Private Sun Deck",
+                    "Deep Soaking Freestanding Tub",
+                    "Complimentary Champagne on Arrival",
+                    "Personal Butler Service",
+                    "State-of-the-Art Sound System",
+                    "Evening Turn-Down Service with Aromatherapy"
+                  ],
+                  "gallery": [
+                    "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=900&q=80",
+                    "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=600&q=80",
+                    "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=80"
+                  ]
+                }
+              ]
+            },
+            "testimonials": {
+              "eyebrow": "OUR GUESTS FEEDBACK",
+              "title_line1": "What Our",
+              "title_highlight": "Guests Say",
+              "items": [
+                {
+                  "id": 1,
+                  "quote": "Valmere redefined our idea of relaxation. The architecture in harmony with nature, the crystal-clear pools and the warmth of the staff made our anniversary escape truly magical.",
+                  "author": "Alexander Wright",
+                  "role": "FREQUENT TRAVELER",
+                  "avatar": "/img/testimonials/alexander.jpg",
+                  "rating": 5
+                },
+                {
+                  "id": 2,
+                  "quote": "From the breathtaking views to the impeccable service, our stay at The Valmere was truly unforgettable. Every detail, from the elegant rooms to the warm hospitality, made our getaway special. We can’t wait to return.",
+                  "author": "Sophia Bennett",
+                  "role": "TRAVEL ENTHUSIAST",
+                  "avatar": "/img/testimonials/sophia.jpg",
+                  "rating": 5
+                },
+                {
+                  "id": 3,
+                  "quote": "A true sanctuary in every sense. Waking up to the gentle sound of waves in the Deluxe Suite was an experience our family will cherish for a lifetime. Absolutely five stars.",
+                  "author": "Isabella Rossi",
+                  "role": "LIFESTYLE BLOGGER",
+                  "avatar": "/img/testimonials/isabella.jpg",
+                  "rating": 5
+                }
+              ]
+            },
+            "faq": {
+              "title_line1": "Do You Have",
+              "title_highlight": "Any Questions?",
+              "description": "Have questions about your stay, suite amenities, or bespoke island experiences? Our dedicated reservations team is available 24/7 to assist you at Valmere.",
+              "button": {
+                "text": "GET IN TOUCH",
+                "href": "/contact"
+              },
+              "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80",
+              "phone_label": "CONTACT US NOW • CALL US",
+              "phone": "+1 800 234 5678"
+            },
+            "gallery": {
+              "eyebrow": "VISUAL RETREAT",
+              "title_line1": "Moments in",
+              "title_highlight": "Paradise",
+              "description": "Explore snapshots of our oceanfront suites, infinity pool sun decks, gourmet culinary dining, and tranquil island landscapes.",
+              "categories": ["All", "Suites", "Pool & Beach", "Dining", "Wellness"],
+              "items": [
+                {
+                  "id": 1,
+                  "category": "Suites",
+                  "title": "Deluxe Oceanfront Bedroom",
+                  "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80"
+                },
+                {
+                  "id": 2,
+                  "category": "Pool & Beach",
+                  "title": "Sunlit Infinity Pool Lounge",
+                  "image": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=80"
+                },
+                {
+                  "id": 3,
+                  "category": "Suites",
+                  "title": "Premier Suite Terrace View",
+                  "image": "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=800&q=80"
+                },
+                {
+                  "id": 4,
+                  "category": "Pool & Beach",
+                  "title": "Private Beach Cabanas",
+                  "image": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
+                },
+                {
+                  "id": 5,
+                  "category": "Dining",
+                  "title": "Seaside Sunset Cocktails",
+                  "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
+                },
+                {
+                  "id": 6,
+                  "category": "Wellness",
+                  "title": "Aromatic Spa Pavilion",
+                  "image": "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=800&q=80"
+                },
+                {
+                  "id": 7,
+                  "category": "Suites",
+                  "title": "Presidential Living Quarters",
+                  "image": "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=800&q=80"
+                },
+                {
+                  "id": 8,
+                  "category": "Dining",
+                  "title": "Artisanal Island Breakfast",
+                  "image": "https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&w=800&q=80"
+                }
+              ]
+            },
+            "contact": {
+              "eyebrow": "GET IN TOUCH",
+              "title_line1": "We Are Here",
+              "title_highlight": "To Assist You",
+              "description": "Have any questions regarding accommodations, private boat charters, or wellness retreats? Connect with our dedicated guest services.",
+              "info": {
+                "address": "450 Ocean Breeze Boulevard, Paradise Island 94021",
+                "phone": "+1 (800) 234-5678",
+                "email": "concierge@valmereresort.com",
+                "hours": "Open 24 Hours • 7 Days a Week"
+              },
+              "form": {
+                "name_placeholder": "Your Full Name",
+                "email_placeholder": "Your Email Address",
+                "phone_placeholder": "Phone Number",
+                "subject_placeholder": "Select Subject (Booking, Dining, Event, Other)",
+                "message_placeholder": "How can we make your stay extraordinary?",
+                "button_text": "SEND MESSAGE"
+              }
+            },
+            "reservation": {
+              "eyebrow": "ONLINE RESERVATION",
+              "title": "Plan Your Island Escape",
+              "description": "Select your desired travel dates, preferred suite or villa, and number of guests to secure your unforgettable retreat at Valmere.",
+              "checkin_label": "Check-in Date",
+              "checkout_label": "Check-out Date",
+              "guests_label": "Number of Guests",
+              "room_label": "Select Suite or Villa",
+              "room_options": [
+                "Deluxe Room Suite ($480 / night)",
+                "Premier Room Suite ($620 / night)",
+                "Royal Garden Villa ($820 / night)",
+                "Presidential Ocean Suite ($950 / night)"
+              ],
+              "button_text": "CONFIRM RESERVATION"
+            },
+            "thank_you": {
+              "title": "Thank You For Choosing Valmere",
+              "description": "Your reservation request has been received. Our concierge team will review your preferences and contact you promptly with confirmation details.",
+              "button": {
+                "text": "RETURN TO HOME",
+                "href": "/"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,26 +1,43 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #fcfaf7;
+  --foreground: #222923;
+  --resort-green: #243c30;
+  --resort-green-dark: #192c22;
+  --resort-gold: #c5a059;
+  --resort-gold-dark: #a9833c;
+  --resort-sand: #f7f3ea;
+  --resort-sage: #edf3ea;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-resort-green: var(--resort-green);
+  --color-resort-gold: var(--resort-gold);
+  --color-resort-sand: var(--resort-sand);
+  --color-resort-sage: var(--resort-sage);
+  --font-sans: var(--font-sans), Arial, sans-serif;
+  --font-serif: var(--font-serif), Georgia, serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+html,
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  overflow-x: clip;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, .font-serif {
+  font-family: var(--font-serif);
+}
+
+a,
+button,
+[type="button"],
+[type="submit"] {
+  cursor: pointer;
 }
