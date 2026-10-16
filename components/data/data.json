@@ -19,24 +19,12 @@
           "href": "/rooms",
           "children": [
             {
-              "name": "All Rooms & Suites",
-              "href": "/rooms"
-            },
-            {
-              "name": "Rooms Details",
-              "href": "/rooms-details"
-            },
-            {
               "name": "Ocean View Suite",
               "href": "/rooms/ocean-view-suite"
             },
             {
               "name": "Garden Pool Villa",
               "href": "/rooms/garden-pool-villa"
-            },
-            {
-              "name": "Presidential Beachfront Villa",
-              "href": "/rooms/presidential-beachfront-villa"
             },
             {
               "name": "Sunset Horizon Penthouse",

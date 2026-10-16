@@ -19,7 +19,13 @@ export default function BackToTop() {
     <button
       type="button"
       aria-label="Back to top"
-      onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+      onClick={() => {
+        if (typeof window !== 'undefined' && (window as any).__lenis) {
+          (window as any).__lenis.scrollTo(0, { duration: 1.3 });
+        } else {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+      }}
       className="fixed bottom-6 right-6 z-40 flex h-11 w-11 items-center justify-center rounded-full bg-[#243c30] text-white shadow-xl hover:bg-[#c5a059] transition-all duration-300 hover:scale-105 active:scale-95"
     >
       <ArrowUp className="h-5 w-5" />

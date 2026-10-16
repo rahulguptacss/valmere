@@ -28,10 +28,35 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans);
   overflow-x: clip;
-  scroll-behavior: smooth;
 }
 
-h1, h2, h3, h4, .font-serif {
+/* Lenis Smooth Scroll Recommended Styles */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+.font-serif {
   font-family: var(--font-serif);
 }
 
@@ -40,4 +65,21 @@ button,
 [type="button"],
 [type="submit"] {
   cursor: pointer;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  body,
+  a,
+  button,
+  [type="button"],
+  [type="submit"],
+  [role="button"] {
+    cursor: none !important;
+  }
+
+  input,
+  textarea,
+  select {
+    cursor: text !important;
+  }
 }

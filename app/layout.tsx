@@ -17,6 +17,8 @@ const plusJakarta = Plus_Jakarta_Sans({
 });
 
 import { pages } from '../components/types';
+import CustomCursor from '../components/ui/CustomCursor';
+import SmoothScroll from '../components/ui/SmoothScroll';
 
 export const metadata: Metadata = {
   title: pages.home?.metadata?.title || 'Valmere - Luxury Resort & Retreat',
@@ -30,7 +32,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${playfair.variable} ${plusJakarta.variable} h-full antialiased`}>
-      <body className="flex min-h-full flex-col font-sans bg-[#fcfaf7] text-[#222923]">{children}</body>
+      <body className="flex min-h-full flex-col font-sans bg-[#fcfaf7] text-[#222923]">
+        <SmoothScroll />
+        <CustomCursor />
+        {children}
+      </body>
     </html>
   );
 }

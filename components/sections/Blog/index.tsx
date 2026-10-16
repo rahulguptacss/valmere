@@ -35,7 +35,7 @@ export default function Blog({ data }: { data: BlogSectionData }) {
       className="relative overflow-hidden bg-[#fdfcf9] py-12 sm:py-16 lg:py-20"
     >
       <div className="mx-auto max-w-[1360px] px-4 sm:px-6 lg:px-8">
-        
+
         {/* Section Heading from data.json with Framer Motion reveal */}
         <motion.div
           initial={{ opacity: 0, y: 25 }}
@@ -173,11 +173,10 @@ export default function Blog({ data }: { data: BlogSectionData }) {
                 type="button"
                 onClick={() => handlePageChange(currentPage - 1)}
                 disabled={currentPage === 1}
-                className={`w-9 h-9 flex items-center justify-center rounded-md text-[16px] transition-all cursor-pointer ${
-                  currentPage === 1
+                className={`w-9 h-9 flex items-center justify-center rounded-md text-[16px] transition-all cursor-pointer ${currentPage === 1
                     ? 'text-[#b0aba0] opacity-40 cursor-not-allowed'
                     : 'text-[#8e8b82] hover:text-[#16241b] hover:bg-white/70'
-                }`}
+                  }`}
                 aria-label="Previous page"
               >
                 «
@@ -191,11 +190,10 @@ export default function Blog({ data }: { data: BlogSectionData }) {
                     key={pageNum}
                     type="button"
                     onClick={() => handlePageChange(pageNum)}
-                    className={`w-9 h-9 flex items-center justify-center rounded-md text-[13.5px] transition-all cursor-pointer ${
-                      isActive
+                    className={`w-9 h-9 flex items-center justify-center rounded-md text-[13.5px] transition-all cursor-pointer ${isActive
                         ? 'font-semibold text-[#16241b] bg-white shadow-[0_1px_3px_rgba(0,0,0,0.06)] border border-[#e8dfd1]'
                         : 'font-normal text-[#6f756e] hover:text-[#16241b] hover:bg-white/70'
-                    }`}
+                      }`}
                     aria-label={`Go to page ${pageNum}`}
                     aria-current={isActive ? 'page' : undefined}
                   >
@@ -209,11 +207,10 @@ export default function Blog({ data }: { data: BlogSectionData }) {
                 type="button"
                 onClick={() => handlePageChange(currentPage + 1)}
                 disabled={currentPage === totalPages}
-                className={`w-9 h-9 flex items-center justify-center rounded-md text-[16px] transition-all cursor-pointer ${
-                  currentPage === totalPages
+                className={`w-9 h-9 flex items-center justify-center rounded-md text-[16px] transition-all cursor-pointer ${currentPage === totalPages
                     ? 'text-[#b0aba0] opacity-40 cursor-not-allowed'
                     : 'text-[#8e8b82] hover:text-[#16241b] hover:bg-white/70'
-                }`}
+                  }`}
                 aria-label="Next page"
               >
                 »
