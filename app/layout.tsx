@@ -16,9 +16,11 @@ const plusJakarta = Plus_Jakarta_Sans({
   display: 'swap',
 });
 
+import { pages } from '../components/types';
+
 export const metadata: Metadata = {
-  title: 'Valmere - Luxury Resort & Retreat',
-  description: 'Where Every Stay Feels Exceptional. Award-winning luxury resort in the paradise island.',
+  title: pages.home?.metadata?.title || 'Valmere - Luxury Resort & Retreat',
+  description: pages.home?.metadata?.description || 'Where Every Stay Feels Exceptional. Award-winning luxury resort in the paradise island.',
 };
 
 export default function RootLayout({

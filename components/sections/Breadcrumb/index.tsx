@@ -16,7 +16,7 @@ export default function Breadcrumb({ data }: { data: BreadcrumbData }) {
   const navRef = useRef<HTMLElement>(null);
   const bgImgRef = useRef<HTMLDivElement>(null);
 
-  const bgImage = data.image || '/img/breadcrumb.png';
+  const bgImage = data.image || '/img/breadcrumb.webp';
 
   useGSAP(
     () => {
@@ -73,7 +73,7 @@ export default function Breadcrumb({ data }: { data: BreadcrumbData }) {
       ref={containerRef}
       className="relative overflow-hidden bg-[#16221a] text-white min-h-[200px] sm:min-h-[250px] md:min-h-[290px] lg:min-h-[330px] flex items-center justify-center py-10 sm:py-14 md:py-16 lg:py-18"
     >
-      {/* Background Image: /img/breadcrumb.png with parallax */}
+      {/* Background Image: /img/breadcrumb.webp with parallax */}
       <div
         ref={bgImgRef}
         className="absolute inset-0 -top-6 -bottom-8 w-full h-[calc(100%+56px)] z-0"

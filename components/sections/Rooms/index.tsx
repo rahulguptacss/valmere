@@ -58,7 +58,7 @@ export default function Rooms({
         {/* 2-Column Luxury Rooms Grid matching screenshot */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-10 sm:gap-x-10 sm:gap-y-12 lg:gap-x-12 lg:gap-y-14">
           {items.map((room: RoomItem, index: number) => {
-            const imageSrc = room.image || room.image_main || (index % 2 === 0 ? '/rooms/1.png' : '/rooms/2.png');
+            const imageSrc = room.image || room.image_main || (index % 2 === 0 ? '/rooms/1.webp' : '/rooms/2.webp');
             const href = room.href || `/rooms/${room.slug || 'ocean-view-suite'}`;
             const ratingCount = room.rating || 5;
 

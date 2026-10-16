@@ -1,196 +1,381 @@
 'use client';
 
 import React, { useState } from 'react';
+import Image from 'next/image';
 import { useRouter } from 'next/navigation';
-import { MapPin, Phone, Mail, Clock, Send, CheckCircle2 } from 'lucide-react';
+import { motion } from 'framer-motion';
+import {
+  MapPin,
+  Phone,
+  Mail,
+  Share2,
+  User,
+  LayoutGrid,
+  PenLine,
+  ArrowRight,
+  CheckCircle2,
+} from 'lucide-react';
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaTwitter,
+  FaPinterestP,
+} from 'react-icons/fa';
 import { ContactSectionData } from '../../types';
+
+function SocialIcon({ name }: { name: string }) {
+  const size = 13;
+  switch (name.toLowerCase()) {
+    case 'facebook':
+      return <FaFacebookF size={size} />;
+    case 'instagram':
+      return <FaInstagram size={size} />;
+    case 'twitter':
+      return <FaTwitter size={size} />;
+    case 'pinterest':
+      return <FaPinterestP size={size} />;
+    default:
+      return <Share2 size={size} />;
+  }
+}
 
 export default function Contact({ data }: { data: ContactSectionData }) {
   const router = useRouter();
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    subject: '',
+    message: '',
+  });
   const [submitting, setSubmitting] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setSubmitting(true);
     setTimeout(() => {
       router.push('/thank-you');
-    }, 600);
+    }, 400);
   };
 
+  const contactItems = data.contact_items || [
+    {
+      type: 'location',
+      title: 'Our Location',
+      lines: [
+        data.info?.address || '123 Education Lane, New York, NY 10001',
+      ],
+    },
+    {
+      type: 'phone',
+      title: 'Phone',
+      lines: [data.info?.phone || '+100000000000'],
+    },
+    {
+      type: 'email',
+      title: 'Email',
+      lines: [data.info?.email || 'info@xyz.com'],
+    },
+    {
+      type: 'social',
+      title: 'Follow Us',
+      socials: [
+        { name: 'facebook', href: 'https://facebook.com' },
+        { name: 'instagram', href: 'https://instagram.com' },
+        { name: 'twitter', href: 'https://twitter.com' },
+        { name: 'pinterest', href: 'https://pinterest.com' },
+      ],
+    },
+  ];
+
   return (
-    <section className="bg-[#fcfaf7] py-16 lg:py-24">
-      <div className="mx-auto max-w-[1360px] px-4 sm:px-6 lg:px-8">
-        
-        {/* Section Header */}
-        <div className="text-center max-w-2xl mx-auto mb-14">
-          <div className="flex items-center justify-center gap-3.5 mb-3">
-            <span className="w-12 h-[1.5px] bg-[#c5a059]" />
-            <span className="text-[11px] sm:text-[11.5px] font-bold tracking-[0.28em] text-[#8c7853] uppercase">
-              {data.eyebrow || "GET IN TOUCH"}
-            </span>
-            <span className="w-12 h-[1.5px] bg-[#c5a059]" />
-          </div>
-          <h2 className="font-serif text-[34px] sm:text-[46px] md:text-[50px] font-normal text-[#243c30] leading-tight mb-4">
-            {data.title_line1} <span className="italic text-[#c5a059]">{data.title_highlight}</span>
-          </h2>
-          <p className="text-[14px] sm:text-[15.5px] text-[#556259] leading-relaxed">
-            {data.description}
-          </p>
-        </div>
-
-        {/* Contact Layout Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
+    <section className="bg-white py-16 sm:py-20 lg:py-24 text-[#16241b]">
+      <div className="mx-auto max-w-[1320px] px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 xl:gap-14 items-start">
           
-          {/* Left Column: Contact Cards & Location */}
-          <div className="lg:col-span-5 space-y-6">
-            <div className="bg-white p-7 sm:p-8 rounded-[28px] border border-[#e8d8b6]/60 shadow-md space-y-6">
-              <h3 className="font-serif text-[24px] text-[#243c30] font-normal">
-                Guest Services & Concierge
-              </h3>
-
-              <div className="space-y-5">
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-full border border-[#c5a059] flex items-center justify-center text-[#c5a059] bg-[#f7f3ea] shrink-0 mt-0.5">
-                    <MapPin size={18} />
-                  </div>
-                  <div>
-                    <span className="block text-[11px] font-bold text-[#8c7853] uppercase tracking-wider">Address</span>
-                    <span className="text-[14px] text-[#243c30]">{data.info.address}</span>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-full border border-[#c5a059] flex items-center justify-center text-[#c5a059] bg-[#f7f3ea] shrink-0 mt-0.5">
-                    <Phone size={18} />
-                  </div>
-                  <div>
-                    <span className="block text-[11px] font-bold text-[#8c7853] uppercase tracking-wider">Phone Inquiries</span>
-                    <span className="text-[14px] text-[#243c30] font-semibold">{data.info.phone}</span>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-full border border-[#c5a059] flex items-center justify-center text-[#c5a059] bg-[#f7f3ea] shrink-0 mt-0.5">
-                    <Mail size={18} />
-                  </div>
-                  <div>
-                    <span className="block text-[11px] font-bold text-[#8c7853] uppercase tracking-wider">Email Address</span>
-                    <span className="text-[14px] text-[#243c30]">{data.info.email}</span>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-full border border-[#c5a059] flex items-center justify-center text-[#c5a059] bg-[#f7f3ea] shrink-0 mt-0.5">
-                    <Clock size={18} />
-                  </div>
-                  <div>
-                    <span className="block text-[11px] font-bold text-[#8c7853] uppercase tracking-wider">Concierge Hours</span>
-                    <span className="text-[14px] text-[#243c30]">{data.info.hours}</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Interactive Map Embed */}
-            <div className="h-64 rounded-[28px] overflow-hidden border border-[#e8d8b6]/60 shadow-md bg-neutral-200">
-              <iframe
-                title="Valmere Resort Location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126920.26442651475!2d-64.81944588320315!3d18.33805626240232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c06f3630f9a5629%3A0x7d94f2791e84f697!2sSaint%20Thomas!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
-                className="w-full h-full border-0"
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              />
-            </div>
-          </div>
-
-          {/* Right Column: Inquiry Message Form */}
-          <div className="lg:col-span-7">
-            <div className="bg-white p-8 sm:p-10 lg:p-12 rounded-[32px] border border-[#e8d8b6]/60 shadow-xl">
-              <span className="block text-[11px] font-bold tracking-[0.25em] text-[#8c7853] uppercase mb-1">
-                SEND US A MESSAGE
+          {/* ================= LEFT COLUMN ================= */}
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, ease: 'easeOut' }}
+            className="lg:col-span-6 flex flex-col"
+          >
+            {/* Eyebrow */}
+            <div className="flex items-center gap-2.5 mb-2.5">
+              <span className="w-8 sm:w-10 h-[1.5px] bg-[#c28b38]" />
+              <span className="text-[11px] sm:text-[12px] font-bold tracking-[0.22em] text-[#ba8538] uppercase">
+                {data.eyebrow}
               </span>
-              <h3 className="font-serif text-[28px] sm:text-[32px] text-[#243c30] font-normal mb-8">
-                How May We Assist You?
-              </h3>
+            </div>
 
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                  <div>
-                    <label className="block text-[12px] font-semibold text-[#6d7971] uppercase tracking-wider mb-2">
-                      Full Name *
-                    </label>
-                    <input
-                      type="text"
-                      required
-                      placeholder={data.form.name_placeholder}
-                      className="w-full px-4 py-3.5 rounded-xl border border-[#e8d8b6] text-[14px] text-[#243c30] placeholder:text-neutral-400 focus:outline-none focus:border-[#243c30]"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-[12px] font-semibold text-[#6d7971] uppercase tracking-wider mb-2">
-                      Email Address *
-                    </label>
-                    <input
-                      type="email"
-                      required
-                      placeholder={data.form.email_placeholder}
-                      className="w-full px-4 py-3.5 rounded-xl border border-[#e8d8b6] text-[14px] text-[#243c30] placeholder:text-neutral-400 focus:outline-none focus:border-[#243c30]"
-                    />
-                  </div>
+            {/* Title: Contact Us */}
+            <h2 className="font-serif text-[42px] sm:text-[50px] lg:text-[54px] font-normal leading-[1.08] text-[#16241b] mb-4 sm:mb-5">
+              {data.title_line1}{' '}
+              <span className="text-[#ba8538]">{data.title_highlight}</span>
+            </h2>
+
+            {/* Description */}
+            <p className="text-[14px] sm:text-[14.5px] text-[#616c65] leading-[1.72] mb-8 sm:mb-10 max-w-[560px]">
+              {data.description}
+            </p>
+
+            {/* 2x2 Contact Info Grid */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-7 sm:gap-y-8 mb-8 sm:mb-10">
+              {contactItems.map((item, idx) => {
+                return (
+                  <motion.div
+                    key={item.title || idx}
+                    initial={{ opacity: 0, y: 16 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: idx * 0.08 }}
+                    className="flex items-start gap-3.5"
+                  >
+                    {/* Circle Icon Container */}
+                    <div className="w-[46px] h-[46px] sm:w-[48px] sm:h-[48px] rounded-full bg-[#f8f3ea] text-[#ba8538] flex items-center justify-center shrink-0 mt-0.5 shadow-sm">
+                      {item.type === 'location' && <MapPin size={20} strokeWidth={1.8} />}
+                      {item.type === 'phone' && <Phone size={20} strokeWidth={1.8} />}
+                      {item.type === 'email' && <Mail size={20} strokeWidth={1.8} />}
+                      {item.type === 'social' && <Share2 size={20} strokeWidth={1.8} />}
+                    </div>
+
+                    {/* Text / Social links */}
+                    <div className="flex-1 min-w-0">
+                      <h3 className="font-serif text-[17px] sm:text-[18px] text-[#16241b] font-medium leading-snug mb-1">
+                        {item.title}
+                      </h3>
+
+                      {item.type === 'social' && item.socials ? (
+                        <div className="flex items-center gap-2 mt-2">
+                          {item.socials.map((soc) => (
+                            <a
+                              key={soc.name}
+                              href={soc.href}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              aria-label={soc.name}
+                              className="w-[30px] h-[30px] rounded-full border border-[#ede7dc] bg-[#faf8f5] hover:bg-[#ba8538] hover:border-[#ba8538] text-[#16241b] hover:text-white flex items-center justify-center transition-all duration-200"
+                            >
+                              <SocialIcon name={soc.name} />
+                            </a>
+                          ))}
+                        </div>
+                      ) : (
+                        <div className="space-y-0.5 text-[13px] sm:text-[13.5px] text-[#616c65] leading-[1.5]">
+                          {item.lines?.map((line, lIdx) => {
+                            if (item.type === 'phone') {
+                              return (
+                                <a
+                                  key={lIdx}
+                                  href={`tel:${line.replace(/[^+\d]/g, '')}`}
+                                  className="block hover:text-[#ba8538] transition-colors"
+                                >
+                                  {line}
+                                </a>
+                              );
+                            }
+                            if (item.type === 'email') {
+                              return (
+                                <a
+                                  key={lIdx}
+                                  href={`mailto:${line}`}
+                                  className="block hover:text-[#ba8538] transition-colors break-all"
+                                >
+                                  {line}
+                                </a>
+                              );
+                            }
+                            return (
+                              <p key={lIdx} className="m-0">
+                                {line}
+                              </p>
+                            );
+                          })}
+                        </div>
+                      )}
+                    </div>
+                  </motion.div>
+                );
+              })}
+            </div>
+
+            {/* Wide Bottom Image */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.98 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.7, ease: 'easeOut' }}
+              className="relative w-full h-[220px] sm:h-[260px] md:h-[280px] rounded-[18px] sm:rounded-[22px] overflow-hidden shadow-sm border border-[#ede7dc]/70"
+            >
+              <Image
+                src={data.image || '/img/contact-resort.webp'}
+                alt={data.image_alt || 'The Valmere Luxury Resort'}
+                fill
+                priority
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover object-center transition-transform duration-700 hover:scale-105"
+              />
+            </motion.div>
+          </motion.div>
+
+          {/* ================= RIGHT COLUMN (FORM CARD) ================= */}
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.15, ease: 'easeOut' }}
+            className="lg:col-span-6"
+          >
+            <div className="bg-white rounded-[22px] sm:rounded-[26px] border border-[#ede7dc] p-6 sm:p-9 lg:p-10 shadow-[0_4px_30px_rgba(0,0,0,0.025)]">
+              {/* Eyebrow */}
+              <div className="flex items-center gap-2.5 mb-2.5">
+                <span className="w-8 sm:w-10 h-[1.5px] bg-[#c28b38]" />
+                <span className="text-[11px] sm:text-[11.5px] font-bold tracking-[0.22em] text-[#ba8538] uppercase">
+                  {data.form.eyebrow}
+                </span>
+              </div>
+
+              {/* Title: Fill Up The Form */}
+              <h2 className="font-serif text-[34px] sm:text-[42px] lg:text-[46px] font-normal leading-[1.1] text-[#16241b] mb-2">
+                {data.form.title_line1}{' '}
+                <span className="text-[#ba8538]">{data.form.title_highlight}</span>
+              </h2>
+
+              {/* Subtitle */}
+              <div className="text-[13px] sm:text-[13.5px] text-[#6a756f] leading-snug mb-7 sm:mb-8 space-y-0.5">
+                <p className="m-0">{data.form.subtitle_line1}</p>
+                <p className="m-0">{data.form.subtitle_line2}</p>
+              </div>
+
+              {/* Form Status Message */}
+              {submitted && (
+                <div className="mb-6 p-4 rounded-xl bg-[#f4f8f4] border border-[#a8cfb4] text-[#1b432a] text-[13.5px] flex items-center gap-2.5 animate-fadeIn">
+                  <CheckCircle2 size={18} className="text-[#2e7d4d] shrink-0" />
+                  <span>Thank you! Your message has been sent successfully. We will contact you shortly.</span>
                 </div>
+              )}
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                  <div>
-                    <label className="block text-[12px] font-semibold text-[#6d7971] uppercase tracking-wider mb-2">
-                      Phone Number
-                    </label>
-                    <input
-                      type="tel"
-                      placeholder={data.form.phone_placeholder}
-                      className="w-full px-4 py-3.5 rounded-xl border border-[#e8d8b6] text-[14px] text-[#243c30] placeholder:text-neutral-400 focus:outline-none focus:border-[#243c30]"
-                    />
+              {/* Form Inputs */}
+              <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-4.5">
+                {/* 1. Name */}
+                <div className="relative flex items-center rounded-[10px] border border-[#ede7dc] bg-white transition-all duration-200 focus-within:border-[#ba8538] focus-within:ring-2 focus-within:ring-[#ba8538]/15">
+                  <div className="absolute left-4 text-[#8f9b93] pointer-events-none flex items-center justify-center">
+                    <User size={18} strokeWidth={1.8} />
                   </div>
-                  <div>
-                    <label className="block text-[12px] font-semibold text-[#6d7971] uppercase tracking-wider mb-2">
-                      Subject
-                    </label>
-                    <select className="w-full px-4 py-3.5 rounded-xl border border-[#e8d8b6] text-[14px] text-[#243c30] focus:outline-none focus:border-[#243c30] bg-white">
-                      <option>Room & Suite Reservations</option>
-                      <option>Private Island Dining</option>
-                      <option>Spa & Wellness Packages</option>
-                      <option>Airport & Yacht Transfers</option>
-                      <option>Events & Wedding Inquiries</option>
-                      <option>Other Special Requests</option>
-                    </select>
-                  </div>
-                </div>
-
-                <div>
-                  <label className="block text-[12px] font-semibold text-[#6d7971] uppercase tracking-wider mb-2">
-                    Message *
-                  </label>
-                  <textarea
-                    rows={5}
+                  <input
+                    type="text"
                     required
-                    placeholder={data.form.message_placeholder}
-                    className="w-full px-4 py-3.5 rounded-xl border border-[#e8d8b6] text-[14px] text-[#243c30] placeholder:text-neutral-400 focus:outline-none focus:border-[#243c30] resize-none"
+                    value={formData.name}
+                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                    placeholder={data.form.name_placeholder}
+                    className="w-full pl-12 pr-4 py-3.5 sm:py-3.5 bg-transparent text-[13.5px] sm:text-[14px] text-[#16241b] placeholder:text-[#8e9891] focus:outline-none"
                   />
                 </div>
 
+                {/* 2. Email Address */}
+                <div className="relative flex items-center rounded-[10px] border border-[#ede7dc] bg-white transition-all duration-200 focus-within:border-[#ba8538] focus-within:ring-2 focus-within:ring-[#ba8538]/15">
+                  <div className="absolute left-4 text-[#8f9b93] pointer-events-none flex items-center justify-center">
+                    <Mail size={18} strokeWidth={1.8} />
+                  </div>
+                  <input
+                    type="email"
+                    required
+                    value={formData.email}
+                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                    placeholder={data.form.email_placeholder}
+                    className="w-full pl-12 pr-4 py-3.5 sm:py-3.5 bg-transparent text-[13.5px] sm:text-[14px] text-[#16241b] placeholder:text-[#8e9891] focus:outline-none"
+                  />
+                </div>
+
+                {/* 3. Phone Number */}
+                <div className="relative flex items-center rounded-[10px] border border-[#ede7dc] bg-white transition-all duration-200 focus-within:border-[#ba8538] focus-within:ring-2 focus-within:ring-[#ba8538]/15">
+                  <div className="absolute left-4 text-[#8f9b93] pointer-events-none flex items-center justify-center">
+                    <Phone size={18} strokeWidth={1.8} />
+                  </div>
+                  <input
+                    type="tel"
+                    inputMode="numeric"
+                    pattern="[0-9]*"
+                    value={formData.phone}
+                    onKeyDown={(e) => {
+                      if (
+                        [
+                          'Backspace',
+                          'Delete',
+                          'Tab',
+                          'Escape',
+                          'Enter',
+                          'ArrowLeft',
+                          'ArrowRight',
+                          'ArrowUp',
+                          'ArrowDown',
+                        ].includes(e.key) ||
+                        e.ctrlKey ||
+                        e.metaKey
+                      ) {
+                        return;
+                      }
+                      if (!/^[0-9]$/.test(e.key)) {
+                        e.preventDefault();
+                      }
+                    }}
+                    onChange={(e) => {
+                      const onlyNums = e.target.value.replace(/[^0-9]/g, '');
+                      setFormData({ ...formData, phone: onlyNums });
+                    }}
+                    placeholder={data.form.phone_placeholder}
+                    className="w-full pl-12 pr-4 py-3.5 sm:py-3.5 bg-transparent text-[13.5px] sm:text-[14px] text-[#16241b] placeholder:text-[#8e9891] focus:outline-none"
+                  />
+                </div>
+
+                {/* 4. Subject */}
+                <div className="relative flex items-center rounded-[10px] border border-[#ede7dc] bg-white transition-all duration-200 focus-within:border-[#ba8538] focus-within:ring-2 focus-within:ring-[#ba8538]/15">
+                  <div className="absolute left-4 text-[#8f9b93] pointer-events-none flex items-center justify-center">
+                    <LayoutGrid size={18} strokeWidth={1.8} />
+                  </div>
+                  <input
+                    type="text"
+                    value={formData.subject}
+                    onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
+                    placeholder={data.form.subject_placeholder}
+                    className="w-full pl-12 pr-4 py-3.5 sm:py-3.5 bg-transparent text-[13.5px] sm:text-[14px] text-[#16241b] placeholder:text-[#8e9891] focus:outline-none"
+                  />
+                </div>
+
+                {/* 5. Message Textarea */}
+                <div className="relative rounded-[10px] border border-[#ede7dc] bg-white transition-all duration-200 focus-within:border-[#ba8538] focus-within:ring-2 focus-within:ring-[#ba8538]/15">
+                  <div className="absolute left-4 top-4 text-[#8f9b93] pointer-events-none">
+                    <PenLine size={18} strokeWidth={1.8} />
+                  </div>
+                  <textarea
+                    rows={5}
+                    required
+                    value={formData.message}
+                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                    placeholder={data.form.message_placeholder}
+                    className="w-full pl-12 pr-4 py-3.5 sm:py-4 bg-transparent text-[13.5px] sm:text-[14px] text-[#16241b] placeholder:text-[#8e9891] focus:outline-none resize-none leading-relaxed"
+                  />
+                </div>
+
+                {/* Submit Button */}
                 <button
                   type="submit"
                   disabled={submitting}
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-[#243c30] hover:bg-[#1a2c23] text-white px-9 py-4 rounded-full text-[13px] font-bold tracking-[0.16em] uppercase shadow-lg hover:shadow-xl transition-all duration-300 disabled:opacity-70"
+                  className="group w-full mt-2 py-4 sm:py-4 px-6 rounded-[10px] bg-[#ba8538] hover:bg-[#a6742b] active:bg-[#946522] text-white text-[15px] sm:text-[15.5px] font-medium tracking-wide flex items-center justify-center gap-2.5 transition-all duration-300 shadow-sm hover:shadow-md disabled:opacity-70 cursor-pointer"
                 >
-                  <span>{submitting ? 'SENDING...' : data.form.button_text}</span>
-                  <Send size={15} className="text-[#c5a059]" />
+                  <span>{submitting ? 'Sending...' : data.form.button_text}</span>
+                  <ArrowRight
+                    size={17}
+                    className="transition-transform duration-300 group-hover:translate-x-1"
+                  />
                 </button>
               </form>
             </div>
-          </div>
+          </motion.div>
 
         </div>
-
       </div>
     </section>
   );

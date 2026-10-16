@@ -54,7 +54,7 @@ export default function Faq({ data }: { data: FaqSectionData }) {
               </defs>
               <text fontSize="7.5" fontWeight="bold" fill="#e8d8b6" letterSpacing="2.5">
                 <textPath href="#circlePath">
-                  CONTACT US NOW • CALL US •
+                  {data.phone_label ? `${data.phone_label} •` : 'CONTACT US NOW • CALL US •'}
                 </textPath>
               </text>
             </svg>

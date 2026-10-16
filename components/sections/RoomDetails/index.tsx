@@ -25,15 +25,13 @@ import {
   Grid,
   BedDouble,
   Phone,
-  PhoneCall,
   Mail,
-  Headphones,
   ArrowRight,
   Calendar,
   User,
   MessageSquare,
 } from 'lucide-react';
-import { RoomItem, RoomInfoItem, RoomFeatureCard, RoomAmenityItem, RoomSupportItem } from '../../types';
+import { RoomItem, RoomInfoItem, RoomFeatureCard, RoomAmenityItem } from '../../types';
 
 // Helper to render feature card icons
 function renderFeatureIcon(icon: string) {
@@ -104,26 +102,10 @@ function renderInfoIcon(icon: string) {
   }
 }
 
-// Helper to render support icons
-function renderSupportIcon(icon: string) {
-  const props = { className: 'w-5 h-5 text-[#b98a57]', strokeWidth: 1.8 };
-  switch (icon.toLowerCase()) {
-    case 'phone':
-    case 'phonecall':
-      return <PhoneCall {...props} />;
-    case 'mail':
-      return <Mail {...props} />;
-    case 'headphones':
-      return <Headphones {...props} />;
-    default:
-      return <PhoneCall {...props} />;
-  }
-}
-
 export default function RoomDetails({ data }: { data: RoomItem }) {
   const gallery = data.gallery && data.gallery.length > 0
     ? data.gallery
-    : ['/rooms/1.png', '/img/why-choose-1.jpg', '/rooms/2.png', '/img/testimonials/bedroom-balcony.jpg'];
+    : ['/rooms/1.webp', '/img/why-choose-1.webp', '/rooms/2.webp', '/img/testimonials/bedroom-balcony.webp'];
 
   const [activeImageIndex, setActiveImageIndex] = useState(0);
   const [submitted, setSubmitted] = useState(false);
@@ -315,7 +297,7 @@ export default function RoomDetails({ data }: { data: RoomItem }) {
 
           </div>
 
-          {/* RIGHT COLUMN (SIDEBAR): Room Info, Photo, Send Enquiry Form, Need Help */}
+          {/* RIGHT COLUMN (SIDEBAR): Room Info, Send Enquiry Form */}
           <div className="lg:col-span-4 lg:sticky lg:top-24 flex flex-col space-y-6 sm:space-y-7">
             
             {/* 1. Room Information Card */}
@@ -348,18 +330,7 @@ export default function RoomDetails({ data }: { data: RoomItem }) {
               </div>
             </div>
 
-            {/* 2. Middle Visual Photo */}
-            <div className="relative w-full aspect-[4/3] rounded-[22px] sm:rounded-[26px] overflow-hidden shadow-md">
-              <Image
-                src={data.sidebar_image || '/rooms/1.png'}
-                alt={`${data.title} terrace view`}
-                fill
-                sizes="(min-width: 1024px) 33vw, 100vw"
-                className="object-cover transition-transform duration-700 hover:scale-105"
-              />
-            </div>
-
-            {/* 3. Send Us an Enquiry Card (Dark Green) */}
+            {/* 2. Send Us an Enquiry Card (Dark Green) */}
             <div className="bg-[#17372b] rounded-[22px] sm:rounded-[26px] p-6 sm:p-7 text-white shadow-xl">
               <h3 className="font-serif text-[24px] font-normal text-white mb-4">
                 Send Us an Enquiry
@@ -447,55 +418,6 @@ export default function RoomDetails({ data }: { data: RoomItem }) {
                   </button>
                 </form>
               )}
-            </div>
-
-            {/* 4. Need Help? Card matching user's uploaded screenshot */}
-            <div className="bg-[#faf6ee] rounded-[22px] sm:rounded-[26px] p-6 sm:p-7 border border-[#ede3d3]/80 shadow-[0_4px_20px_-8px_rgba(31,52,39,0.05)]">
-              <h3 className="font-serif text-[24px] sm:text-[26px] font-normal text-[#17372b]">
-                {data.need_help?.title || 'Need Help?'}
-              </h3>
-              
-              {/* Gold accent line matching screenshot */}
-              <div className="w-10 h-[2.5px] bg-[#c5a059] mt-2 mb-5 rounded-full" />
-
-              <div className="flex flex-col">
-                {(data.need_help?.support || [
-                  { label: 'Customer Support', value: '+960 1234 5678', href: 'tel:+96012345678', icon: 'PhoneCall' },
-                  { label: 'Email Us', value: 'info@thevalmere.com', href: 'mailto:info@thevalmere.com', icon: 'Mail' },
-                  { label: 'Live Support', value: '24/7 Assistance', icon: 'Headphones' },
-                ]).map((sup: RoomSupportItem, idx: number, arr: RoomSupportItem[]) => {
-                  const content = (
-                    <div className="flex items-center gap-3.5 group cursor-pointer">
-                      <span className="w-12 h-12 rounded-full bg-[#f4ebdc] text-[#b98a57] flex items-center justify-center shrink-0 transition-transform duration-300 group-hover:scale-105 shadow-sm">
-                        {renderSupportIcon(sup.icon)}
-                      </span>
-                      <div className="flex flex-col">
-                        <span className="text-[13px] font-normal text-[#6b7770]">
-                          {sup.label}
-                        </span>
-                        <span className="text-[15px] sm:text-[16px] font-bold text-[#17372b] tracking-tight group-hover:text-[#b98a57] transition-colors leading-tight mt-0.5">
-                          {sup.value}
-                        </span>
-                      </div>
-                    </div>
-                  );
-
-                  return (
-                    <React.Fragment key={idx}>
-                      {sup.href ? (
-                        <a href={sup.href} className="block">
-                          {content}
-                        </a>
-                      ) : (
-                        <div>{content}</div>
-                      )}
-                      {idx < arr.length - 1 && (
-                        <div className="w-full h-px bg-[#eee3d1] my-3.5" />
-                      )}
-                    </React.Fragment>
-                  );
-                })}
-              </div>
             </div>
 
           </div>

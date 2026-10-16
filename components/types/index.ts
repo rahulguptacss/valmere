@@ -43,6 +43,7 @@ export interface HeroSectionData {
   eyebrow: string;
   title_line1: string;
   title_line2: string;
+  title_line3?: string;
   title_highlight: string;
   description: string;
   button: { text: string; href: string };
@@ -208,38 +209,150 @@ export interface GallerySectionData {
   items: GalleryItem[];
 }
 
+export interface BlogPostItem {
+  id: number;
+  slug?: string;
+  title: string;
+  date: string;
+  category: string;
+  excerpt: string;
+  image: string;
+  href?: string;
+}
+
+export interface BlogSectionData {
+  eyebrow: string;
+  title_line1: string;
+  title_highlight: string;
+  description: string;
+  posts_per_page?: number;
+  posts: BlogPostItem[];
+}
+
+export interface BlogDetailQuote {
+  text: string;
+  author: string;
+}
+
+export interface BlogDetailItem {
+  id: number;
+  slug: string;
+  title: string;
+  category?: string;
+  date?: string;
+  author: string;
+  comments_count: string;
+  read_time: string;
+  image: string;
+  paragraphs: string[];
+  quote: BlogDetailQuote;
+  key_factors_title: string;
+  key_factors_image: string;
+  key_factors: string[];
+}
+
+export interface RecentBlogPost {
+  id: number;
+  slug: string;
+  title: string;
+  date: string;
+  image: string;
+  href: string;
+}
+
+export interface BlogDetailsSectionData {
+  recent_posts_title: string;
+  recent_posts: RecentBlogPost[];
+  items: BlogDetailItem[];
+}
+
+export interface ContactSocial {
+  name: string;
+  href: string;
+}
+
+export interface ContactItem {
+  type: string;
+  title: string;
+  lines?: string[];
+  socials?: ContactSocial[];
+}
+
+export interface ContactFormConfig {
+  eyebrow: string;
+  title_line1: string;
+  title_highlight: string;
+  subtitle_line1: string;
+  subtitle_line2: string;
+  name_placeholder: string;
+  email_placeholder: string;
+  phone_placeholder: string;
+  subject_placeholder: string;
+  message_placeholder: string;
+  button_text: string;
+}
+
 export interface ContactSectionData {
   eyebrow: string;
   title_line1: string;
   title_highlight: string;
   description: string;
-  info: {
+  contact_items: ContactItem[];
+  image: string;
+  image_alt?: string;
+  form: ContactFormConfig;
+  info?: {
     address: string;
     phone: string;
     email: string;
     hours: string;
   };
-  form: {
-    name_placeholder: string;
-    email_placeholder: string;
-    phone_placeholder: string;
-    subject_placeholder: string;
-    message_placeholder: string;
-    button_text: string;
-  };
 }
 
-export interface ReservationSectionData {
-  eyebrow: string;
+export interface ProcessStep {
   title: string;
   description: string;
-  checkin_label: string;
-  checkout_label: string;
-  guests_label: string;
-  room_label: string;
+  icon: string;
+}
+
+export interface EnquireFormConfig {
+  eyebrow: string;
+  name_placeholder: string;
+  email_placeholder: string;
+  phone_placeholder: string;
+  checkin_placeholder: string;
+  checkout_placeholder: string;
+  guests_placeholder: string;
+  room_type_placeholder: string;
   room_options: string[];
+  special_requests_placeholder: string;
+  special_request_options: string[];
+  message_placeholder: string;
   button_text: string;
 }
+
+export interface EnquiryNowSectionData {
+  eyebrow: string;
+  title_line1: string;
+  title_highlight: string;
+  title?: string;
+  description: string;
+  image: string;
+  image_alt?: string;
+  form: EnquireFormConfig;
+  how_it_works: {
+    eyebrow: string;
+    steps: ProcessStep[];
+  };
+  checkin_label?: string;
+  checkout_label?: string;
+  guests_label?: string;
+  room_label?: string;
+  room_options?: string[];
+  button_text?: string;
+}
+
+export type ReservationSectionData = EnquiryNowSectionData;
 
 export interface ThankYouSectionData {
   title: string;

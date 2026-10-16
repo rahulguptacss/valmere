@@ -1,49 +1,89 @@
 {
   "common": {
     "Header": {
-      "logo": "/logo/logo.png",
+      "logo": "/logo/logo.webp",
       "logo_text": "VALMERE",
       "logo_subtext": "HOTELS & RESORTS",
       "links": [
-        { "name": "HOME", "href": "/", "active": true },
-        { "name": "ABOUT US", "href": "/about" },
+        {
+          "name": "HOME",
+          "href": "/",
+          "active": true
+        },
+        {
+          "name": "ABOUT US",
+          "href": "/about"
+        },
         {
           "name": "ROOMS & SUITS",
           "href": "/rooms",
           "children": [
-            { "name": "All Rooms & Suites", "href": "/rooms" },
-            { "name": "Rooms Details", "href": "/rooms-details" },
-            { "name": "Ocean View Suite", "href": "/rooms/ocean-view-suite" },
-            { "name": "Garden Pool Villa", "href": "/rooms/garden-pool-villa" },
-            { "name": "Presidential Beachfront Villa", "href": "/rooms/presidential-beachfront-villa" },
-            { "name": "Sunset Horizon Penthouse", "href": "/rooms/sunset-horizon-penthouse" },
-            { "name": "Royal Lagoon Residence", "href": "/rooms/royal-lagoon-residence" },
-            { "name": "Overwater Panoramic Suite", "href": "/rooms/overwater-panoramic-suite" }
+            {
+              "name": "All Rooms & Suites",
+              "href": "/rooms"
+            },
+            {
+              "name": "Rooms Details",
+              "href": "/rooms-details"
+            },
+            {
+              "name": "Ocean View Suite",
+              "href": "/rooms/ocean-view-suite"
+            },
+            {
+              "name": "Garden Pool Villa",
+              "href": "/rooms/garden-pool-villa"
+            },
+            {
+              "name": "Presidential Beachfront Villa",
+              "href": "/rooms/presidential-beachfront-villa"
+            },
+            {
+              "name": "Sunset Horizon Penthouse",
+              "href": "/rooms/sunset-horizon-penthouse"
+            },
+            {
+              "name": "Royal Lagoon Residence",
+              "href": "/rooms/royal-lagoon-residence"
+            },
+            {
+              "name": "Overwater Panoramic Suite",
+              "href": "/rooms/overwater-panoramic-suite"
+            }
           ]
         },
-        { "name": "GALLERY", "href": "/gallery" },
-        { "name": "TESTIMONIALS", "href": "/testimonials" },
-        { "name": "CONTACT US", "href": "/contact" }
+        {
+          "name": "TESTIMONIALS",
+          "href": "/testimonials"
+        },
+        {
+          "name": "BLOG",
+          "href": "/blog"
+        },
+        {
+          "name": "CONTACT US",
+          "href": "/contact"
+        }
       ],
-      "button_text": "ENQUIRE NOW",
-      "button_link": "/reservation"
+      "button_text": "ENQUIRY NOW",
+      "button_link": "/enquiry-now"
     },
     "Footer": {
-      "logo": "/logo/logo.png",
+      "logo": "/logo/logo.webp",
       "logo_alt": "The Valmere Hotels & Resorts",
       "headline_line1": "Award-winning",
       "headline_line2": "resort in the",
       "headline_highlight": "paradise island",
       "contact_title": "Contact Info",
       "contact": {
-        "address": "54 Longbranch Ave.\nBrandon, FL 33510",
-        "phone": "1-800-123-4567",
-        "email": "reservations@example.com"
+        "address": "123 Education Lane,\nNew York, NY 10001",
+        "phone": "+100000000000",
+        "email": "info@xyz.com"
       },
-      "reservations_title": "Reservations",
+      "reservations_title": "Enquiry Now",
       "reservations": {
-        "phone": "1-800-123-4567",
-        "email": "reservations@example.com",
+        "phone": "+100000000000",
+        "email": "info@xyz.com",
         "hours": "Mon - Sun : 9:00 AM - 8:00 PM"
       },
       "copyright_text": "Copyright © 2026. All rights reserved.",
@@ -53,10 +93,22 @@
         "href": "https://lestow.com"
       },
       "socials": [
-        { "name": "Facebook", "href": "https://facebook.com" },
-        { "name": "Instagram", "href": "https://instagram.com" },
-        { "name": "LinkedIn", "href": "https://linkedin.com" },
-        { "name": "YouTube", "href": "https://youtube.com" }
+        {
+          "name": "Facebook",
+          "href": "https://facebook.com"
+        },
+        {
+          "name": "Instagram",
+          "href": "https://instagram.com"
+        },
+        {
+          "name": "LinkedIn",
+          "href": "https://linkedin.com"
+        },
+        {
+          "name": "YouTube",
+          "href": "https://youtube.com"
+        }
       ]
     }
   },
@@ -73,12 +125,30 @@
                 "description": "Award-winning luxury resort and retreat nestled in the paradise island."
               },
               "components": [
-                { "key": "HeroSection", "component": "Hero" },
-                { "key": "AboutSection", "component": "About" },
-                { "key": "SuitesSection", "component": "Suites" },
-                { "key": "SuitesReverseSection", "component": "SuitesReverse" },
-                { "key": "TestimonialsSection", "component": "Testimonials" },
-                { "key": "CtaSection", "component": "Cta" }
+                {
+                  "key": "HeroSection",
+                  "component": "Hero"
+                },
+                {
+                  "key": "AboutSection",
+                  "component": "About"
+                },
+                {
+                  "key": "SuitesSection",
+                  "component": "Suites"
+                },
+                {
+                  "key": "SuitesReverseSection",
+                  "component": "SuitesReverse"
+                },
+                {
+                  "key": "TestimonialsSection",
+                  "component": "Testimonials"
+                },
+                {
+                  "key": "CtaSection",
+                  "component": "Cta"
+                }
               ]
             },
             "about": {
@@ -90,16 +160,31 @@
               },
               "breadcrumb": {
                 "title": "About Us",
-                "image": "/img/breadcrumb.png",
+                "image": "/img/breadcrumb.webp",
                 "items": [
-                  { "name": "Home", "href": "/" },
-                  { "name": "About Us", "href": "/about" }
+                  {
+                    "name": "Home",
+                    "href": "/"
+                  },
+                  {
+                    "name": "About Us",
+                    "href": "/about"
+                  }
                 ]
               },
               "components": [
-                { "key": "BreadcrumbSection", "component": "Breadcrumb" },
-                { "key": "AboutSection", "component": "About" },
-                { "key": "WhyChooseUsSection", "component": "WhyChooseUs" }
+                {
+                  "key": "BreadcrumbSection",
+                  "component": "Breadcrumb"
+                },
+                {
+                  "key": "AboutSection",
+                  "component": "About"
+                },
+                {
+                  "key": "WhyChooseUsSection",
+                  "component": "WhyChooseUs"
+                }
               ]
             },
             "rooms": {
@@ -111,15 +196,27 @@
               },
               "breadcrumb": {
                 "title": "Rooms & Suits",
-                "image": "/img/breadcrumb.png",
+                "image": "/img/breadcrumb.webp",
                 "items": [
-                  { "name": "Home", "href": "/" },
-                  { "name": "Rooms & Suits", "href": "/rooms" }
+                  {
+                    "name": "Home",
+                    "href": "/"
+                  },
+                  {
+                    "name": "Rooms & Suits",
+                    "href": "/rooms"
+                  }
                 ]
               },
               "components": [
-                { "key": "BreadcrumbSection", "component": "Breadcrumb" },
-                { "key": "RoomsSection", "component": "Rooms" }
+                {
+                  "key": "BreadcrumbSection",
+                  "component": "Breadcrumb"
+                },
+                {
+                  "key": "RoomsSection",
+                  "component": "Rooms"
+                }
               ]
             },
             "room_details": {
@@ -131,35 +228,27 @@
               },
               "breadcrumb": {
                 "title": "Rooms Details",
-                "image": "/img/breadcrumb.png",
+                "image": "/img/breadcrumb.webp",
                 "items": [
-                  { "name": "Home", "href": "/" },
-                  { "name": "Rooms Details", "href": "/rooms-details" }
+                  {
+                    "name": "Home",
+                    "href": "/"
+                  },
+                  {
+                    "name": "Rooms Details",
+                    "href": "/rooms-details"
+                  }
                 ]
               },
               "components": [
-                { "key": "BreadcrumbSection", "component": "Breadcrumb" },
-                { "key": "RoomDetailsSection", "component": "RoomDetails" }
-              ]
-            },
-            "gallery": {
-              "title": "Our Gallery",
-              "pageName": "Gallery",
-              "metadata": {
-                "title": "Gallery | Valmere Luxury Resort",
-                "description": "Immerse yourself in the picturesque beauty, architecture, and lush views of Valmere."
-              },
-              "breadcrumb": {
-                "title": "Our Gallery",
-                "items": [
-                  { "name": "Home", "href": "/" },
-                  { "name": "Gallery", "href": "/gallery" }
-                ]
-              },
-              "components": [
-                { "key": "BreadcrumbSection", "component": "Breadcrumb" },
-                { "key": "GallerySection", "component": "Gallery" },
-                { "key": "FaqSection", "component": "Faq" }
+                {
+                  "key": "BreadcrumbSection",
+                  "component": "Breadcrumb"
+                },
+                {
+                  "key": "RoomDetailsSection",
+                  "component": "RoomDetails"
+                }
               ]
             },
             "testimonials": {
@@ -171,15 +260,27 @@
               },
               "breadcrumb": {
                 "title": "Testimonials",
-                "image": "/img/breadcrumb.png",
+                "image": "/img/breadcrumb.webp",
                 "items": [
-                  { "name": "Home", "href": "/" },
-                  { "name": "Testimonials", "href": "/testimonials" }
+                  {
+                    "name": "Home",
+                    "href": "/"
+                  },
+                  {
+                    "name": "Testimonials",
+                    "href": "/testimonials"
+                  }
                 ]
               },
               "components": [
-                { "key": "BreadcrumbSection", "component": "Breadcrumb" },
-                { "key": "TestimonialsSection", "component": "Testimonials" }
+                {
+                  "key": "BreadcrumbSection",
+                  "component": "Breadcrumb"
+                },
+                {
+                  "key": "TestimonialsSection",
+                  "component": "Testimonials"
+                }
               ]
             },
             "contact": {
@@ -187,37 +288,30 @@
               "pageName": "Contact Us",
               "metadata": {
                 "title": "Contact Us | Valmere Luxury Resort",
-                "description": "Reach out to our concierge for booking inquiries, airport transfers, and private reservations."
+                "description": "Reach out to our team for booking inquiries, airport transfers, and private enquiries."
               },
               "breadcrumb": {
                 "title": "Contact Us",
                 "items": [
-                  { "name": "Home", "href": "/" },
-                  { "name": "Contact Us", "href": "/contact" }
+                  {
+                    "name": "Home",
+                    "href": "/"
+                  },
+                  {
+                    "name": "Contact Us",
+                    "href": "/contact"
+                  }
                 ]
               },
               "components": [
-                { "key": "BreadcrumbSection", "component": "Breadcrumb" },
-                { "key": "ContactSection", "component": "Contact" }
-              ]
-            },
-            "reservation": {
-              "title": "Book Your Stay",
-              "pageName": "Reservation",
-              "metadata": {
-                "title": "Reservations | Valmere Luxury Resort",
-                "description": "Reserve your oceanfront suite or private villa at Valmere Resort."
-              },
-              "breadcrumb": {
-                "title": "Book Your Stay",
-                "items": [
-                  { "name": "Home", "href": "/" },
-                  { "name": "Reservation", "href": "/reservation" }
-                ]
-              },
-              "components": [
-                { "key": "BreadcrumbSection", "component": "Breadcrumb" },
-                { "key": "ReservationSection", "component": "Reservation" }
+                {
+                  "key": "BreadcrumbSection",
+                  "component": "Breadcrumb"
+                },
+                {
+                  "key": "ContactSection",
+                  "component": "Contact"
+                }
               ]
             },
             "thank_you": {
@@ -225,10 +319,109 @@
               "pageName": "Thank You",
               "metadata": {
                 "title": "Thank You | Valmere Luxury Resort",
-                "description": "We have received your reservation request."
+                "description": "We have received your enquiry request."
               },
               "components": [
-                { "key": "ThankYouSection", "component": "ThankYou" }
+                {
+                  "key": "ThankYouSection",
+                  "component": "ThankYou"
+                }
+              ]
+            },
+            "blog": {
+              "title": "Blogs",
+              "pageName": "Blogs",
+              "metadata": {
+                "title": "Blogs | Valmere Luxury Resort",
+                "description": "Explore our latest stories, travel guides and expert tips to make your stay more enjoyable and memorable."
+              },
+              "breadcrumb": {
+                "title": "Blogs",
+                "image": "/img/breadcrumb.webp",
+                "items": [
+                  {
+                    "name": "HOME",
+                    "href": "/"
+                  },
+                  {
+                    "name": "BLOGS",
+                    "href": "/blog"
+                  }
+                ]
+              },
+              "components": [
+                {
+                  "key": "BreadcrumbSection",
+                  "component": "Breadcrumb"
+                },
+                {
+                  "key": "BlogSection",
+                  "component": "Blog"
+                }
+              ]
+            },
+            "blog_details": {
+              "title": "Blogs Details",
+              "pageName": "Blogs Details",
+              "metadata": {
+                "title": "Blogs Details | Valmere Luxury Resort",
+                "description": "A Complete Guide to Choosing the Perfect Resort for Your Vacation."
+              },
+              "breadcrumb": {
+                "title": "Blogs Details",
+                "image": "/img/breadcrumb.webp",
+                "items": [
+                  {
+                    "name": "HOME",
+                    "href": "/"
+                  },
+                  {
+                    "name": "BLOGS DETAILS",
+                    "href": "/blog"
+                  }
+                ]
+              },
+              "components": [
+                {
+                  "key": "BreadcrumbSection",
+                  "component": "Breadcrumb"
+                },
+                {
+                  "key": "BlogDetailsSection",
+                  "component": "BlogDetails"
+                }
+              ]
+            },
+            "enquiry_now": {
+              "title": "Enquiry Now",
+              "pageName": "Enquiry Now",
+              "metadata": {
+                "title": "Enquiry Now | The Valmere Hotels & Resorts",
+                "description": "Share your travel plans with us and our team will get back to you with the best options tailored to your needs."
+              },
+              "breadcrumb": {
+                "title": "Enquiry Now",
+                "image": "/img/breadcrumb.webp",
+                "items": [
+                  {
+                    "name": "Home",
+                    "href": "/"
+                  },
+                  {
+                    "name": "ENQUIRY NOW",
+                    "href": "/enquiry-now"
+                  }
+                ]
+              },
+              "components": [
+                {
+                  "key": "BreadcrumbSection",
+                  "component": "Breadcrumb"
+                },
+                {
+                  "key": "EnquiryNowSection",
+                  "component": "EnquiryNow"
+                }
               ]
             }
           },
@@ -237,15 +430,16 @@
               "eyebrow": "LUXURY GETAWAYS",
               "title_line1": "Where",
               "title_line2": "Every Stay",
+              "title_line3": "Feels",
               "title_highlight": "Exceptional.",
               "description": "Experience effortless tranquility amidst pristine ocean horizons, bespoke hospitality, and architecturally exquisite island suites designed for genuine rejuvenation.",
               "button": {
                 "text": "EXPLORE SUITES",
                 "href": "/rooms"
               },
-              "image_main": "/img/luxury-travel-hero-2.png",
-              "image_side": "/img/luxury-travel-hero-3.png",
-              "image_circle": "/img/luxury-travel-hero-1.png"
+              "image_main": "/img/luxury-travel-hero-2.webp",
+              "image_side": "/img/luxury-travel-hero-3.webp",
+              "image_circle": "/img/luxury-travel-hero-1.webp"
             },
             "about": {
               "eyebrow": "ABOUT US",
@@ -257,16 +451,16 @@
                 "text": "DISCOVER MORE",
                 "href": "/about"
               },
-              "image_large": "/img/about.png",
-              "image_top_right": "/img/about-s1.png",
-              "image_bottom_right": "/img/about-s2.png"
+              "image_large": "/img/about.webp",
+              "image_top_right": "/img/about-s1.webp",
+              "image_bottom_right": "/img/about-s2.webp"
             },
             "why_choose_us": {
               "eyebrow": "WHY CHOOSE US",
               "title_line1": "What Makes Us",
               "title_highlight": "Different",
-              "image_left": "/img/why-choose-1.jpg",
-              "image_right": "/img/why-choose-2.jpg",
+              "image_left": "/img/why-choose-1.webp",
+              "image_right": "/img/why-choose-2.webp",
               "items": [
                 {
                   "number": "01.",
@@ -296,18 +490,30 @@
               "title_line1": "Deluxe",
               "title_line2": "Room Suite",
               "features": [
-                { "icon": "Leaf", "label": "Pick & Drop Service" },
-                { "icon": "Leaf", "label": "City Tour Guide" },
-                { "icon": "Leaf", "label": "Swimming Pool" },
-                { "icon": "Leaf", "label": "Fibre Internet" }
+                {
+                  "icon": "Leaf",
+                  "label": "Pick & Drop Service"
+                },
+                {
+                  "icon": "Leaf",
+                  "label": "City Tour Guide"
+                },
+                {
+                  "icon": "Leaf",
+                  "label": "Swimming Pool"
+                },
+                {
+                  "icon": "Leaf",
+                  "label": "Fibre Internet"
+                }
               ],
               "description": "Experience a perfect blend of comfort and elegance with our Deluxe Room Suite, designed to make your stay truly memorable.",
               "button": {
                 "text": "ENQUIRE",
-                "href": "/reservation"
+                "href": "/enquiry-now"
               },
-              "image_main": "/img/suite1.png",
-              "image_secondary": "/img/suite2.png"
+              "image_main": "/img/suite1.webp",
+              "image_secondary": "/img/suite2.webp"
             },
             "suites_premier": {
               "eyebrow": "ROOMS & SUITES",
@@ -315,27 +521,39 @@
               "title_line1": "Premier",
               "title_line2": "Room Suite",
               "features": [
-                { "icon": "Leaf", "label": "Pick & Drop Service" },
-                { "icon": "Leaf", "label": "City Tour Guide" },
-                { "icon": "Leaf", "label": "Swimming Pool" },
-                { "icon": "Leaf", "label": "Fibre Internet" }
+                {
+                  "icon": "Leaf",
+                  "label": "Pick & Drop Service"
+                },
+                {
+                  "icon": "Leaf",
+                  "label": "City Tour Guide"
+                },
+                {
+                  "icon": "Leaf",
+                  "label": "Swimming Pool"
+                },
+                {
+                  "icon": "Leaf",
+                  "label": "Fibre Internet"
+                }
               ],
               "description": "A spacious and refined retreat offering modern amenities, stunning views and an exceptional stay for our valued guests.",
               "button": {
                 "text": "ENQUIRE",
-                "href": "/reservation"
+                "href": "/enquiry-now"
               },
-              "image_main": "/img/suite-deluxe-main.jpg",
-              "image_secondary": "/img/suite-deluxe-sec.jpg"
+              "image_main": "/img/suite-deluxe-main.webp",
+              "image_secondary": "/img/suite-deluxe-sec.webp"
             },
             "cta": {
-              "image": "/img/girl.png",
+              "image": "/img/girl.webp",
               "image_alt": "Valmere guest relations concierge",
               "badge_text": "CALL US ANYTIME",
-              "phone": "+91 98765 43210",
+              "phone": "+100000000000",
               "title": "Do You Have",
               "title_highlight": "Any Questions?",
-              "description": "Our team is always here to assist you with reservations, special requests,\nor any information you need for a memorable stay at The Valmere.",
+              "description": "Our team is always here to assist you with enquiries, special requests,\nor any information you need for a memorable stay at The Valmere.",
               "button": {
                 "text": "GET IN TOUCH",
                 "href": "/contact"
@@ -351,7 +569,7 @@
                   "slug": "ocean-view-suite",
                   "title": "Ocean View Suite",
                   "location": "Maldives, Indian Ocean",
-                  "image": "/rooms/1.png",
+                  "image": "/rooms/1.webp",
                   "rating": 5,
                   "reviews": "14 Reviews",
                   "href": "/rooms/ocean-view-suite"
@@ -361,7 +579,7 @@
                   "slug": "garden-pool-villa",
                   "title": "Garden Pool Villa",
                   "location": "Ubud, Bali",
-                  "image": "/rooms/2.png",
+                  "image": "/rooms/2.webp",
                   "rating": 5,
                   "reviews": "19 Reviews",
                   "href": "/rooms/garden-pool-villa"
@@ -371,7 +589,7 @@
                   "slug": "presidential-beachfront-villa",
                   "title": "Presidential Beachfront Villa",
                   "location": "Bora Bora, French Polynesia",
-                  "image": "/rooms/1.png",
+                  "image": "/rooms/1.webp",
                   "rating": 5,
                   "reviews": "24 Reviews",
                   "href": "/rooms/presidential-beachfront-villa"
@@ -381,7 +599,7 @@
                   "slug": "sunset-horizon-penthouse",
                   "title": "Sunset Horizon Penthouse",
                   "location": "Santorini, Greece",
-                  "image": "/rooms/2.png",
+                  "image": "/rooms/2.webp",
                   "rating": 5,
                   "reviews": "18 Reviews",
                   "href": "/rooms/sunset-horizon-penthouse"
@@ -391,7 +609,7 @@
                   "slug": "royal-lagoon-residence",
                   "title": "Royal Lagoon Residence",
                   "location": "Phuket, Thailand",
-                  "image": "/rooms/1.png",
+                  "image": "/rooms/1.webp",
                   "rating": 5,
                   "reviews": "16 Reviews",
                   "href": "/rooms/royal-lagoon-residence"
@@ -401,7 +619,7 @@
                   "slug": "overwater-panoramic-suite",
                   "title": "Overwater Panoramic Suite",
                   "location": "Fiji Islands, South Pacific",
-                  "image": "/rooms/2.png",
+                  "image": "/rooms/2.webp",
                   "rating": 5,
                   "reviews": "27 Reviews",
                   "href": "/rooms/overwater-panoramic-suite"
@@ -420,21 +638,53 @@
                   "price": "$520",
                   "period": "night",
                   "gallery": [
-                    "/rooms/1.png",
-                    "/img/why-choose-1.jpg",
-                    "/rooms/2.png",
-                    "/img/testimonials/bedroom-balcony.jpg"
+                    "/rooms/1.webp",
+                    "/img/why-choose-1.webp",
+                    "/rooms/2.webp",
+                    "/img/testimonials/bedroom-balcony.webp"
                   ],
-                  "sidebar_image": "/rooms/1.png",
+                  "sidebar_image": "/rooms/1.webp",
                   "information": [
-                    { "label": "Guests", "value": "4 (2 Adults + 2 Children)", "icon": "Users" },
-                    { "label": "View", "value": "Ocean View", "icon": "Eye" },
-                    { "label": "Size", "value": "850 ft²", "icon": "Maximize2" },
-                    { "label": "Bed Type", "value": "King Bed", "icon": "Bed" },
-                    { "label": "Category", "value": "Suite", "icon": "Grid" },
-                    { "label": "Bedrooms", "value": "2", "icon": "BedDouble" },
-                    { "label": "Bathrooms", "value": "2", "icon": "Bath" },
-                    { "label": "Location", "value": "Maldives, Indian Ocean", "icon": "MapPin" }
+                    {
+                      "label": "Guests",
+                      "value": "4 (2 Adults + 2 Children)",
+                      "icon": "Users"
+                    },
+                    {
+                      "label": "View",
+                      "value": "Ocean View",
+                      "icon": "Eye"
+                    },
+                    {
+                      "label": "Size",
+                      "value": "850 ft²",
+                      "icon": "Maximize2"
+                    },
+                    {
+                      "label": "Bed Type",
+                      "value": "King Bed",
+                      "icon": "Bed"
+                    },
+                    {
+                      "label": "Category",
+                      "value": "Suite",
+                      "icon": "Grid"
+                    },
+                    {
+                      "label": "Bedrooms",
+                      "value": "2",
+                      "icon": "BedDouble"
+                    },
+                    {
+                      "label": "Bathrooms",
+                      "value": "2",
+                      "icon": "Bath"
+                    },
+                    {
+                      "label": "Location",
+                      "value": "Maldives, Indian Ocean",
+                      "icon": "MapPin"
+                    }
                   ],
                   "included": [
                     "King-size bed with premium linens",
@@ -483,19 +733,51 @@
                     }
                   ],
                   "amenities": [
-                    { "label": "100% Eco Friendly", "icon": "Leaf" },
-                    { "label": "24/7 Elevator Services", "icon": "ArrowUpDown" },
-                    { "label": "24/7 Security", "icon": "ShieldCheck" },
-                    { "label": "Fireplace For Atmosphere", "icon": "Flame" },
-                    { "label": "Comfortable Seating", "icon": "Armchair" },
-                    { "label": "Work Desk", "icon": "Laptop" }
+                    {
+                      "label": "100% Eco Friendly",
+                      "icon": "Leaf"
+                    },
+                    {
+                      "label": "24/7 Elevator Services",
+                      "icon": "ArrowUpDown"
+                    },
+                    {
+                      "label": "24/7 Security",
+                      "icon": "ShieldCheck"
+                    },
+                    {
+                      "label": "Fireplace For Atmosphere",
+                      "icon": "Flame"
+                    },
+                    {
+                      "label": "Comfortable Seating",
+                      "icon": "Armchair"
+                    },
+                    {
+                      "label": "Work Desk",
+                      "icon": "Laptop"
+                    }
                   ],
                   "need_help": {
                     "title": "Need Help?",
                     "support": [
-                      { "label": "Customer Support", "value": "+960 1234 5678", "href": "tel:+96012345678", "icon": "Phone" },
-                      { "label": "Email Us", "value": "info@thevalmere.com", "href": "mailto:info@thevalmere.com", "icon": "Mail" },
-                      { "label": "Live Support", "value": "24/7 Assistance", "icon": "Headphones" }
+                      {
+                        "label": "Customer Support",
+                        "value": "+100000000000",
+                        "href": "tel:+100000000000",
+                        "icon": "Phone"
+                      },
+                      {
+                        "label": "Email Us",
+                        "value": "info@xyz.com",
+                        "href": "mailto:info@xyz.com",
+                        "icon": "Mail"
+                      },
+                      {
+                        "label": "Live Support",
+                        "value": "24/7 Assistance",
+                        "icon": "Headphones"
+                      }
                     ]
                   }
                 },
@@ -509,21 +791,53 @@
                   "price": "$640",
                   "period": "night",
                   "gallery": [
-                    "/rooms/2.png",
-                    "/rooms/1.png",
-                    "/img/why-choose-1.jpg",
-                    "/img/testimonials/bedroom-balcony.jpg"
+                    "/rooms/2.webp",
+                    "/rooms/1.webp",
+                    "/img/why-choose-1.webp",
+                    "/img/testimonials/bedroom-balcony.webp"
                   ],
-                  "sidebar_image": "/rooms/2.png",
+                  "sidebar_image": "/rooms/2.webp",
                   "information": [
-                    { "label": "Guests", "value": "3 (2 Adults + 1 Child)", "icon": "Users" },
-                    { "label": "View", "value": "Tropical Garden & Pool View", "icon": "Eye" },
-                    { "label": "Size", "value": "920 ft²", "icon": "Maximize2" },
-                    { "label": "Bed Type", "value": "King Bed", "icon": "Bed" },
-                    { "label": "Category", "value": "Villa", "icon": "Grid" },
-                    { "label": "Bedrooms", "value": "1", "icon": "BedDouble" },
-                    { "label": "Bathrooms", "value": "2", "icon": "Bath" },
-                    { "label": "Location", "value": "Ubud, Bali", "icon": "MapPin" }
+                    {
+                      "label": "Guests",
+                      "value": "3 (2 Adults + 1 Child)",
+                      "icon": "Users"
+                    },
+                    {
+                      "label": "View",
+                      "value": "Tropical Garden & Pool View",
+                      "icon": "Eye"
+                    },
+                    {
+                      "label": "Size",
+                      "value": "920 ft²",
+                      "icon": "Maximize2"
+                    },
+                    {
+                      "label": "Bed Type",
+                      "value": "King Bed",
+                      "icon": "Bed"
+                    },
+                    {
+                      "label": "Category",
+                      "value": "Villa",
+                      "icon": "Grid"
+                    },
+                    {
+                      "label": "Bedrooms",
+                      "value": "1",
+                      "icon": "BedDouble"
+                    },
+                    {
+                      "label": "Bathrooms",
+                      "value": "2",
+                      "icon": "Bath"
+                    },
+                    {
+                      "label": "Location",
+                      "value": "Ubud, Bali",
+                      "icon": "MapPin"
+                    }
                   ],
                   "included": [
                     "Private infinity plunge pool",
@@ -572,19 +886,51 @@
                     }
                   ],
                   "amenities": [
-                    { "label": "100% Eco Friendly", "icon": "Leaf" },
-                    { "label": "Private Golf Buggy", "icon": "ArrowUpDown" },
-                    { "label": "24/7 Security", "icon": "ShieldCheck" },
-                    { "label": "Fireplace For Atmosphere", "icon": "Flame" },
-                    { "label": "Comfortable Seating", "icon": "Armchair" },
-                    { "label": "Work Desk", "icon": "Laptop" }
+                    {
+                      "label": "100% Eco Friendly",
+                      "icon": "Leaf"
+                    },
+                    {
+                      "label": "Private Golf Buggy",
+                      "icon": "ArrowUpDown"
+                    },
+                    {
+                      "label": "24/7 Security",
+                      "icon": "ShieldCheck"
+                    },
+                    {
+                      "label": "Fireplace For Atmosphere",
+                      "icon": "Flame"
+                    },
+                    {
+                      "label": "Comfortable Seating",
+                      "icon": "Armchair"
+                    },
+                    {
+                      "label": "Work Desk",
+                      "icon": "Laptop"
+                    }
                   ],
                   "need_help": {
                     "title": "Need Help?",
                     "support": [
-                      { "label": "Customer Support", "value": "+960 1234 5678", "href": "tel:+96012345678", "icon": "Phone" },
-                      { "label": "Email Us", "value": "info@thevalmere.com", "href": "mailto:info@thevalmere.com", "icon": "Mail" },
-                      { "label": "Live Support", "value": "24/7 Assistance", "icon": "Headphones" }
+                      {
+                        "label": "Customer Support",
+                        "value": "+100000000000",
+                        "href": "tel:+100000000000",
+                        "icon": "Phone"
+                      },
+                      {
+                        "label": "Email Us",
+                        "value": "info@xyz.com",
+                        "href": "mailto:info@xyz.com",
+                        "icon": "Mail"
+                      },
+                      {
+                        "label": "Live Support",
+                        "value": "24/7 Assistance",
+                        "icon": "Headphones"
+                      }
                     ]
                   }
                 },
@@ -598,21 +944,53 @@
                   "price": "$980",
                   "period": "night",
                   "gallery": [
-                    "/rooms/1.png",
-                    "/rooms/2.png",
-                    "/img/why-choose-1.jpg",
-                    "/img/testimonials/bedroom-balcony.jpg"
+                    "/rooms/1.webp",
+                    "/rooms/2.webp",
+                    "/img/why-choose-1.webp",
+                    "/img/testimonials/bedroom-balcony.webp"
                   ],
-                  "sidebar_image": "/rooms/1.png",
+                  "sidebar_image": "/rooms/1.webp",
                   "information": [
-                    { "label": "Guests", "value": "6 (4 Adults + 2 Children)", "icon": "Users" },
-                    { "label": "View", "value": "Beachfront Lagoon & Sunset", "icon": "Eye" },
-                    { "label": "Size", "value": "1,450 ft²", "icon": "Maximize2" },
-                    { "label": "Bed Type", "value": "2 King Beds", "icon": "Bed" },
-                    { "label": "Category", "value": "Presidential", "icon": "Grid" },
-                    { "label": "Bedrooms", "value": "2", "icon": "BedDouble" },
-                    { "label": "Bathrooms", "value": "3", "icon": "Bath" },
-                    { "label": "Location", "value": "Bora Bora, French Polynesia", "icon": "MapPin" }
+                    {
+                      "label": "Guests",
+                      "value": "6 (4 Adults + 2 Children)",
+                      "icon": "Users"
+                    },
+                    {
+                      "label": "View",
+                      "value": "Beachfront Lagoon & Sunset",
+                      "icon": "Eye"
+                    },
+                    {
+                      "label": "Size",
+                      "value": "1,450 ft²",
+                      "icon": "Maximize2"
+                    },
+                    {
+                      "label": "Bed Type",
+                      "value": "2 King Beds",
+                      "icon": "Bed"
+                    },
+                    {
+                      "label": "Category",
+                      "value": "Presidential",
+                      "icon": "Grid"
+                    },
+                    {
+                      "label": "Bedrooms",
+                      "value": "2",
+                      "icon": "BedDouble"
+                    },
+                    {
+                      "label": "Bathrooms",
+                      "value": "3",
+                      "icon": "Bath"
+                    },
+                    {
+                      "label": "Location",
+                      "value": "Bora Bora, French Polynesia",
+                      "icon": "MapPin"
+                    }
                   ],
                   "included": [
                     "Direct private beachfront access",
@@ -629,27 +1007,83 @@
                     "Private boat docking jetty"
                   ],
                   "features_grid": [
-                    { "title": "Lagoon View", "description": "Uninterrupted vistas across turquoise waters", "icon": "Waves" },
-                    { "title": "Private Pool", "description": "Large private pool overlooking the white sand beach", "icon": "Sun" },
-                    { "title": "Master Suite", "description": "Expansive rooms with floor-to-ceiling glass", "icon": "Bed" },
-                    { "title": "Private Beach", "description": "Your own secluded stretch of pristine shore", "icon": "Sparkles" },
-                    { "title": "Spa Tub", "description": "Deep oceanfront hydrotherapy soaking tub", "icon": "Bath" },
-                    { "title": "Gourmet Dining", "description": "Custom dining menu prepared by executive chefs", "icon": "Coffee" }
+                    {
+                      "title": "Lagoon View",
+                      "description": "Uninterrupted vistas across turquoise waters",
+                      "icon": "Waves"
+                    },
+                    {
+                      "title": "Private Pool",
+                      "description": "Large private pool overlooking the white sand beach",
+                      "icon": "Sun"
+                    },
+                    {
+                      "title": "Master Suite",
+                      "description": "Expansive rooms with floor-to-ceiling glass",
+                      "icon": "Bed"
+                    },
+                    {
+                      "title": "Private Beach",
+                      "description": "Your own secluded stretch of pristine shore",
+                      "icon": "Sparkles"
+                    },
+                    {
+                      "title": "Spa Tub",
+                      "description": "Deep oceanfront hydrotherapy soaking tub",
+                      "icon": "Bath"
+                    },
+                    {
+                      "title": "Gourmet Dining",
+                      "description": "Custom dining menu prepared by executive chefs",
+                      "icon": "Coffee"
+                    }
                   ],
                   "amenities": [
-                    { "label": "100% Eco Friendly", "icon": "Leaf" },
-                    { "label": "Private Elevator", "icon": "ArrowUpDown" },
-                    { "label": "24/7 Security", "icon": "ShieldCheck" },
-                    { "label": "Fireplace For Atmosphere", "icon": "Flame" },
-                    { "label": "Comfortable Seating", "icon": "Armchair" },
-                    { "label": "Work Desk", "icon": "Laptop" }
+                    {
+                      "label": "100% Eco Friendly",
+                      "icon": "Leaf"
+                    },
+                    {
+                      "label": "Private Elevator",
+                      "icon": "ArrowUpDown"
+                    },
+                    {
+                      "label": "24/7 Security",
+                      "icon": "ShieldCheck"
+                    },
+                    {
+                      "label": "Fireplace For Atmosphere",
+                      "icon": "Flame"
+                    },
+                    {
+                      "label": "Comfortable Seating",
+                      "icon": "Armchair"
+                    },
+                    {
+                      "label": "Work Desk",
+                      "icon": "Laptop"
+                    }
                   ],
                   "need_help": {
                     "title": "Need Help?",
                     "support": [
-                      { "label": "Customer Support", "value": "+960 1234 5678", "href": "tel:+96012345678", "icon": "Phone" },
-                      { "label": "Email Us", "value": "info@thevalmere.com", "href": "mailto:info@thevalmere.com", "icon": "Mail" },
-                      { "label": "Live Support", "value": "24/7 Assistance", "icon": "Headphones" }
+                      {
+                        "label": "Customer Support",
+                        "value": "+100000000000",
+                        "href": "tel:+100000000000",
+                        "icon": "Phone"
+                      },
+                      {
+                        "label": "Email Us",
+                        "value": "info@xyz.com",
+                        "href": "mailto:info@xyz.com",
+                        "icon": "Mail"
+                      },
+                      {
+                        "label": "Live Support",
+                        "value": "24/7 Assistance",
+                        "icon": "Headphones"
+                      }
                     ]
                   }
                 },
@@ -663,21 +1097,53 @@
                   "price": "$780",
                   "period": "night",
                   "gallery": [
-                    "/rooms/2.png",
-                    "/rooms/1.png",
-                    "/img/why-choose-2.jpg",
-                    "/img/testimonials/bedroom-balcony.jpg"
+                    "/rooms/2.webp",
+                    "/rooms/1.webp",
+                    "/img/why-choose-2.webp",
+                    "/img/testimonials/bedroom-balcony.webp"
                   ],
-                  "sidebar_image": "/rooms/2.png",
+                  "sidebar_image": "/rooms/2.webp",
                   "information": [
-                    { "label": "Guests", "value": "4 (2 Adults + 2 Guests)", "icon": "Users" },
-                    { "label": "View", "value": "Panoramic Caldera Sunset", "icon": "Eye" },
-                    { "label": "Size", "value": "1,100 ft²", "icon": "Maximize2" },
-                    { "label": "Bed Type", "value": "King Bed", "icon": "Bed" },
-                    { "label": "Category", "value": "Penthouse", "icon": "Grid" },
-                    { "label": "Bedrooms", "value": "2", "icon": "BedDouble" },
-                    { "label": "Bathrooms", "value": "2", "icon": "Bath" },
-                    { "label": "Location", "value": "Santorini, Greece", "icon": "MapPin" }
+                    {
+                      "label": "Guests",
+                      "value": "4 (2 Adults + 2 Guests)",
+                      "icon": "Users"
+                    },
+                    {
+                      "label": "View",
+                      "value": "Panoramic Caldera Sunset",
+                      "icon": "Eye"
+                    },
+                    {
+                      "label": "Size",
+                      "value": "1,100 ft²",
+                      "icon": "Maximize2"
+                    },
+                    {
+                      "label": "Bed Type",
+                      "value": "King Bed",
+                      "icon": "Bed"
+                    },
+                    {
+                      "label": "Category",
+                      "value": "Penthouse",
+                      "icon": "Grid"
+                    },
+                    {
+                      "label": "Bedrooms",
+                      "value": "2",
+                      "icon": "BedDouble"
+                    },
+                    {
+                      "label": "Bathrooms",
+                      "value": "2",
+                      "icon": "Bath"
+                    },
+                    {
+                      "label": "Location",
+                      "value": "Santorini, Greece",
+                      "icon": "MapPin"
+                    }
                   ],
                   "included": [
                     "Panoramic rooftop sun deck",
@@ -692,27 +1158,83 @@
                     "Sunset cocktail hour service"
                   ],
                   "features_grid": [
-                    { "title": "Sunset View", "description": "Unrivaled vantage point for famous golden sunsets", "icon": "Sun" },
-                    { "title": "Rooftop Deck", "description": "Private terrace with heated Jacuzzi and daybeds", "icon": "Waves" },
-                    { "title": "Caldera Vistas", "description": "Sweeping views across volcanic island cliffs", "icon": "Sparkles" },
-                    { "title": "King Suite", "description": "Sculpted cave-style luxury bedroom suite", "icon": "Bed" },
-                    { "title": "Marble Bath", "description": "Rain shower with caldera window view", "icon": "Bath" },
-                    { "title": "Artisan Dining", "description": "Mediterranean breakfast served under the sun", "icon": "Coffee" }
+                    {
+                      "title": "Sunset View",
+                      "description": "Unrivaled vantage point for famous golden sunsets",
+                      "icon": "Sun"
+                    },
+                    {
+                      "title": "Rooftop Deck",
+                      "description": "Private terrace with heated Jacuzzi and daybeds",
+                      "icon": "Waves"
+                    },
+                    {
+                      "title": "Caldera Vistas",
+                      "description": "Sweeping views across volcanic island cliffs",
+                      "icon": "Sparkles"
+                    },
+                    {
+                      "title": "King Suite",
+                      "description": "Sculpted cave-style luxury bedroom suite",
+                      "icon": "Bed"
+                    },
+                    {
+                      "title": "Marble Bath",
+                      "description": "Rain shower with caldera window view",
+                      "icon": "Bath"
+                    },
+                    {
+                      "title": "Artisan Dining",
+                      "description": "Mediterranean breakfast served under the sun",
+                      "icon": "Coffee"
+                    }
                   ],
                   "amenities": [
-                    { "label": "100% Eco Friendly", "icon": "Leaf" },
-                    { "label": "24/7 Elevator Services", "icon": "ArrowUpDown" },
-                    { "label": "24/7 Security", "icon": "ShieldCheck" },
-                    { "label": "Fireplace For Atmosphere", "icon": "Flame" },
-                    { "label": "Comfortable Seating", "icon": "Armchair" },
-                    { "label": "Work Desk", "icon": "Laptop" }
+                    {
+                      "label": "100% Eco Friendly",
+                      "icon": "Leaf"
+                    },
+                    {
+                      "label": "24/7 Elevator Services",
+                      "icon": "ArrowUpDown"
+                    },
+                    {
+                      "label": "24/7 Security",
+                      "icon": "ShieldCheck"
+                    },
+                    {
+                      "label": "Fireplace For Atmosphere",
+                      "icon": "Flame"
+                    },
+                    {
+                      "label": "Comfortable Seating",
+                      "icon": "Armchair"
+                    },
+                    {
+                      "label": "Work Desk",
+                      "icon": "Laptop"
+                    }
                   ],
                   "need_help": {
                     "title": "Need Help?",
                     "support": [
-                      { "label": "Customer Support", "value": "+960 1234 5678", "href": "tel:+96012345678", "icon": "Phone" },
-                      { "label": "Email Us", "value": "info@thevalmere.com", "href": "mailto:info@thevalmere.com", "icon": "Mail" },
-                      { "label": "Live Support", "value": "24/7 Assistance", "icon": "Headphones" }
+                      {
+                        "label": "Customer Support",
+                        "value": "+100000000000",
+                        "href": "tel:+100000000000",
+                        "icon": "Phone"
+                      },
+                      {
+                        "label": "Email Us",
+                        "value": "info@xyz.com",
+                        "href": "mailto:info@xyz.com",
+                        "icon": "Mail"
+                      },
+                      {
+                        "label": "Live Support",
+                        "value": "24/7 Assistance",
+                        "icon": "Headphones"
+                      }
                     ]
                   }
                 },
@@ -726,21 +1248,53 @@
                   "price": "$720",
                   "period": "night",
                   "gallery": [
-                    "/rooms/1.png",
-                    "/rooms/2.png",
-                    "/img/why-choose-1.jpg",
-                    "/img/testimonials/bedroom-balcony.jpg"
+                    "/rooms/1.webp",
+                    "/rooms/2.webp",
+                    "/img/why-choose-1.webp",
+                    "/img/testimonials/bedroom-balcony.webp"
                   ],
-                  "sidebar_image": "/rooms/1.png",
+                  "sidebar_image": "/rooms/1.webp",
                   "information": [
-                    { "label": "Guests", "value": "4 (2 Adults + 2 Children)", "icon": "Users" },
-                    { "label": "View", "value": "Emerald Lagoon View", "icon": "Eye" },
-                    { "label": "Size", "value": "980 ft²", "icon": "Maximize2" },
-                    { "label": "Bed Type", "value": "King Bed", "icon": "Bed" },
-                    { "label": "Category", "value": "Residence", "icon": "Grid" },
-                    { "label": "Bedrooms", "value": "2", "icon": "BedDouble" },
-                    { "label": "Bathrooms", "value": "2", "icon": "Bath" },
-                    { "label": "Location", "value": "Phuket, Thailand", "icon": "MapPin" }
+                    {
+                      "label": "Guests",
+                      "value": "4 (2 Adults + 2 Children)",
+                      "icon": "Users"
+                    },
+                    {
+                      "label": "View",
+                      "value": "Emerald Lagoon View",
+                      "icon": "Eye"
+                    },
+                    {
+                      "label": "Size",
+                      "value": "980 ft²",
+                      "icon": "Maximize2"
+                    },
+                    {
+                      "label": "Bed Type",
+                      "value": "King Bed",
+                      "icon": "Bed"
+                    },
+                    {
+                      "label": "Category",
+                      "value": "Residence",
+                      "icon": "Grid"
+                    },
+                    {
+                      "label": "Bedrooms",
+                      "value": "2",
+                      "icon": "BedDouble"
+                    },
+                    {
+                      "label": "Bathrooms",
+                      "value": "2",
+                      "icon": "Bath"
+                    },
+                    {
+                      "label": "Location",
+                      "value": "Phuket, Thailand",
+                      "icon": "MapPin"
+                    }
                   ],
                   "included": [
                     "Private infinity edge swimming pool",
@@ -753,27 +1307,83 @@
                     "Spacious teak wood sun deck"
                   ],
                   "features_grid": [
-                    { "title": "Lagoon Front", "description": "Steps away from tranquil emerald lagoon waters", "icon": "Waves" },
-                    { "title": "Infinity Pool", "description": "Swim overlooking towering palm trees", "icon": "Sun" },
-                    { "title": "Teak Interior", "description": "Authentic handcrafted wooden furniture", "icon": "Bed" },
-                    { "title": "Sun Pavilion", "description": "Shaded pavilion for relaxation and cocktails", "icon": "Sparkles" },
-                    { "title": "Spa Bathroom", "description": "Deep soaking tub and tropical rainfall shower", "icon": "Bath" },
-                    { "title": "Buffet Breakfast", "description": "Fresh tropical fruits and international fare", "icon": "Coffee" }
+                    {
+                      "title": "Lagoon Front",
+                      "description": "Steps away from tranquil emerald lagoon waters",
+                      "icon": "Waves"
+                    },
+                    {
+                      "title": "Infinity Pool",
+                      "description": "Swim overlooking towering palm trees",
+                      "icon": "Sun"
+                    },
+                    {
+                      "title": "Teak Interior",
+                      "description": "Authentic handcrafted wooden furniture",
+                      "icon": "Bed"
+                    },
+                    {
+                      "title": "Sun Pavilion",
+                      "description": "Shaded pavilion for relaxation and cocktails",
+                      "icon": "Sparkles"
+                    },
+                    {
+                      "title": "Spa Bathroom",
+                      "description": "Deep soaking tub and tropical rainfall shower",
+                      "icon": "Bath"
+                    },
+                    {
+                      "title": "Buffet Breakfast",
+                      "description": "Fresh tropical fruits and international fare",
+                      "icon": "Coffee"
+                    }
                   ],
                   "amenities": [
-                    { "label": "100% Eco Friendly", "icon": "Leaf" },
-                    { "label": "24/7 Elevator Services", "icon": "ArrowUpDown" },
-                    { "label": "24/7 Security", "icon": "ShieldCheck" },
-                    { "label": "Fireplace For Atmosphere", "icon": "Flame" },
-                    { "label": "Comfortable Seating", "icon": "Armchair" },
-                    { "label": "Work Desk", "icon": "Laptop" }
+                    {
+                      "label": "100% Eco Friendly",
+                      "icon": "Leaf"
+                    },
+                    {
+                      "label": "24/7 Elevator Services",
+                      "icon": "ArrowUpDown"
+                    },
+                    {
+                      "label": "24/7 Security",
+                      "icon": "ShieldCheck"
+                    },
+                    {
+                      "label": "Fireplace For Atmosphere",
+                      "icon": "Flame"
+                    },
+                    {
+                      "label": "Comfortable Seating",
+                      "icon": "Armchair"
+                    },
+                    {
+                      "label": "Work Desk",
+                      "icon": "Laptop"
+                    }
                   ],
                   "need_help": {
                     "title": "Need Help?",
                     "support": [
-                      { "label": "Customer Support", "value": "+960 1234 5678", "href": "tel:+96012345678", "icon": "Phone" },
-                      { "label": "Email Us", "value": "info@thevalmere.com", "href": "mailto:info@thevalmere.com", "icon": "Mail" },
-                      { "label": "Live Support", "value": "24/7 Assistance", "icon": "Headphones" }
+                      {
+                        "label": "Customer Support",
+                        "value": "+100000000000",
+                        "href": "tel:+100000000000",
+                        "icon": "Phone"
+                      },
+                      {
+                        "label": "Email Us",
+                        "value": "info@xyz.com",
+                        "href": "mailto:info@xyz.com",
+                        "icon": "Mail"
+                      },
+                      {
+                        "label": "Live Support",
+                        "value": "24/7 Assistance",
+                        "icon": "Headphones"
+                      }
                     ]
                   }
                 },
@@ -787,21 +1397,53 @@
                   "price": "$890",
                   "period": "night",
                   "gallery": [
-                    "/rooms/2.png",
-                    "/rooms/1.png",
-                    "/img/why-choose-1.jpg",
-                    "/img/testimonials/bedroom-balcony.jpg"
+                    "/rooms/2.webp",
+                    "/rooms/1.webp",
+                    "/img/why-choose-1.webp",
+                    "/img/testimonials/bedroom-balcony.webp"
                   ],
-                  "sidebar_image": "/rooms/2.png",
+                  "sidebar_image": "/rooms/2.webp",
                   "information": [
-                    { "label": "Guests", "value": "2 Adults", "icon": "Users" },
-                    { "label": "View", "value": "360° Reef Ocean Horizon", "icon": "Eye" },
-                    { "label": "Size", "value": "1,050 ft²", "icon": "Maximize2" },
-                    { "label": "Bed Type", "value": "King Bed", "icon": "Bed" },
-                    { "label": "Category", "value": "Overwater", "icon": "Grid" },
-                    { "label": "Bedrooms", "value": "1", "icon": "BedDouble" },
-                    { "label": "Bathrooms", "value": "1", "icon": "Bath" },
-                    { "label": "Location", "value": "Fiji Islands, South Pacific", "icon": "MapPin" }
+                    {
+                      "label": "Guests",
+                      "value": "2 Adults",
+                      "icon": "Users"
+                    },
+                    {
+                      "label": "View",
+                      "value": "360° Reef Ocean Horizon",
+                      "icon": "Eye"
+                    },
+                    {
+                      "label": "Size",
+                      "value": "1,050 ft²",
+                      "icon": "Maximize2"
+                    },
+                    {
+                      "label": "Bed Type",
+                      "value": "King Bed",
+                      "icon": "Bed"
+                    },
+                    {
+                      "label": "Category",
+                      "value": "Overwater",
+                      "icon": "Grid"
+                    },
+                    {
+                      "label": "Bedrooms",
+                      "value": "1",
+                      "icon": "BedDouble"
+                    },
+                    {
+                      "label": "Bathrooms",
+                      "value": "1",
+                      "icon": "Bath"
+                    },
+                    {
+                      "label": "Location",
+                      "value": "Fiji Islands, South Pacific",
+                      "icon": "MapPin"
+                    }
                   ],
                   "included": [
                     "Direct ladder access to coral reef",
@@ -814,27 +1456,83 @@
                     "24/7 in-suite dining service"
                   ],
                   "features_grid": [
-                    { "title": "Overwater Net", "description": "Lounge directly suspended above crystal reef", "icon": "Waves" },
-                    { "title": "Reef Access", "description": "Direct stairs leading into the warm ocean waters", "icon": "Sun" },
-                    { "title": "Glass Floor", "description": "Observe marine life right below your living room", "icon": "Eye" },
-                    { "title": "King Suite", "description": "Awake to sunrise over the horizon", "icon": "Bed" },
-                    { "title": "Ocean Tub", "description": "Free-standing tub overlooking the sea", "icon": "Bath" },
-                    { "title": "Gourmet Meals", "description": "Full breakfast delivered via private wooden skiff", "icon": "Coffee" }
+                    {
+                      "title": "Overwater Net",
+                      "description": "Lounge directly suspended above crystal reef",
+                      "icon": "Waves"
+                    },
+                    {
+                      "title": "Reef Access",
+                      "description": "Direct stairs leading into the warm ocean waters",
+                      "icon": "Sun"
+                    },
+                    {
+                      "title": "Glass Floor",
+                      "description": "Observe marine life right below your living room",
+                      "icon": "Eye"
+                    },
+                    {
+                      "title": "King Suite",
+                      "description": "Awake to sunrise over the horizon",
+                      "icon": "Bed"
+                    },
+                    {
+                      "title": "Ocean Tub",
+                      "description": "Free-standing tub overlooking the sea",
+                      "icon": "Bath"
+                    },
+                    {
+                      "title": "Gourmet Meals",
+                      "description": "Full breakfast delivered via private wooden skiff",
+                      "icon": "Coffee"
+                    }
                   ],
                   "amenities": [
-                    { "label": "100% Eco Friendly", "icon": "Leaf" },
-                    { "label": "Private Jetty Access", "icon": "ArrowUpDown" },
-                    { "label": "24/7 Security", "icon": "ShieldCheck" },
-                    { "label": "Fireplace For Atmosphere", "icon": "Flame" },
-                    { "label": "Comfortable Seating", "icon": "Armchair" },
-                    { "label": "Work Desk", "icon": "Laptop" }
+                    {
+                      "label": "100% Eco Friendly",
+                      "icon": "Leaf"
+                    },
+                    {
+                      "label": "Private Jetty Access",
+                      "icon": "ArrowUpDown"
+                    },
+                    {
+                      "label": "24/7 Security",
+                      "icon": "ShieldCheck"
+                    },
+                    {
+                      "label": "Fireplace For Atmosphere",
+                      "icon": "Flame"
+                    },
+                    {
+                      "label": "Comfortable Seating",
+                      "icon": "Armchair"
+                    },
+                    {
+                      "label": "Work Desk",
+                      "icon": "Laptop"
+                    }
                   ],
                   "need_help": {
                     "title": "Need Help?",
                     "support": [
-                      { "label": "Customer Support", "value": "+960 1234 5678", "href": "tel:+96012345678", "icon": "Phone" },
-                      { "label": "Email Us", "value": "info@thevalmere.com", "href": "mailto:info@thevalmere.com", "icon": "Mail" },
-                      { "label": "Live Support", "value": "24/7 Assistance", "icon": "Headphones" }
+                      {
+                        "label": "Customer Support",
+                        "value": "+100000000000",
+                        "href": "tel:+100000000000",
+                        "icon": "Phone"
+                      },
+                      {
+                        "label": "Email Us",
+                        "value": "info@xyz.com",
+                        "href": "mailto:info@xyz.com",
+                        "icon": "Mail"
+                      },
+                      {
+                        "label": "Live Support",
+                        "value": "24/7 Assistance",
+                        "icon": "Headphones"
+                      }
                     ]
                   }
                 }
@@ -850,7 +1548,7 @@
                   "quote": "Valmere redefined our idea of relaxation. The architecture in harmony with nature, the crystal-clear pools and the warmth of the staff made our anniversary escape truly magical.",
                   "author": "Alexander Wright",
                   "role": "FREQUENT TRAVELER",
-                  "avatar": "/img/testimonials/alexander.jpg",
+                  "avatar": "/img/testimonials/alexander.webp",
                   "rating": 5
                 },
                 {
@@ -858,7 +1556,7 @@
                   "quote": "From the breathtaking views to the impeccable service, our stay at The Valmere was truly unforgettable. Every detail, from the elegant rooms to the warm hospitality, made our getaway special. We can’t wait to return.",
                   "author": "Sophia Bennett",
                   "role": "TRAVEL ENTHUSIAST",
-                  "avatar": "/img/testimonials/sophia.jpg",
+                  "avatar": "/img/testimonials/sophia.webp",
                   "rating": 5
                 },
                 {
@@ -866,7 +1564,7 @@
                   "quote": "A true sanctuary in every sense. Waking up to the gentle sound of waves in the Deluxe Suite was an experience our family will cherish for a lifetime. Absolutely five stars.",
                   "author": "Isabella Rossi",
                   "role": "LIFESTYLE BLOGGER",
-                  "avatar": "/img/testimonials/isabella.jpg",
+                  "avatar": "/img/testimonials/isabella.webp",
                   "rating": 5
                 }
               ]
@@ -879,38 +1577,38 @@
               "items": [
                 {
                   "id": 1,
-                  "image": "/img/why-choose-1.jpg",
+                  "image": "/img/why-choose-1.webp",
                   "quote": "Our stay was absolutely magical! The views, the rooms, and the hospitality were beyond our expectations. Every detail was taken care of, and the staff made us feel truly special.",
                   "author": "Emily Carter",
                   "location": "London, UK",
-                  "avatar": "/img/testimonials/emily.jpg",
+                  "avatar": "/img/testimonials/emily.webp",
                   "rating": 5
                 },
                 {
                   "id": 2,
-                  "image": "/img/testimonials/bedroom-balcony.jpg",
+                  "image": "/img/testimonials/bedroom-balcony.webp",
                   "quote": "Beautiful property with world-class amenities. The rooms are spacious, clean and beautifully designed. We loved the private beach access and the peaceful environment. Highly recommended!",
                   "author": "James Wilson",
                   "location": "Sydney, Australia",
-                  "avatar": "/img/testimonials/james.jpg",
+                  "avatar": "/img/testimonials/james.webp",
                   "rating": 5
                 },
                 {
                   "id": 3,
-                  "image": "/img/why-choose-2.jpg",
+                  "image": "/img/why-choose-2.webp",
                   "quote": "A perfect getaway! The suite was elegant and comfortable with breathtaking views. The food, service and hospitality were excellent. We will definitely be coming back again.",
                   "author": "Sophia Martinez",
                   "location": "Toronto, Canada",
-                  "avatar": "/img/testimonials/sophia-m.jpg",
+                  "avatar": "/img/testimonials/sophia-m.webp",
                   "rating": 5
                 },
                 {
                   "id": 4,
-                  "image": "/img/testimonials/pool-palms.jpg",
+                  "image": "/img/testimonials/pool-palms.webp",
                   "quote": "From the moment we arrived, everything was exceptional. The location is serene, the suites are luxurious and the staff goes above and beyond to make your stay memorable. Truly a five-star experience!",
                   "author": "Daniel Kim",
                   "location": "Los Angeles, USA",
-                  "avatar": "/img/testimonials/daniel.jpg",
+                  "avatar": "/img/testimonials/daniel.webp",
                   "rating": 5
                 }
               ]
@@ -918,115 +1616,922 @@
             "faq": {
               "title_line1": "Do You Have",
               "title_highlight": "Any Questions?",
-              "description": "Have questions about your stay, suite amenities, or bespoke island experiences? Our dedicated reservations team is available 24/7 to assist you at Valmere.",
+              "description": "Have questions about your stay, suite amenities, or bespoke island experiences? Our dedicated enquiry team is available 24/7 to assist you at Valmere.",
               "button": {
                 "text": "GET IN TOUCH",
                 "href": "/contact"
               },
               "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80",
               "phone_label": "CONTACT US NOW • CALL US",
-              "phone": "+1 800 234 5678"
-            },
-            "gallery": {
-              "eyebrow": "VISUAL RETREAT",
-              "title_line1": "Moments in",
-              "title_highlight": "Paradise",
-              "description": "Explore snapshots of our oceanfront suites, infinity pool sun decks, gourmet culinary dining, and tranquil island landscapes.",
-              "categories": ["All", "Suites", "Pool & Beach", "Dining", "Wellness"],
-              "items": [
-                {
-                  "id": 1,
-                  "category": "Suites",
-                  "title": "Deluxe Oceanfront Bedroom",
-                  "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80"
-                },
-                {
-                  "id": 2,
-                  "category": "Pool & Beach",
-                  "title": "Sunlit Infinity Pool Lounge",
-                  "image": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=80"
-                },
-                {
-                  "id": 3,
-                  "category": "Suites",
-                  "title": "Premier Suite Terrace View",
-                  "image": "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=800&q=80"
-                },
-                {
-                  "id": 4,
-                  "category": "Pool & Beach",
-                  "title": "Private Beach Cabanas",
-                  "image": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
-                },
-                {
-                  "id": 5,
-                  "category": "Dining",
-                  "title": "Seaside Sunset Cocktails",
-                  "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
-                },
-                {
-                  "id": 6,
-                  "category": "Wellness",
-                  "title": "Aromatic Spa Pavilion",
-                  "image": "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=800&q=80"
-                },
-                {
-                  "id": 7,
-                  "category": "Suites",
-                  "title": "Presidential Living Quarters",
-                  "image": "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=800&q=80"
-                },
-                {
-                  "id": 8,
-                  "category": "Dining",
-                  "title": "Artisanal Island Breakfast",
-                  "image": "https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&w=800&q=80"
-                }
-              ]
+              "phone": "+100000000000"
             },
             "contact": {
               "eyebrow": "GET IN TOUCH",
-              "title_line1": "We Are Here",
-              "title_highlight": "To Assist You",
-              "description": "Have any questions regarding accommodations, private boat charters, or wellness retreats? Connect with our dedicated guest services.",
-              "info": {
-                "address": "450 Ocean Breeze Boulevard, Paradise Island 94021",
-                "phone": "+1 (800) 234-5678",
-                "email": "concierge@valmereresort.com",
-                "hours": "Open 24 Hours • 7 Days a Week"
-              },
+              "title_line1": "Contact",
+              "title_highlight": "Us",
+              "description": "We'd love to hear from you. Whether you have a question, need assistance with your booking, or want to plan a special stay, our team is here to help make your experience at The Valmere truly memorable.",
+              "contact_items": [
+                {
+                  "type": "location",
+                  "title": "Our Location",
+                  "lines": [
+                    "123 Education Lane,",
+                    "New York, NY 10001"
+                  ]
+                },
+                {
+                  "type": "phone",
+                  "title": "Phone",
+                  "lines": [
+                    "+100000000000",
+                    "+100000000000"
+                  ]
+                },
+                {
+                  "type": "email",
+                  "title": "Email",
+                  "lines": [
+                    "info@xyz.com",
+                    "info@xyz.com"
+                  ]
+                },
+                {
+                  "type": "social",
+                  "title": "Follow Us",
+                  "socials": [
+                    {
+                      "name": "facebook",
+                      "href": "https://facebook.com"
+                    },
+                    {
+                      "name": "instagram",
+                      "href": "https://instagram.com"
+                    },
+                    {
+                      "name": "twitter",
+                      "href": "https://twitter.com"
+                    },
+                    {
+                      "name": "pinterest",
+                      "href": "https://pinterest.com"
+                    }
+                  ]
+                }
+              ],
+              "image": "/img/contact-resort.webp",
+              "image_alt": "The Valmere Luxury Resort Oceanfront Patio",
               "form": {
-                "name_placeholder": "Your Full Name",
-                "email_placeholder": "Your Email Address",
-                "phone_placeholder": "Phone Number",
-                "subject_placeholder": "Select Subject (Booking, Dining, Event, Other)",
-                "message_placeholder": "How can we make your stay extraordinary?",
-                "button_text": "SEND MESSAGE"
+                "eyebrow": "SEND US A MESSAGE",
+                "title_line1": "Fill Up",
+                "title_highlight": "The Form",
+                "subtitle_line1": "Your email address will not be published.",
+                "subtitle_line2": "Required fields are marked *",
+                "name_placeholder": "Your Name*",
+                "email_placeholder": "Your Email Address*",
+                "phone_placeholder": "Your Phone Number",
+                "subject_placeholder": "Subject",
+                "message_placeholder": "Enter Your Message here*",
+                "button_text": "Send Us Message"
+              },
+              "info": {
+                "address": "123 Education Lane, New York, NY 10001",
+                "phone": "+100000000000",
+                "email": "info@xyz.com",
+                "hours": "Mon - Sun : 9:00 AM - 8:00 PM"
               }
             },
-            "reservation": {
-              "eyebrow": "ONLINE RESERVATION",
-              "title": "Plan Your Island Escape",
-              "description": "Select your desired travel dates, preferred suite or villa, and number of guests to secure your unforgettable retreat at Valmere.",
-              "checkin_label": "Check-in Date",
-              "checkout_label": "Check-out Date",
-              "guests_label": "Number of Guests",
-              "room_label": "Select Suite or Villa",
-              "room_options": [
-                "Deluxe Room Suite ($480 / night)",
-                "Premier Room Suite ($620 / night)",
-                "Royal Garden Villa ($820 / night)",
-                "Presidential Ocean Suite ($950 / night)"
-              ],
-              "button_text": "CONFIRM RESERVATION"
-            },
             "thank_you": {
-              "title": "Thank You For Choosing Valmere",
-              "description": "Your reservation request has been received. Our concierge team will review your preferences and contact you promptly with confirmation details.",
+              "title": "Thank You For Your Enquiry",
+              "description": "Your enquiry request has been received. Our concierge team will review your preferences and contact you promptly with confirmation details.",
               "button": {
                 "text": "RETURN TO HOME",
                 "href": "/"
               }
+            },
+            "blog": {
+              "eyebrow": "OUR BLOG",
+              "title_line1": "Travel Stories",
+              "title_highlight": "& Tips",
+              "description": "Explore our latest stories, travel guides and expert tips to make your stay more enjoyable and memorable.",
+              "posts_per_page": 6,
+              "posts": [
+                {
+                  "id": 1,
+                  "slug": "top-5-island-destinations-for-a-relaxing-getaway",
+                  "title": "Top 5 Island Destinations for a Relaxing Getaway",
+                  "date": "12 Aug, 2026",
+                  "category": "Travel Guide",
+                  "excerpt": "Discover the most beautiful island destinations around the world, perfect for a peaceful and rejuvenating vacation.",
+                  "image": "/blog/1.webp",
+                  "href": "/blog/top-5-island-destinations-for-a-relaxing-getaway"
+                },
+                {
+                  "id": 2,
+                  "slug": "how-to-choose-the-perfect-room-for-your-stay",
+                  "title": "How to Choose the Perfect Room for Your Stay",
+                  "date": "08 Aug, 2026",
+                  "category": "Stay Tips",
+                  "excerpt": "From ocean view suites to private pool villas, here's a complete guide to help you select the ideal room for your vacation.",
+                  "image": "/blog/2.webp",
+                  "href": "/blog/how-to-choose-the-perfect-room-for-your-stay"
+                },
+                {
+                  "id": 3,
+                  "slug": "a-culinary-journey-flavors-from-the-ocean",
+                  "title": "A Culinary Journey: Flavors from the Ocean",
+                  "date": "05 Aug, 2026",
+                  "category": "Dining",
+                  "excerpt": "Experience exquisite dining with fresh local ingredients and international cuisine prepared by our expert chefs.",
+                  "image": "/blog/3.webp",
+                  "href": "/blog/a-culinary-journey-flavors-from-the-ocean"
+                },
+                {
+                  "id": 4,
+                  "slug": "the-benefits-of-a-wellness-retreat",
+                  "title": "The Benefits of a Wellness Retreat",
+                  "date": "01 Aug, 2026",
+                  "category": "Wellness",
+                  "excerpt": "Learn how a wellness retreat can help you relax, recharge and reconnect with yourself in a beautiful natural setting.",
+                  "image": "/blog/4.webp",
+                  "href": "/blog/the-benefits-of-a-wellness-retreat"
+                },
+                {
+                  "id": 5,
+                  "slug": "sunset-ocean-sailing-private-yacht-charters",
+                  "title": "Sunset Ocean Sailing & Private Yacht Charters",
+                  "date": "28 Jul, 2026",
+                  "category": "Adventure",
+                  "excerpt": "Set sail across crystal turquoise waters and witness breathtaking twilight horizons aboard our bespoke island catamarans.",
+                  "image": "/blog/5.webp",
+                  "href": "/blog/sunset-ocean-sailing-private-yacht-charters"
+                },
+                {
+                  "id": 6,
+                  "slug": "the-art-of-island-architecture-villa-escapes",
+                  "title": "The Art of Island Architecture & Villa Escapes",
+                  "date": "22 Jul, 2026",
+                  "category": "Lifestyle",
+                  "excerpt": "Explore how organic teak timber, private infinity pools, and panoramic ocean vistas harmonize into timeless luxury.",
+                  "image": "/blog/6.webp",
+                  "href": "/blog/the-art-of-island-architecture-villa-escapes"
+                },
+                {
+                  "id": 7,
+                  "slug": "morning-yoga-oceanfront-mindfulness",
+                  "title": "Morning Yoga & Oceanfront Mindfulness",
+                  "date": "18 Jul, 2026",
+                  "category": "Wellness",
+                  "excerpt": "Greet the rising sun with guided open-air meditation sessions designed to restore mental clarity and inner balance.",
+                  "image": "/blog/7.webp",
+                  "href": "/blog/morning-yoga-oceanfront-mindfulness"
+                },
+                {
+                  "id": 8,
+                  "slug": "secret-coral-reefs-underwater-snorkeling-guide",
+                  "title": "Secret Coral Reefs: An Underwater Snorkeling Guide",
+                  "date": "14 Jul, 2026",
+                  "category": "Excursions",
+                  "excerpt": "Dive into pristine lagoon waters teeming with sea turtles, exotic marine biodiversity, and untouched coral gardens.",
+                  "image": "/blog/8.webp",
+                  "href": "/blog/secret-coral-reefs-underwater-snorkeling-guide"
+                },
+                {
+                  "id": 9,
+                  "slug": "artisanal-cocktails-twilight-beach-lounges",
+                  "title": "Artisanal Cocktails & Twilight Beach Lounges",
+                  "date": "09 Jul, 2026",
+                  "category": "Dining",
+                  "excerpt": "Savor handcrafted tropical mixology and lantern-lit evenings as the ocean breeze cools the golden island sands.",
+                  "image": "/blog/9.webp",
+                  "href": "/blog/artisanal-cocktails-twilight-beach-lounges"
+                },
+                {
+                  "id": 10,
+                  "slug": "romantic-escapes-private-candlelight-beach-dining",
+                  "title": "Romantic Escapes: Private Candlelight Beach Dining",
+                  "date": "04 Jul, 2026",
+                  "category": "Experience",
+                  "excerpt": "Celebrate unforgettable milestones with an intimate five-course dinner set directly under a canopy of starlight.",
+                  "image": "/blog/10.webp",
+                  "href": "/blog/romantic-escapes-private-candlelight-beach-dining"
+                },
+                {
+                  "id": 11,
+                  "slug": "rainforest-sanctuary-botanical-spa-hydrotherapy",
+                  "title": "Rainforest Sanctuary: Botanical Spa & Hydrotherapy",
+                  "date": "29 Jun, 2026",
+                  "category": "Spa & Wellness",
+                  "excerpt": "Immerse yourself in therapeutic open-air stone baths enveloped by tropical orchids and soothing waterfall acoustics.",
+                  "image": "/blog/11.webp",
+                  "href": "/blog/rainforest-sanctuary-botanical-spa-hydrotherapy"
+                },
+                {
+                  "id": 12,
+                  "slug": "overwater-living-suspended-hammocks-lagoon-suites",
+                  "title": "Overwater Living: Suspended Hammocks & Lagoon Suites",
+                  "date": "23 Jun, 2026",
+                  "category": "Accommodations",
+                  "excerpt": "Experience the ultimate seclusion lounging above iridescent turquoise water in architecturally cantilevered net hammocks.",
+                  "image": "/blog/12.webp",
+                  "href": "/blog/overwater-living-suspended-hammocks-lagoon-suites"
+                },
+                {
+                  "id": 13,
+                  "slug": "island-wellness-ancient-healing-holistic-rituals",
+                  "title": "Island Wellness: Ancient Healing & Holistic Rituals",
+                  "date": "17 Jun, 2026",
+                  "category": "Wellness",
+                  "excerpt": "Discover age-old restorative rituals and organic essential oil therapies rooted in island tradition and holistic care.",
+                  "image": "/blog/13.webp",
+                  "href": "/blog/island-wellness-ancient-healing-holistic-rituals"
+                },
+                {
+                  "id": 14,
+                  "slug": "exclusive-suites-inside-valmere-master-retreats",
+                  "title": "Exclusive Suites: Inside Valmere's Master Retreats",
+                  "date": "11 Jun, 2026",
+                  "category": "Accommodations",
+                  "excerpt": "Step behind closed doors into our most coveted private residences featuring bespoke furnishings and sunset terraces.",
+                  "image": "/blog/14.webp",
+                  "href": "/blog/exclusive-suites-inside-valmere-master-retreats"
+                },
+                {
+                  "id": 15,
+                  "slug": "sustainable-hospitality-protecting-island-biosphere",
+                  "title": "Sustainable Hospitality: Protecting Our Island Biosphere",
+                  "date": "06 Jun, 2026",
+                  "category": "Eco Travel",
+                  "excerpt": "Learn about our zero-plastic initiatives, solar innovation, and active marine conservation efforts across the atoll.",
+                  "image": "/blog/15.webp",
+                  "href": "/blog/sustainable-hospitality-protecting-island-biosphere"
+                },
+                {
+                  "id": 16,
+                  "slug": "curated-island-excursions-hidden-sea-caves",
+                  "title": "Curated Island Excursions & Hidden Sea Caves",
+                  "date": "31 May, 2026",
+                  "category": "Adventure",
+                  "excerpt": "Embark on guided coastal expeditions exploring secluded marine grottos, secret lagoons, and untouched island coves.",
+                  "image": "/blog/16.webp",
+                  "href": "/blog/curated-island-excursions-hidden-sea-caves"
+                },
+                {
+                  "id": 17,
+                  "slug": "culinary-philosophy-farm-to-table-dining",
+                  "title": "The Culinary Philosophy Behind Farm-to-Table Dining",
+                  "date": "24 May, 2026",
+                  "category": "Dining",
+                  "excerpt": "Discover how our master chefs source organic heirloom produce directly from sustainable micro-farms across the island.",
+                  "image": "/blog/17.webp",
+                  "href": "/blog/culinary-philosophy-farm-to-table-dining"
+                },
+                {
+                  "id": 18,
+                  "slug": "golden-hour-moments-best-photography-spots",
+                  "title": "Golden Hour Moments: Best Photography Spots on the Island",
+                  "date": "18 May, 2026",
+                  "category": "Photography",
+                  "excerpt": "A guide to capturing timeless vacation memories at the most picturesque vantage points across the Valmere coastline.",
+                  "image": "/blog/18.webp",
+                  "href": "/blog/golden-hour-moments-best-photography-spots"
+                }
+              ]
+            },
+            "blog_details": {
+              "recent_posts_title": "Recent Posts",
+              "recent_posts": [
+                {
+                  "id": 1,
+                  "slug": "top-5-island-destinations-for-a-relaxing-getaway",
+                  "title": "Top 5 Luxury Island Destinations for Your Next Vacation",
+                  "date": "12 Aug, 2026",
+                  "image": "/blog/1.webp",
+                  "href": "/blog/top-5-island-destinations-for-a-relaxing-getaway"
+                },
+                {
+                  "id": 3,
+                  "slug": "a-culinary-journey-flavors-from-the-ocean",
+                  "title": "A Culinary Journey: Flavors from Around the World",
+                  "date": "05 Aug, 2026",
+                  "image": "/blog/3.webp",
+                  "href": "/blog/a-culinary-journey-flavors-from-the-ocean"
+                },
+                {
+                  "id": 2,
+                  "slug": "how-to-choose-the-perfect-room-for-your-stay",
+                  "title": "How to Choose the Perfect Room for Your Stay",
+                  "date": "01 Aug, 2026",
+                  "image": "/blog/2.webp",
+                  "href": "/blog/how-to-choose-the-perfect-room-for-your-stay"
+                },
+                {
+                  "id": 4,
+                  "slug": "the-benefits-of-a-wellness-retreat",
+                  "title": "The Benefits of a Wellness Retreat: Relax, Rejuvenate and Reconnect",
+                  "date": "28 Jul, 2026",
+                  "image": "/blog/4.webp",
+                  "href": "/blog/the-benefits-of-a-wellness-retreat"
+                }
+              ],
+              "items": [
+                {
+                  "id": 1,
+                  "slug": "top-5-island-destinations-for-a-relaxing-getaway",
+                  "title": "Top 5 Island Destinations for a Relaxing Getaway",
+                  "category": "Travel Guide",
+                  "date": "12 Aug, 2026",
+                  "author": "By Elena Vance",
+                  "comments_count": "Comments (05)",
+                  "read_time": "5 min Read",
+                  "image": "/blog/1.webp",
+                  "paragraphs": [
+                    "Escaping the hustle and bustle of everyday life often requires finding a destination where time seems to slow down. The world is home to incredible tropical islands, each with its own rhythm, turquoise horizons, and warm trade winds that soothe the soul.",
+                    "From secluded atolls in the Indian Ocean to dramatic volcanic peaks fringed by coral reefs in the South Pacific, a tranquil getaway should offer privacy, pristine nature, and world-class hospitality.",
+                    "In this guide, we explore five handpicked island sanctuaries that promise absolute stillness, sublime beachfront luxury, and restorative experiences that stay with you long after you return home."
+                  ],
+                  "quote": {
+                    "text": "True travel is not about seeing new landscapes, but having new eyes through quiet moments in nature.",
+                    "author": "Elena Vance, Travel Curator"
+                  },
+                  "key_factors_title": "Top Island Selection Criteria",
+                  "key_factors_image": "/blog/1.webp",
+                  "key_factors": [
+                    "Direct access to uncrowded, pristine marine lagoons.",
+                    "Secluded villa architecture that blends into the coastal landscape.",
+                    "Bespoke wellness therapies and outdoor oceanfront pavilions.",
+                    "Sustainable eco-conscious practices protecting local reefs.",
+                    "Seamless private airport boat transfers and personalized concierge."
+                  ]
+                },
+                {
+                  "id": 2,
+                  "slug": "how-to-choose-the-perfect-room-for-your-stay",
+                  "title": "A Complete Guide to Choosing the Perfect Resort for Your Vacation",
+                  "category": "Stay Tips",
+                  "date": "08 Aug, 2026",
+                  "author": "By Admin",
+                  "comments_count": "Comments (03)",
+                  "read_time": "5 min Read",
+                  "image": "/blog/2.webp",
+                  "paragraphs": [
+                    "Planning a vacation is always exciting, but choosing the right resort can make all the difference in creating a truly unforgettable experience. From location and amenities to the type of rooms and activities available, every detail plays a role in ensuring a relaxing and enjoyable stay. In this guide, we'll help you understand the key factors to consider when selecting the perfect resort for your next getaway.",
+                    "Whether you're looking for a serene beachfront retreat, a family-friendly resort, or a luxurious escape, the right choice can turn your vacation into a collection of beautiful memories.",
+                    "In this blog, we'll walk you through the essential aspects to keep in mind, from stunning locations and world-class amenities to dining options and unique experiences, so you can find a resort that matches your travel style and preferences."
+                  ],
+                  "quote": {
+                    "text": "A great resort stay is not just about the destination, but the experiences and memories you create along the way.",
+                    "author": "The Valmere Team"
+                  },
+                  "key_factors_title": "Key Factors to Consider",
+                  "key_factors_image": "/blog/1.webp",
+                  "key_factors": [
+                    "Choose a location that suits your travel style.",
+                    "Look for amenities that enhance your comfort.",
+                    "Consider the type of room that fits your needs.",
+                    "Explore dining options and culinary experiences.",
+                    "Check guest reviews and recommendations.",
+                    "Plan activities that match your interests."
+                  ]
+                },
+                {
+                  "id": 3,
+                  "slug": "a-culinary-journey-flavors-from-the-ocean",
+                  "title": "A Culinary Journey: Flavors from the Ocean",
+                  "category": "Dining",
+                  "date": "05 Aug, 2026",
+                  "author": "By Chef Marcus Ray",
+                  "comments_count": "Comments (07)",
+                  "read_time": "4 min Read",
+                  "image": "/blog/3.webp",
+                  "paragraphs": [
+                    "At Valmere, dining is elevated to an art form centered on the bounties of the surrounding ocean. Every morning, our culinary team works alongside local fishermen to select sustainable catches of wild sea bass, rock lobster, and reef snapper.",
+                    "Our kitchen balances traditional island spices with refined Mediterranean techniques, crafting vibrant dishes that celebrate pure texture and unadulterated freshness.",
+                    "Whether enjoying a barefoot seafood grill directly on the sunset sands or an intimate wine-paired tasting menu over water, each plate tells a story of the tides and seasons."
+                  ],
+                  "quote": {
+                    "text": "The freshest catch needs little adornment—just the heat of sea salt, olive oil, and the whisper of island herbs.",
+                    "author": "Executive Chef Marcus Ray"
+                  },
+                  "key_factors_title": "Signature Seafood Highlights",
+                  "key_factors_image": "/blog/3.webp",
+                  "key_factors": [
+                    "Daily line-caught sustainable seafood from local waters.",
+                    "Charcoal-grilled beachfront tasting dinners under the stars.",
+                    "Organic citrus and garden herbs harvested on the island.",
+                    "Curated sommelier pairings featuring biodynamic coastal wines.",
+                    "Interactive chef-led culinary masterclasses for guests."
+                  ]
+                },
+                {
+                  "id": 4,
+                  "slug": "the-benefits-of-a-wellness-retreat",
+                  "title": "The Benefits of a Wellness Retreat: Relax, Rejuvenate and Reconnect",
+                  "category": "Wellness",
+                  "date": "01 Aug, 2026",
+                  "author": "By Dr. Maya Lin",
+                  "comments_count": "Comments (04)",
+                  "read_time": "6 min Read",
+                  "image": "/blog/4.webp",
+                  "paragraphs": [
+                    "Modern lifestyles impose relentless demands on our mental and physical energy. Stepping away for a dedicated wellness retreat offers far more than a momentary break—it initiates deep cellular restoration and mental reset.",
+                    "Surrounded by soothing sea breezes and tropical greenery, your nervous system downshifts from chronic fight-or-flight into restorative tranquility. Gentle open-air therapies restore circadian alignment naturally.",
+                    "By integrating mindful movement, nourishing island botanicals, and silent meditation, guests leave with lasting vitality and renewed emotional equilibrium."
+                  ],
+                  "quote": {
+                    "text": "Silence and the rhythm of the ocean are the most potent natural remedies known to human physiology.",
+                    "author": "Dr. Maya Lin, Wellness Director"
+                  },
+                  "key_factors_title": "Core Wellness Principles",
+                  "key_factors_image": "/blog/4.webp",
+                  "key_factors": [
+                    "Individualized holistic wellness assessments upon arrival.",
+                    "Outdoor ocean-breeze hydrotherapy and restorative bodywork.",
+                    "Circadian sleep therapy with organic linen and aromatherapy.",
+                    "Plant-forward adaptogenic menus crafted by nutritional chefs.",
+                    "Daily sunrise meditation sessions overlooking the lagoon."
+                  ]
+                },
+                {
+                  "id": 5,
+                  "slug": "sunset-ocean-sailing-private-yacht-charters",
+                  "title": "Sunset Ocean Sailing & Private Yacht Charters",
+                  "category": "Adventure",
+                  "date": "28 Jul, 2026",
+                  "author": "By Captain Julian Ross",
+                  "comments_count": "Comments (02)",
+                  "read_time": "4 min Read",
+                  "image": "/blog/5.webp",
+                  "paragraphs": [
+                    "There is nothing quite like watching the island shoreline slip away as sails catch the evening trade wind. Our private catamaran charters are designed for travelers who appreciate the freedom of open waters in utmost elegance.",
+                    "Glide past uninhabited islets, drop anchor in hidden turquoise lagoons for a twilight swim, and watch pods of spinner dolphins leap alongside the hull.",
+                    "As dusk turns the sky into amber and violet, chilled champagne and canapés are served on the teak deck while gentle waves rock the vessel into peace."
+                  ],
+                  "quote": {
+                    "text": "The sea once it casts its spell, holds one in its net of wonder forever.",
+                    "author": "Captain Julian Ross, Marine Guide"
+                  },
+                  "key_factors_title": "Private Charter Inclusions",
+                  "key_factors_image": "/blog/5.webp",
+                  "key_factors": [
+                    "Customizable itinerary across secluded island lagoons.",
+                    "Experienced skipper, private deck steward, and safety crew.",
+                    "Gourmet champagne sunset picnic basket on the aft deck.",
+                    "High-end snorkeling gear and sea-scooters included on board.",
+                    "Direct pickup from the Valmere private overwater jetty."
+                  ]
+                },
+                {
+                  "id": 6,
+                  "slug": "the-art-of-island-architecture-villa-escapes",
+                  "title": "The Art of Island Architecture & Villa Escapes",
+                  "category": "Lifestyle",
+                  "date": "22 Jul, 2026",
+                  "author": "By Sofia Morales",
+                  "comments_count": "Comments (06)",
+                  "read_time": "5 min Read",
+                  "image": "/blog/6.webp",
+                  "paragraphs": [
+                    "Great luxury architecture should never compete with its natural surroundings; rather, it should frame and celebrate them. At Valmere, each villa is conceived as an organic extension of the island's coastal geography.",
+                    "Hand-carved reclaimed teak, local volcanic stone, and expansive floor-to-ceiling glass pavilions blur the boundary between indoors and the endless ocean horizon.",
+                    "Cantilevered private decks and infinity pools give the sensation of floating above the turquoise waters, providing guests with personal sanctuaries of unmatched serenity."
+                  ],
+                  "quote": {
+                    "text": "Architecture in the tropics is fundamentally about light, breeze, and honoring the natural landscape.",
+                    "author": "Sofia Morales, Principal Architect"
+                  },
+                  "key_factors_title": "Architectural Design Elements",
+                  "key_factors_image": "/blog/6.webp",
+                  "key_factors": [
+                    "Biophilic design maximizing natural cross-ventilation.",
+                    "Locally sourced teak wood, coral stone, and thatched roofing.",
+                    "Private infinity pools aligned with direct sunset views.",
+                    "Spacious open-concept living integrating indoor and outdoor rooms.",
+                    "Low-impact eco-footprint with solar thermal integration."
+                  ]
+                },
+                {
+                  "id": 7,
+                  "slug": "morning-yoga-oceanfront-mindfulness",
+                  "title": "Morning Yoga & Oceanfront Mindfulness",
+                  "category": "Wellness",
+                  "date": "18 Jul, 2026",
+                  "author": "By Priya Sharma",
+                  "comments_count": "Comments (03)",
+                  "read_time": "4 min Read",
+                  "image": "/blog/7.webp",
+                  "paragraphs": [
+                    "Dawn on the island brings an incomparable sense of rebirth. As the first pastel rays illuminate the lagoon, our open-air yoga deck welcomes practitioners of all levels to awaken the body with mindful breath.",
+                    "Flowing through gentle vinyasa sequences while listening to the rhythmic murmur of gentle surf helps release accumulated muscular tension and clears mental static.",
+                    "Followed by a soothing singing bowl sound bath and fresh island coconut water, this morning ritual sets a grounded, joyful tone for the day ahead."
+                  ],
+                  "quote": {
+                    "text": "Breathe with the rising sun, and allow the ocean tide to carry away whatever no longer serves you.",
+                    "author": "Priya Sharma, Yoga Master"
+                  },
+                  "key_factors_title": "Morning Practice Benefits",
+                  "key_factors_image": "/blog/7.webp",
+                  "key_factors": [
+                    "Gentle Hatha and Vinyasa flows suitable for all levels.",
+                    "Sound meditation utilizing hand-crafted Tibetan singing bowls.",
+                    "Breathwork techniques for nervous system down-regulation.",
+                    "Post-session organic botanical teas and fresh island fruits.",
+                    "Private one-on-one yoga guidance available on request."
+                  ]
+                },
+                {
+                  "id": 8,
+                  "slug": "secret-coral-reefs-an-underwater-snorkeling-guide",
+                  "title": "Secret Coral Reefs: An Underwater Snorkeling Guide",
+                  "category": "Excursions",
+                  "date": "14 Jul, 2026",
+                  "author": "By Liam Campbell",
+                  "comments_count": "Comments (05)",
+                  "read_time": "5 min Read",
+                  "image": "/blog/8.webp",
+                  "paragraphs": [
+                    "Beneath the tranquil surface of Valmere's atoll lies a vibrant wonderland of marine life. Sheltered outer reefs create a tranquil sanctuary where healthy hard and soft coral colonies flourish in warm, sunlit waters.",
+                    "Snorkelers of all ages can glide alongside gentle green sea turtles, schools of electric blue tangs, and harmless reef sharks grazing along the coral shelves.",
+                    "Our resident marine biologists lead daily respectful guided snorkel trails, sharing fascinating insights into coral conservation and atoll ecosystem health."
+                  ],
+                  "quote": {
+                    "text": "Every descent into a coral reef feels like stepping into an ancient living cathedral of light and color.",
+                    "author": "Liam Campbell, Marine Biologist"
+                  },
+                  "key_factors_title": "Snorkeling Tips & Insights",
+                  "key_factors_image": "/blog/8.webp",
+                  "key_factors": [
+                    "Complimentary reef-safe sunscreen provided for all guests.",
+                    "Small-group guided tours led by certified marine biologists.",
+                    "Spotting guides for identifying rare reef fish and turtles.",
+                    "High-visibility crystal masks and dry-top snorkels.",
+                    "Strict no-touch conservation protocols to protect coral life."
+                  ]
+                },
+                {
+                  "id": 9,
+                  "slug": "artisanal-cocktails-twilight-beach-lounges",
+                  "title": "Artisanal Cocktails & Twilight Beach Lounges",
+                  "category": "Dining",
+                  "date": "09 Jul, 2026",
+                  "author": "By Mateo Alvarez",
+                  "comments_count": "Comments (04)",
+                  "read_time": "4 min Read",
+                  "image": "/blog/9.webp",
+                  "paragraphs": [
+                    "When the tropical sun dips below the horizon, the Valmere shoreline comes alive with the warm glow of hand-woven lanterns and ambient acoustic island music.",
+                    "Our mixology team crafts cocktails using house-distilled botanical rums, cold-pressed island mango, passion fruit, fresh lemongrass, and hand-cut ice cubes.",
+                    "Relax into sunken beachfront lounges with toes in the sand, watching the embers of twilight reflect across the water while enjoying artisanal tapas."
+                  ],
+                  "quote": {
+                    "text": "A great cocktail should capture the spirit of where it was born—sweet island air, citrus zest, and aged wooden barrels.",
+                    "author": "Mateo Alvarez, Head Mixologist"
+                  },
+                  "key_factors_title": "Twilight Lounge Features",
+                  "key_factors_image": "/blog/9.webp",
+                  "key_factors": [
+                    "Custom botanical infusions crafted from resort-grown herbs.",
+                    "Sunken beach seating with plush cushions and candlelit tables.",
+                    "Curated acoustic and chill-out live musician performances.",
+                    "Artisanal small-plate pairings with local tropical spices.",
+                    "Zero-proof mocktail menu utilizing adaptogenic botanicals."
+                  ]
+                },
+                {
+                  "id": 10,
+                  "slug": "romantic-escapes-private-candlelight-beach-dining",
+                  "title": "Romantic Escapes: Private Candlelight Beach Dining",
+                  "category": "Experience",
+                  "date": "04 Jul, 2026",
+                  "author": "By Valmere Concierge",
+                  "comments_count": "Comments (08)",
+                  "read_time": "5 min Read",
+                  "image": "/blog/10.webp",
+                  "paragraphs": [
+                    "Celebrating an anniversary, honeymoon, or milestone moment deserves a setting as extraordinary as the love you share. Our private beachfront dinner is staged on a secluded stretch of powdery white sand.",
+                    "Framed by flickering lanterns and the celestial arch of the night sky, a private table is dressed in crisp white linen and fragrant frangipani blossoms.",
+                    "A dedicated private butler and personal chef attend to your every wish, delivering a personalized five-course culinary journey paired with vintage champagnes."
+                  ],
+                  "quote": {
+                    "text": "True romance is created through undivided presence in a place of transcendent natural beauty.",
+                    "author": "Valmere Concierge Team"
+                  },
+                  "key_factors_title": "Romantic Dining Inclusions",
+                  "key_factors_image": "/blog/10.webp",
+                  "key_factors": [
+                    "Private candlelit table positioned right at the ocean's edge.",
+                    "Bespoke five-course customized tasting menu with your chef.",
+                    "Dedicated butler service throughout the entire evening.",
+                    "Chilled vintage champagne and customized dessert message.",
+                    "Surrounding torchlight and lanterns creating private intimacy."
+                  ]
+                },
+                {
+                  "id": 11,
+                  "slug": "rainforest-sanctuary-botanical-spa-hydrotherapy",
+                  "title": "Rainforest Sanctuary: Botanical Spa & Hydrotherapy",
+                  "category": "Spa & Wellness",
+                  "date": "29 Jun, 2026",
+                  "author": "By Ananya Sen",
+                  "comments_count": "Comments (03)",
+                  "read_time": "5 min Read",
+                  "image": "/blog/11.webp",
+                  "paragraphs": [
+                    "Tucked away within the lush jungle heart of the island lies the Valmere Botanical Spa Sanctuary. Here, natural hot thermal springs and stone hydrotherapy baths are surrounded by wild orchids, ferns, and gently flowing waterfalls.",
+                    "Guests are invited into open-air pavilions where steam baths infused with native eucalyptus and sea salt prepare the skin for therapeutic mineral wraps.",
+                    "The gentle sounds of mountain streams and singing birds provide a natural soundtrack that deepens relaxation to levels unattainable in city environments."
+                  ],
+                  "quote": {
+                    "text": "When water and natural plant medicine unite in the wild, the body remembers how to heal itself.",
+                    "author": "Ananya Sen, Botanical Therapist"
+                  },
+                  "key_factors_title": "Hydrotherapy Rituals",
+                  "key_factors_image": "/blog/11.webp",
+                  "key_factors": [
+                    "Carved natural stone soaking baths with mineral spring water.",
+                    "Fresh botanical scrubs using crushed coconut and island ginger.",
+                    "Open-air waterfall showers enveloped by wild flora.",
+                    "Herbal steam sanctuaries with locally gathered botanicals.",
+                    "Post-treatment herbal infusions in the shaded orchid garden."
+                  ]
+                },
+                {
+                  "id": 12,
+                  "slug": "overwater-living-suspended-hammocks-lagoon-suites",
+                  "title": "Overwater Living: Suspended Hammocks & Lagoon Suites",
+                  "category": "Accommodations",
+                  "date": "23 Jun, 2026",
+                  "author": "By Thomas Weber",
+                  "comments_count": "Comments (06)",
+                  "read_time": "4 min Read",
+                  "image": "/blog/12.webp",
+                  "paragraphs": [
+                    "Overwater architecture is the ultimate expression of island luxury. Suspended on stilts above crystalline turquoise water, our Lagoon Suites offer direct access into the warm marine playground.",
+                    "One of the signature features of each private sundeck is the woven catamaran net hammock, suspended directly over the water for hours of weightless reading, sunbathing, and watching baby reef fish swim below.",
+                    "From sliding glass walls that capture the ocean breeze to glass floor viewing panels inside the bedroom, every inch is engineered for immersive tropical living."
+                  ],
+                  "quote": {
+                    "text": "Lying suspended over the ocean with only sky above and clear water beneath is pure weightless bliss.",
+                    "author": "Thomas Weber, Resort Curator"
+                  },
+                  "key_factors_title": "Lagoon Suite Amenities",
+                  "key_factors_image": "/blog/12.webp",
+                  "key_factors": [
+                    "Private catamaran overwater netting suspended above the sea.",
+                    "Direct staircase leading into the shallow lagoon water.",
+                    "Glass floor viewing ports to observe marine life from bed.",
+                    "Expansive wooden sun deck with double daybeds and loungers.",
+                    "In-villa breakfast delivered by wooden outrigger boat."
+                  ]
+                },
+                {
+                  "id": 13,
+                  "slug": "island-wellness-ancient-healing-holistic-rituals",
+                  "title": "Island Wellness: Ancient Healing & Holistic Rituals",
+                  "category": "Wellness",
+                  "date": "17 Jun, 2026",
+                  "author": "By Master Wayan",
+                  "comments_count": "Comments (04)",
+                  "read_time": "5 min Read",
+                  "image": "/blog/13.webp",
+                  "paragraphs": [
+                    "For centuries, island communities have cultivated deep knowledge of botanical remedies and energy balancing techniques. At Valmere, we respectfully integrate these ancient modalities into contemporary wellness regimens.",
+                    "Traditional warm herbal poultice therapies, synchronized four-hand lomi-lomi strokes, and flower petal bath blessings awaken the body's natural vitality.",
+                    "Each ritual begins with a sacred intention and uses cold-pressed coconut oil scented with jasmine, ylang-ylang, and sandalwood to soothe both body and spirit."
+                  ],
+                  "quote": {
+                    "text": "Ancient healing is not a luxury, it is the remembering of our innate connection to the earth.",
+                    "author": "Master Wayan, Traditional Healer"
+                  },
+                  "key_factors_title": "Traditional Ritual Elements",
+                  "key_factors_image": "/blog/13.webp",
+                  "key_factors": [
+                    "Warm herbal compress therapy with freshly steamed herbs.",
+                    "Traditional flower blessing foot bath upon arrival.",
+                    "Pure organic cold-pressed oils infused with local botanicals.",
+                    "Deep tissue tension release combining stretching and acupressure.",
+                    "Guided breath meditation closing every therapeutic session."
+                  ]
+                },
+                {
+                  "id": 14,
+                  "slug": "exclusive-suites-inside-valmeres-master-retreats",
+                  "title": "Exclusive Suites: Inside Valmere's Master Retreats",
+                  "category": "Accommodations",
+                  "date": "11 Jun, 2026",
+                  "author": "By Helena Vance",
+                  "comments_count": "Comments (05)",
+                  "read_time": "5 min Read",
+                  "image": "/blog/14.webp",
+                  "paragraphs": [
+                    "For travelers requiring absolute privacy and monumental space, the Master Retreats at Valmere represent the zenith of island accommodation. Each residence offers multiple bedroom wings, private screening rooms, and private fitness pavilions.",
+                    "Positioned on the most private tip of the atoll with a dedicated stretch of beach, guests enjoy personal butler service, dedicated private chefs, and a private boat and captain throughout their stay.",
+                    "Interiors showcase hand-selected Italian linens, bespoke timber joinery, and oversized stone soaking tubs looking out over panoramic sunset views."
+                  ],
+                  "quote": {
+                    "text": "True privacy is the rarest commodity in the modern world; we designed our Master Retreats to be its ultimate sanctuary.",
+                    "author": "Helena Vance, Managing Director"
+                  },
+                  "key_factors_title": "Master Retreat Privileges",
+                  "key_factors_image": "/blog/14.webp",
+                  "key_factors": [
+                    "Dedicated 24-hour butler and private culinary team.",
+                    "Exclusive private speedboat and captain for personal use.",
+                    "Expansive 25-meter private beachfront infinity pool.",
+                    "In-villa wellness treatments and private fitness trainer.",
+                    "VIP private lounge check-in and custom wine cellar stocking."
+                  ]
+                },
+                {
+                  "id": 15,
+                  "slug": "sustainable-hospitality-protecting-our-island-biosphere",
+                  "title": "Sustainable Hospitality: Protecting Our Island Biosphere",
+                  "category": "Eco Travel",
+                  "date": "06 Jun, 2026",
+                  "author": "By Dr. David Thorne",
+                  "comments_count": "Comments (02)",
+                  "read_time": "4 min Read",
+                  "image": "/blog/15.webp",
+                  "paragraphs": [
+                    "Luxury and ecological responsibility must walk hand in hand. Valmere operates under a rigorous zero single-use plastic mandate, producing its own glass-bottled desalinated water using solar energy.",
+                    "Our coral nursery project has successfully transplanted over 4,000 coral fragments back onto damaged reef sections, fostering a thriving habitat for juvenile fish and sea turtles.",
+                    "Guests are invited to join our conservation team, participating in coral propagation and learning how sustainable tourism protects fragile island biospheres for future generations."
+                  ],
+                  "quote": {
+                    "text": "We do not inherit the earth from our ancestors; we borrow it from our children.",
+                    "author": "Dr. David Thorne, Sustainability Lead"
+                  },
+                  "key_factors_title": "Eco-Initiatives in Action",
+                  "key_factors_image": "/blog/15.webp",
+                  "key_factors": [
+                    "100% single-use plastic free across all guest areas.",
+                    "Solar array generating over 60% of daily resort power.",
+                    "On-site coral nursery with guest propagation workshops.",
+                    "Zero-food-waste composting providing fertilizer for gardens.",
+                    "Organic greywater filtration system feeding island flora."
+                  ]
+                },
+                {
+                  "id": 16,
+                  "slug": "curated-island-excursions-hidden-sea-caves",
+                  "title": "Curated Island Excursions & Hidden Sea Caves",
+                  "category": "Adventure",
+                  "date": "31 May, 2026",
+                  "author": "By Noah Bennett",
+                  "comments_count": "Comments (04)",
+                  "read_time": "5 min Read",
+                  "image": "/blog/16.webp",
+                  "paragraphs": [
+                    "Beyond our tranquil beaches lies a wild coastline of sea caves carved by millennia of tides. Guided sea-kayaking expeditions take adventurous travelers into vaulted caverns illuminated by emerald light.",
+                    "Paddle through narrow rock arches into hidden tidal lagoons accessible only during low tide, where undisturbed bird colonies nest in sheer limestone cliffs.",
+                    "Returning to a private beach pop-up barbecue with cold coconut water and fresh tropical ceviche makes for an unforgettable day of island discovery."
+                  ],
+                  "quote": {
+                    "text": "Adventure is not about conquering nature; it is about humility and awe in the presence of timeless geology.",
+                    "author": "Noah Bennett, Expedition Lead"
+                  },
+                  "key_factors_title": "Excursion Highlights",
+                  "key_factors_image": "/blog/16.webp",
+                  "key_factors": [
+                    "Guided tandem and single sea kayaks with lightweight paddles.",
+                    "Expert safety briefing and tide-timing by certified guides.",
+                    "Exploration of tidal sea caves and hidden limestone grottos.",
+                    "Beachfront gourmet picnic on an uninhabited desert island.",
+                    "Waterproof dry bags and photography assistance included."
+                  ]
+                },
+                {
+                  "id": 17,
+                  "slug": "the-culinary-philosophy-behind-farm-to-table-dining",
+                  "title": "The Culinary Philosophy Behind Farm-to-Table Dining",
+                  "category": "Dining",
+                  "date": "24 May, 2026",
+                  "author": "By Chef Marcus Ray",
+                  "comments_count": "Comments (03)",
+                  "read_time": "4 min Read",
+                  "image": "/blog/17.webp",
+                  "paragraphs": [
+                    "Great cuisine begins in the soil. At Valmere, our culinary team cultivates an expansive two-acre organic micro-farm on the island's fertile interior plateau.",
+                    "Here, heirloom tomatoes, fragrant Thai basil, ginger, lemongrass, and edible tropical flowers are harvested daily just hours before service.",
+                    "Guests are invited to take morning chef tours through the gardens, selecting their own fresh ingredients for private personalized cooking sessions."
+                  ],
+                  "quote": {
+                    "text": "When an ingredient is picked at peak ripeness under morning sunlight, cooking becomes an act of pure preservation.",
+                    "author": "Chef Marcus Ray"
+                  },
+                  "key_factors_title": "Organic Garden Highlights",
+                  "key_factors_image": "/blog/17.webp",
+                  "key_factors": [
+                    "Over 40 varieties of heirloom vegetables, herbs, and fruits.",
+                    "Daily morning harvest ensuring maximum nutritional density.",
+                    "Interactive chef garden tours with custom salad harvesting.",
+                    "Regenerative organic composting without artificial fertilizers.",
+                    "Specialty farm-to-fork tasting dinners hosted in the greenhouse."
+                  ]
+                },
+                {
+                  "id": 18,
+                  "slug": "golden-hour-moments-best-photography-spots-on-the-island",
+                  "title": "Golden Hour Moments: Best Photography Spots on the Island",
+                  "category": "Photography",
+                  "date": "18 May, 2026",
+                  "author": "By Sarah Jenkins",
+                  "comments_count": "Comments (05)",
+                  "read_time": "4 min Read",
+                  "image": "/blog/18.webp",
+                  "paragraphs": [
+                    "The island of Valmere offers an ever-shifting tapestry of light, water, and shadow. For photography enthusiasts, the golden hour—the hour just before sunset and just after sunrise—is pure visual magic.",
+                    "From the western jetty where the sun dips into the open ocean to the elevated granite lookout overlooking the dual-color lagoon, exceptional vantage points abound.",
+                    "In this guide, our resident photographer shares the exact coordinates, lens recommendations, and timing tips to capture professional-grade memories of your vacation."
+                  ],
+                  "quote": {
+                    "text": "Photography is the only language that can pause the fleeting beauty of a tropical sunset forever.",
+                    "author": "Sarah Jenkins, Resident Photographer"
+                  },
+                  "key_factors_title": "Top Photography Locations",
+                  "key_factors_image": "/blog/18.webp",
+                  "key_factors": [
+                    "Sunset Point Jetty: Unobstructed 360-degree ocean views.",
+                    "Palm Grove Beach: Dramatic silhouetted coconut palms at dusk.",
+                    "Lagoon Hammock: Vibrant reflections on tranquil turquoise water.",
+                    "Complimentary golden hour camera tutorials for guests.",
+                    "Private professional resort photo sessions available on demand."
+                  ]
+                }
+              ]
+            },
+            "enquiry_now": {
+              "eyebrow": "ENQUIRY NOW",
+              "title_line1": "Plan Your",
+              "title_highlight": "Perfect Stay",
+              "title": "Plan Your Perfect Stay",
+              "description": "Share your travel plans with us and our team will get back to you with the best options tailored to your needs.",
+              "image": "/img/enquire-bedroom.webp",
+              "image_alt": "The Valmere Resort Oceanfront Luxury Bedroom Suite",
+              "form": {
+                "eyebrow": "SEND US AN ENQUIRY",
+                "name_placeholder": "Your Name*",
+                "email_placeholder": "Your Email Address*",
+                "phone_placeholder": "Your Phone Number*",
+                "checkin_placeholder": "Check In Date",
+                "checkout_placeholder": "Check Out Date",
+                "guests_placeholder": "Number of Guests",
+                "room_type_placeholder": "Room Type",
+                "room_options": [
+                  "Deluxe Oceanfront Suite",
+                  "Premier Beachfront Villa",
+                  "Royal Garden Villa",
+                  "Presidential Overwater Suite",
+                  "Family Tropical Penthouse"
+                ],
+                "special_requests_placeholder": "Special Requests (Optional)",
+                "special_request_options": [
+                  "None",
+                  "Airport Speedboat Transfer",
+                  "Candlelight Beach Dinner",
+                  "Spa & Wellness Package",
+                  "Honeymoon / Anniversary Setup",
+                  "Early Check-in / Late Check-out"
+                ],
+                "message_placeholder": "Your Message here*",
+                "button_text": "Submit Enquiry"
+              },
+              "how_it_works": {
+                "eyebrow": "HOW IT WORKS",
+                "steps": [
+                  {
+                    "title": "Submit Enquiry",
+                    "description": "Fill in your travel details in the form.",
+                    "icon": "file-text"
+                  },
+                  {
+                    "title": "Our Team Reviews",
+                    "description": "We check availability and suggest the best options.",
+                    "icon": "headphones"
+                  },
+                  {
+                    "title": "Get a Personalized Plan",
+                    "description": "Receive a customized recommendation.",
+                    "icon": "mail"
+                  },
+                  {
+                    "title": "Confirm & Enjoy",
+                    "description": "Book your stay and create unforgettable memories.",
+                    "icon": "calendar-check"
+                  }
+                ]
+              },
+              "checkin_label": "Check In Date",
+              "checkout_label": "Check Out Date",
+              "guests_label": "Number of Guests",
+              "room_label": "Room Type",
+              "room_options": [
+                "Deluxe Oceanfront Suite",
+                "Premier Beachfront Villa",
+                "Royal Garden Villa",
+                "Presidential Overwater Suite",
+                "Family Tropical Penthouse"
+              ],
+              "button_text": "Submit Enquiry"
             }
           }
         }

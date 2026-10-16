@@ -304,7 +304,7 @@ export default function Hero({ data }: { data: HeroSectionData }) {
                 <br />
                 {/* Line 3: Feels Exceptional. */}
                 <span ref={titleLine3Ref} className="whitespace-nowrap inline-block">
-                  Feels{' '}
+                  {data.title_line3 ? `${data.title_line3} ` : 'Feels '}
                   <span className="font-serif italic font-normal text-[#c5a059]">
                     {data.title_highlight || 'Exceptional.'}
                   </span>
@@ -322,7 +322,7 @@ export default function Hero({ data }: { data: HeroSectionData }) {
                   <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden bg-neutral-100">
                     <img
                       ref={beachImgRef}
-                      src={data.image_circle || '/img/luxury-travel-hero-1.png'}
+                      src={data.image_circle || '/img/luxury-travel-hero-1.webp'}
                       alt="Resort View"
                       className="w-full h-full object-cover"
                     />
@@ -356,7 +356,7 @@ export default function Hero({ data }: { data: HeroSectionData }) {
                   className="w-full h-full rounded-full overflow-hidden relative z-10"
                 >
                   <img
-                    src={data.image_main || '/img/luxury-travel-hero-2.png'}
+                    src={data.image_main || '/img/luxury-travel-hero-2.webp'}
                     alt="Luxury Oceanfront Suite Bedroom"
                     className="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-1000"
                   />
@@ -371,7 +371,7 @@ export default function Hero({ data }: { data: HeroSectionData }) {
                 {/* Magnetic 3D layer (separate from entrance tween) */}
                 <div ref={magnetRef} className="w-full h-full will-change-transform [transform-style:preserve-3d]">
                   <img
-                    src={data.image_side || '/img/luxury-travel-hero-3.png'}
+                    src={data.image_side || '/img/luxury-travel-hero-3.webp'}
                     alt="Outdoor Scenic Terrace Overlooking Sea"
                     className="w-full h-full object-contain object-left-top drop-shadow-[0_18px_25px_rgba(0,0,0,0.12)]"
                   />

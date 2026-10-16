@@ -224,7 +224,7 @@ export default function About({ data, showButton = true }: { data: AboutSectionD
             <div data-mask="main" className="group col-span-7 rounded-none overflow-hidden bg-neutral-100">
               <img
                 data-par-img="main"
-                src={data.image_large || "/img/about.png"}
+                src={data.image_large || "/img/about.webp"}
                 alt="Outdoor Living Lounge with Ocean View"
                 className="w-full h-full min-h-[380px] sm:min-h-[460px] lg:min-h-[500px] object-cover rounded-none transition-[scale] duration-700 group-hover:scale-105"
               />
@@ -236,7 +236,7 @@ export default function About({ data, showButton = true }: { data: AboutSectionD
               <div data-mask="top" className="group h-[48.5%] rounded-none overflow-hidden bg-neutral-100">
                 <img
                   data-par-img="top"
-                  src={data.image_top_right || "/img/about-s1.png"}
+                  src={data.image_top_right || "/img/about-s1.webp"}
                   alt="Master Suite Bedroom"
                   className="w-full h-full object-cover rounded-none transition-[scale] duration-700 group-hover:scale-105"
                 />
@@ -246,7 +246,7 @@ export default function About({ data, showButton = true }: { data: AboutSectionD
               <div data-mask="bottom" className="group h-[48.5%] rounded-none overflow-hidden bg-neutral-100">
                 <img
                   data-par-img="bottom"
-                  src={data.image_bottom_right || "/img/about-s2.png"}
+                  src={data.image_bottom_right || "/img/about-s2.webp"}
                   alt="Spa Essentials and Flora"
                   className="w-full h-full object-cover rounded-none transition-[scale] duration-700 group-hover:scale-105"
                 />

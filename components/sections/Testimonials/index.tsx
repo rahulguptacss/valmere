@@ -310,7 +310,7 @@ export default function Testimonials({
                 {/* Left: Resort Image */}
                 <div className="relative w-full sm:w-[200px] md:w-[220px] lg:w-[210px] xl:w-[230px] shrink-0 aspect-[4/3] sm:aspect-auto rounded-[16px] sm:rounded-[20px] overflow-hidden">
                   <Image
-                    src={item.image || '/img/why-choose-1.jpg'}
+                    src={item.image || '/img/why-choose-1.webp'}
                     alt={item.author}
                     fill
                     sizes="(min-width: 1024px) 25vw, (min-width: 640px) 220px, 90vw"

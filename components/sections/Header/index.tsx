@@ -60,7 +60,7 @@ export default function Header({ data }: { data: HeaderData }) {
     >
       <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-2">
         
-        {/* Brand Logo with /logo/logo.png */}
+        {/* Brand Logo with /logo/logo.webp */}
         <Link href="/" className="flex items-center shrink min-w-0 group">
           <motion.div
             whileHover={{ scale: 1.02 }}
@@ -68,8 +68,8 @@ export default function Header({ data }: { data: HeaderData }) {
             className="relative flex items-center"
           >
             <img
-              src="/logo/logo.png"
-              alt="The Valmere Hotels & Resorts"
+              src={data.logo || "/logo/logo.webp"}
+              alt={data.logo_text || "The Valmere Hotels & Resorts"}
               className="block h-[56px] min-[400px]:h-[64px] sm:h-[76px] md:h-[84px] w-auto max-w-full object-contain -my-[9px] min-[400px]:-my-[11px] sm:-my-[14px] md:-my-[16px] -ml-[4px] sm:-ml-[5px] md:-ml-[6px]"
             />
           </motion.div>
@@ -156,7 +156,7 @@ export default function Header({ data }: { data: HeaderData }) {
             transition={{ duration: 0.2 }}
           >
             <Link
-              href={data.button_link || "/reservation"}
+              href={data.button_link || "/enquiry-now"}
               className="group inline-flex items-center justify-center gap-1.5 sm:gap-2 bg-[#596c58] hover:bg-[#495948] text-white px-3 py-2 sm:px-5 sm:py-2 rounded-[5px] text-[10px] min-[400px]:text-[10.5px] sm:text-[11.5px] font-bold tracking-[0.1em] sm:tracking-[0.12em] uppercase whitespace-nowrap transition-colors duration-200 shadow-sm"
             >
               <span>{data.button_text || "ENQUIRE NOW"}</span>
