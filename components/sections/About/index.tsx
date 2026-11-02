@@ -144,7 +144,7 @@ export default function About({ data, showButton = true }: { data: AboutSectionD
   );
 
   return (
-    <section ref={containerRef} className="relative overflow-hidden bg-white pt-10 pb-4 sm:pt-12 sm:pb-6 lg:pt-14 lg:pb-6">
+    <section ref={containerRef} className="relative overflow-hidden bg-white pt-16 pb-4 sm:pt-20 sm:pb-6 lg:pt-24 lg:pb-6">
       
       {/* Decorative Botanical Leaf Line Art matching screenshot bottom-right corner */}
       <div

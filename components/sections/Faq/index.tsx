@@ -22,8 +22,8 @@ export default function Faq({ data }: { data: FaqSectionData }) {
             className="relative z-10 w-24 h-24 sm:w-28 sm:h-28 rounded-full overflow-hidden border-4 border-white shadow-xl bg-neutral-200"
           >
             <img
-              src={data.avatar || "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80"}
-              alt="Valmere Concierge"
+              src={data.avatar || "/img/girl.webp"}
+              alt={data.avatar_alt || "Valmere Concierge"}
               className="w-full h-full object-cover object-top"
             />
           </motion.div>

@@ -32,7 +32,7 @@ export default function Blog({ data }: { data: BlogSectionData }) {
   return (
     <section
       ref={containerRef}
-      className="relative overflow-hidden bg-[#fdfcf9] py-12 sm:py-16 lg:py-20"
+      className="relative overflow-hidden bg-[#fdfcf9] py-16 sm:py-20 lg:py-24"
     >
       <div className="mx-auto max-w-[1360px] px-4 sm:px-6 lg:px-8">
 

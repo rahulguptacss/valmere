@@ -126,6 +126,22 @@ export interface RoomItem {
   rating?: number;
   reviews?: string;
   href?: string;
+  button_text?: string;
+  included_title?: string;
+  amenities_title?: string;
+  enquiry_form?: {
+    title?: string;
+    name_placeholder?: string;
+    phone_placeholder?: string;
+    email_placeholder?: string;
+    checkin_placeholder?: string;
+    checkout_placeholder?: string;
+    message_placeholder?: string;
+    button_text?: string;
+    submitting_text?: string;
+    success_title?: string;
+    success_message?: string;
+  };
   capacity?: string;
   size?: string;
   bed?: string;
@@ -145,6 +161,7 @@ export interface RoomsSectionData {
   eyebrow: string;
   title: string;
   description: string;
+  button_text?: string;
   items: RoomItem[];
 }
 
@@ -160,6 +177,7 @@ export interface TestimonialItem {
   role?: string;
   location?: string;
   avatar: string;
+  avatar_alt?: string;
   rating?: number;
 }
 
@@ -178,6 +196,7 @@ export interface FaqSectionData {
   description: string;
   button: { text: string; href: string };
   avatar: string;
+  avatar_alt?: string;
   phone_label: string;
   phone: string;
 }
@@ -290,6 +309,8 @@ export interface ContactFormConfig {
   subject_placeholder: string;
   message_placeholder: string;
   button_text: string;
+  submitting_text?: string;
+  success_message?: string;
 }
 
 export interface ContactSectionData {
@@ -329,6 +350,8 @@ export interface EnquireFormConfig {
   special_request_options: string[];
   message_placeholder: string;
   button_text: string;
+  submitting_text?: string;
+  success_message?: string;
 }
 
 export interface EnquiryNowSectionData {
@@ -355,8 +378,12 @@ export interface EnquiryNowSectionData {
 export type ReservationSectionData = EnquiryNowSectionData;
 
 export interface ThankYouSectionData {
+  badge?: string;
   title: string;
   description: string;
+  assistance_label?: string;
+  assistance_text?: string;
+  phone?: string;
   button: {
     text: string;
     href: string;

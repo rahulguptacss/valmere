@@ -16,29 +16,7 @@
         },
         {
           "name": "ROOMS & SUITS",
-          "href": "/rooms",
-          "children": [
-            {
-              "name": "Ocean View Suite",
-              "href": "/rooms/ocean-view-suite"
-            },
-            {
-              "name": "Garden Pool Villa",
-              "href": "/rooms/garden-pool-villa"
-            },
-            {
-              "name": "Sunset Horizon Penthouse",
-              "href": "/rooms/sunset-horizon-penthouse"
-            },
-            {
-              "name": "Royal Lagoon Residence",
-              "href": "/rooms/royal-lagoon-residence"
-            },
-            {
-              "name": "Overwater Panoramic Suite",
-              "href": "/rooms/overwater-panoramic-suite"
-            }
-          ]
+          "href": "/rooms"
         },
         {
           "name": "TESTIMONIALS",
@@ -560,7 +538,8 @@
                   "image": "/rooms/1.webp",
                   "rating": 5,
                   "reviews": "14 Reviews",
-                  "href": "/rooms/ocean-view-suite"
+                  "href": "/rooms/ocean-view-suite",
+                  "button_text": "View Details"
                 },
                 {
                   "id": 2,
@@ -570,7 +549,8 @@
                   "image": "/rooms/2.webp",
                   "rating": 5,
                   "reviews": "19 Reviews",
-                  "href": "/rooms/garden-pool-villa"
+                  "href": "/rooms/garden-pool-villa",
+                  "button_text": "View Details"
                 },
                 {
                   "id": 3,
@@ -580,7 +560,8 @@
                   "image": "/rooms/1.webp",
                   "rating": 5,
                   "reviews": "24 Reviews",
-                  "href": "/rooms/presidential-beachfront-villa"
+                  "href": "/rooms/presidential-beachfront-villa",
+                  "button_text": "View Details"
                 },
                 {
                   "id": 4,
@@ -590,7 +571,8 @@
                   "image": "/rooms/2.webp",
                   "rating": 5,
                   "reviews": "18 Reviews",
-                  "href": "/rooms/sunset-horizon-penthouse"
+                  "href": "/rooms/sunset-horizon-penthouse",
+                  "button_text": "View Details"
                 },
                 {
                   "id": 5,
@@ -600,7 +582,8 @@
                   "image": "/rooms/1.webp",
                   "rating": 5,
                   "reviews": "16 Reviews",
-                  "href": "/rooms/royal-lagoon-residence"
+                  "href": "/rooms/royal-lagoon-residence",
+                  "button_text": "View Details"
                 },
                 {
                   "id": 6,
@@ -610,9 +593,11 @@
                   "image": "/rooms/2.webp",
                   "rating": 5,
                   "reviews": "27 Reviews",
-                  "href": "/rooms/overwater-panoramic-suite"
+                  "href": "/rooms/overwater-panoramic-suite",
+                  "button_text": "View Details"
                 }
-              ]
+              ],
+              "button_text": "View Details"
             },
             "room_details": {
               "items": [
@@ -767,6 +752,22 @@
                         "icon": "Headphones"
                       }
                     ]
+                  },
+                  "button_text": "View Details",
+                  "included_title": "What's Included in This Room?",
+                  "amenities_title": "Popular Amenities & Services",
+                  "enquiry_form": {
+                    "title": "Send Us an Enquiry",
+                    "name_placeholder": "Your Name",
+                    "phone_placeholder": "Phone Number",
+                    "email_placeholder": "Email Address",
+                    "checkin_placeholder": "Check In Date",
+                    "checkout_placeholder": "Check Out Date",
+                    "message_placeholder": "Your Message",
+                    "button_text": "SEND ENQUIRY",
+                    "submitting_text": "Sending...",
+                    "success_title": "Thank You!",
+                    "success_message": "Your enquiry has been received. Our concierge will contact you shortly."
                   }
                 },
                 {
@@ -920,6 +921,22 @@
                         "icon": "Headphones"
                       }
                     ]
+                  },
+                  "button_text": "View Details",
+                  "included_title": "What's Included in This Room?",
+                  "amenities_title": "Popular Amenities & Services",
+                  "enquiry_form": {
+                    "title": "Send Us an Enquiry",
+                    "name_placeholder": "Your Name",
+                    "phone_placeholder": "Phone Number",
+                    "email_placeholder": "Email Address",
+                    "checkin_placeholder": "Check In Date",
+                    "checkout_placeholder": "Check Out Date",
+                    "message_placeholder": "Your Message",
+                    "button_text": "SEND ENQUIRY",
+                    "submitting_text": "Sending...",
+                    "success_title": "Thank You!",
+                    "success_message": "Your enquiry has been received. Our concierge will contact you shortly."
                   }
                 },
                 {
@@ -1073,6 +1090,22 @@
                         "icon": "Headphones"
                       }
                     ]
+                  },
+                  "button_text": "View Details",
+                  "included_title": "What's Included in This Room?",
+                  "amenities_title": "Popular Amenities & Services",
+                  "enquiry_form": {
+                    "title": "Send Us an Enquiry",
+                    "name_placeholder": "Your Name",
+                    "phone_placeholder": "Phone Number",
+                    "email_placeholder": "Email Address",
+                    "checkin_placeholder": "Check In Date",
+                    "checkout_placeholder": "Check Out Date",
+                    "message_placeholder": "Your Message",
+                    "button_text": "SEND ENQUIRY",
+                    "submitting_text": "Sending...",
+                    "success_title": "Thank You!",
+                    "success_message": "Your enquiry has been received. Our concierge will contact you shortly."
                   }
                 },
                 {
@@ -1224,6 +1257,22 @@
                         "icon": "Headphones"
                       }
                     ]
+                  },
+                  "button_text": "View Details",
+                  "included_title": "What's Included in This Room?",
+                  "amenities_title": "Popular Amenities & Services",
+                  "enquiry_form": {
+                    "title": "Send Us an Enquiry",
+                    "name_placeholder": "Your Name",
+                    "phone_placeholder": "Phone Number",
+                    "email_placeholder": "Email Address",
+                    "checkin_placeholder": "Check In Date",
+                    "checkout_placeholder": "Check Out Date",
+                    "message_placeholder": "Your Message",
+                    "button_text": "SEND ENQUIRY",
+                    "submitting_text": "Sending...",
+                    "success_title": "Thank You!",
+                    "success_message": "Your enquiry has been received. Our concierge will contact you shortly."
                   }
                 },
                 {
@@ -1373,6 +1422,22 @@
                         "icon": "Headphones"
                       }
                     ]
+                  },
+                  "button_text": "View Details",
+                  "included_title": "What's Included in This Room?",
+                  "amenities_title": "Popular Amenities & Services",
+                  "enquiry_form": {
+                    "title": "Send Us an Enquiry",
+                    "name_placeholder": "Your Name",
+                    "phone_placeholder": "Phone Number",
+                    "email_placeholder": "Email Address",
+                    "checkin_placeholder": "Check In Date",
+                    "checkout_placeholder": "Check Out Date",
+                    "message_placeholder": "Your Message",
+                    "button_text": "SEND ENQUIRY",
+                    "submitting_text": "Sending...",
+                    "success_title": "Thank You!",
+                    "success_message": "Your enquiry has been received. Our concierge will contact you shortly."
                   }
                 },
                 {
@@ -1522,6 +1587,22 @@
                         "icon": "Headphones"
                       }
                     ]
+                  },
+                  "button_text": "View Details",
+                  "included_title": "What's Included in This Room?",
+                  "amenities_title": "Popular Amenities & Services",
+                  "enquiry_form": {
+                    "title": "Send Us an Enquiry",
+                    "name_placeholder": "Your Name",
+                    "phone_placeholder": "Phone Number",
+                    "email_placeholder": "Email Address",
+                    "checkin_placeholder": "Check In Date",
+                    "checkout_placeholder": "Check Out Date",
+                    "message_placeholder": "Your Message",
+                    "button_text": "SEND ENQUIRY",
+                    "submitting_text": "Sending...",
+                    "success_title": "Thank You!",
+                    "success_message": "Your enquiry has been received. Our concierge will contact you shortly."
                   }
                 }
               ]
@@ -1609,7 +1690,7 @@
                 "text": "GET IN TOUCH",
                 "href": "/contact"
               },
-              "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80",
+              "avatar": "/img/girl.webp",
               "phone_label": "CONTACT US NOW • CALL US",
               "phone": "+100000000000"
             },
@@ -1679,7 +1760,9 @@
                 "phone_placeholder": "Your Phone Number",
                 "subject_placeholder": "Subject",
                 "message_placeholder": "Enter Your Message here*",
-                "button_text": "Send Us Message"
+                "button_text": "Send Us Message",
+                "submitting_text": "Sending...",
+                "success_message": "Thank you! Your message has been sent successfully. We will contact you shortly."
               },
               "info": {
                 "address": "123 Education Lane, New York, NY 10001",
@@ -1694,7 +1777,11 @@
               "button": {
                 "text": "RETURN TO HOME",
                 "href": "/"
-              }
+              },
+              "badge": "Enquiry Confirmed",
+              "assistance_label": "Need immediate assistance?",
+              "assistance_text": "Call our 24/7 guest desk at",
+              "phone": "+100000000000"
             },
             "blog": {
               "eyebrow": "OUR BLOG",
@@ -2481,7 +2568,8 @@
                   "Early Check-in / Late Check-out"
                 ],
                 "message_placeholder": "Your Message here*",
-                "button_text": "Submit Enquiry"
+                "button_text": "Submit Enquiry",
+                "submitting_text": "Submitting..."
               },
               "how_it_works": {
                 "eyebrow": "HOW IT WORKS",

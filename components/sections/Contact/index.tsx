@@ -253,7 +253,7 @@ export default function Contact({ data }: { data: ContactSectionData }) {
               {submitted && (
                 <div className="mb-6 p-4 rounded-xl bg-[#f4f8f4] border border-[#a8cfb4] text-[#1b432a] text-[13.5px] flex items-center gap-2.5 animate-fadeIn">
                   <CheckCircle2 size={18} className="text-[#2e7d4d] shrink-0" />
-                  <span>Thank you! Your message has been sent successfully. We will contact you shortly.</span>
+                  <span>{data.form.success_message || "Thank you! Your message has been sent successfully. We will contact you shortly."}</span>
                 </div>
               )}
 
@@ -365,7 +365,7 @@ export default function Contact({ data }: { data: ContactSectionData }) {
                   disabled={submitting}
                   className="group w-full mt-2 py-4 sm:py-4 px-6 rounded-[10px] bg-[#ba8538] hover:bg-[#a6742b] active:bg-[#946522] text-white text-[15px] sm:text-[15.5px] font-medium tracking-wide flex items-center justify-center gap-2.5 transition-all duration-300 shadow-sm hover:shadow-md disabled:opacity-70 cursor-pointer"
                 >
-                  <span>{submitting ? 'Sending...' : data.form.button_text}</span>
+                  <span>{submitting ? (data.form.submitting_text || 'Sending...') : data.form.button_text}</span>
                   <ArrowRight
                     size={17}
                     className="transition-transform duration-300 group-hover:translate-x-1"

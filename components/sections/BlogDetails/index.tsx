@@ -19,7 +19,7 @@ export default function BlogDetails({
   recentPostsTitle = 'Recent Posts',
 }: BlogDetailsProps) {
   return (
-    <section className="relative bg-[#fdfcf9] py-12 sm:py-16 lg:py-20">
+    <section className="relative bg-[#fdfcf9] py-16 sm:py-20 lg:py-24">
       <div className="mx-auto max-w-[1360px] px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 xl:gap-12 items-start">
           

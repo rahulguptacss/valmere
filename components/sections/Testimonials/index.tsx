@@ -253,7 +253,7 @@ export default function Testimonials({
       <section
         ref={sectionRef}
         id="testimonials"
-        className="relative w-full overflow-hidden bg-[#fdfcf9] py-14 sm:py-20 lg:py-24"
+        className="relative w-full overflow-hidden bg-[#fdfcf9] py-16 sm:py-20 lg:py-24"
       >
         <div className="relative mx-auto max-w-[1360px] px-4 sm:px-6 lg:px-8">
           {/* Eyebrow with gold lines */}

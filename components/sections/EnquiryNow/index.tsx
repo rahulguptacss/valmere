@@ -202,7 +202,7 @@ export default function EnquiryNow({ data }: { data: EnquiryNowSectionData }) {
   ];
 
   return (
-    <section className="bg-white py-8 sm:py-12 lg:py-14 text-[#16241b]">
+    <section className="bg-white py-16 sm:py-20 lg:py-24 text-[#16241b]">
       <div className="mx-auto max-w-[1320px] px-4 sm:px-6 lg:px-8">
         
         {/* ================= 2-COLUMN MAIN ENQUIRY SECTION ================= */}
@@ -457,7 +457,7 @@ export default function EnquiryNow({ data }: { data: EnquiryNowSectionData }) {
                   disabled={submitting}
                   className="group w-full mt-2 py-4 sm:py-4 px-6 rounded-[10px] bg-[#ba8538] hover:bg-[#a6742b] active:bg-[#946522] text-white text-[15px] sm:text-[15.5px] font-medium tracking-wide flex items-center justify-center gap-2.5 transition-all duration-300 shadow-sm hover:shadow-md disabled:opacity-70 cursor-pointer"
                 >
-                  <span>{submitting ? 'Submitting...' : data.form.button_text}</span>
+                  <span>{submitting ? (data.form.submitting_text || 'Submitting...') : data.form.button_text}</span>
                   <ArrowRight
                     size={17}
                     className="transition-transform duration-300 group-hover:translate-x-1"

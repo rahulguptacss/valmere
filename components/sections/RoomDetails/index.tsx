@@ -125,7 +125,7 @@ export default function RoomDetails({ data }: { data: RoomItem }) {
   };
 
   return (
-    <section className="bg-[#fcfaf7] py-10 sm:py-14 lg:py-18">
+    <section className="bg-[#fcfaf7] py-16 sm:py-20 lg:py-24">
       <div className="mx-auto max-w-[1360px] px-4 sm:px-6 lg:px-8">
         
         {/* 2-Column Responsive Layout matching screenshot */}
@@ -213,7 +213,7 @@ export default function RoomDetails({ data }: { data: RoomItem }) {
             {/* 5. What's Included in This Room? */}
             <div className="pt-2 border-t border-[#eee5d6]/70">
               <h2 className="font-serif text-[24px] sm:text-[28px] font-normal text-[#1f3d33] mb-4.5">
-                What&apos;s Included in This Room?
+                {data.included_title || "What's Included in This Room?"}
               </h2>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-0">
@@ -271,7 +271,7 @@ export default function RoomDetails({ data }: { data: RoomItem }) {
             {/* 7. Room Amenities Section (2 Columns with outline icons) */}
             <div className="pt-3 border-t border-[#eee5d6]/70">
               <h2 className="font-serif text-[24px] sm:text-[28px] font-normal text-[#1f3d33] mb-5">
-                Room Amenities
+                {data.amenities_title || "Room Amenities"}
               </h2>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-4">
@@ -333,7 +333,7 @@ export default function RoomDetails({ data }: { data: RoomItem }) {
             {/* 2. Send Us an Enquiry Card (Dark Green) */}
             <div className="bg-[#17372b] rounded-[22px] sm:rounded-[26px] p-6 sm:p-7 text-white shadow-xl">
               <h3 className="font-serif text-[24px] font-normal text-white mb-4">
-                Send Us an Enquiry
+                {data.enquiry_form?.title || 'Send Us an Enquiry'}
               </h3>
 
               {submitted ? (
@@ -341,8 +341,12 @@ export default function RoomDetails({ data }: { data: RoomItem }) {
                   <div className="w-12 h-12 rounded-full bg-[#c5a059] text-white flex items-center justify-center mx-auto mb-3">
                     <Check className="w-6 h-6" strokeWidth={2.5} />
                   </div>
-                  <h4 className="font-serif text-[18px] text-white">Thank You!</h4>
-                  <p className="text-[12.5px] text-white/80 mt-1">Your enquiry has been received. Our concierge will contact you shortly.</p>
+                  <h4 className="font-serif text-[18px] text-white">
+                    {data.enquiry_form?.success_title || 'Thank You!'}
+                  </h4>
+                  <p className="text-[12.5px] text-white/80 mt-1">
+                    {data.enquiry_form?.success_message || 'Your enquiry has been received. Our concierge will contact you shortly.'}
+                  </p>
                 </div>
               ) : (
                 <form onSubmit={handleEnquirySubmit} className="space-y-3">
@@ -351,7 +355,7 @@ export default function RoomDetails({ data }: { data: RoomItem }) {
                     <input
                       type="text"
                       required
-                      placeholder="Your Name"
+                      placeholder={data.enquiry_form?.name_placeholder || 'Your Name'}
                       className="w-full bg-white text-[#1f3d33] placeholder-[#809087] rounded-md pl-10 pr-3.5 py-3 text-[13px] focus:outline-none focus:ring-2 focus:ring-[#c5a059]"
                     />
                   </div>
@@ -361,7 +365,7 @@ export default function RoomDetails({ data }: { data: RoomItem }) {
                     <input
                       type="tel"
                       required
-                      placeholder="Phone Number"
+                      placeholder={data.enquiry_form?.phone_placeholder || 'Phone Number'}
                       className="w-full bg-white text-[#1f3d33] placeholder-[#809087] rounded-md pl-10 pr-3.5 py-3 text-[13px] focus:outline-none focus:ring-2 focus:ring-[#c5a059]"
                     />
                   </div>
@@ -371,7 +375,7 @@ export default function RoomDetails({ data }: { data: RoomItem }) {
                     <input
                       type="email"
                       required
-                      placeholder="Email Address"
+                      placeholder={data.enquiry_form?.email_placeholder || 'Email Address'}
                       className="w-full bg-white text-[#1f3d33] placeholder-[#809087] rounded-md pl-10 pr-3.5 py-3 text-[13px] focus:outline-none focus:ring-2 focus:ring-[#c5a059]"
                     />
                   </div>
@@ -382,7 +386,7 @@ export default function RoomDetails({ data }: { data: RoomItem }) {
                       type="text"
                       onFocus={(e) => (e.target.type = 'date')}
                       onBlur={(e) => { if (!e.target.value) e.target.type = 'text'; }}
-                      placeholder="Check In Date"
+                      placeholder={data.enquiry_form?.checkin_placeholder || 'Check In Date'}
                       className="w-full bg-white text-[#1f3d33] placeholder-[#809087] rounded-md pl-10 pr-3.5 py-3 text-[13px] focus:outline-none focus:ring-2 focus:ring-[#c5a059]"
                     />
                   </div>
@@ -393,7 +397,7 @@ export default function RoomDetails({ data }: { data: RoomItem }) {
                       type="text"
                       onFocus={(e) => (e.target.type = 'date')}
                       onBlur={(e) => { if (!e.target.value) e.target.type = 'text'; }}
-                      placeholder="Check Out Date"
+                      placeholder={data.enquiry_form?.checkout_placeholder || 'Check Out Date'}
                       className="w-full bg-white text-[#1f3d33] placeholder-[#809087] rounded-md pl-10 pr-3.5 py-3 text-[13px] focus:outline-none focus:ring-2 focus:ring-[#c5a059]"
                     />
                   </div>
@@ -402,7 +406,7 @@ export default function RoomDetails({ data }: { data: RoomItem }) {
                     <MessageSquare className="absolute left-3.5 top-3.5 w-4 h-4 text-[#8a9990] pointer-events-none" />
                     <textarea
                       rows={3}
-                      placeholder="Your Message"
+                      placeholder={data.enquiry_form?.message_placeholder || 'Your Message'}
                       className="w-full bg-white text-[#1f3d33] placeholder-[#809087] rounded-md pl-10 pr-3.5 py-2.5 text-[13px] resize-none focus:outline-none focus:ring-2 focus:ring-[#c5a059]"
                     />
                   </div>
@@ -411,7 +415,7 @@ export default function RoomDetails({ data }: { data: RoomItem }) {
                     type="submit"
                     className="w-full mt-3.5 relative py-3.5 px-6 rounded-full bg-[#c59a58] hover:bg-[#b38848] text-white font-medium text-[13px] uppercase tracking-[0.12em] flex items-center justify-center transition-all shadow-md hover:shadow-lg active:scale-98"
                   >
-                    <span>SEND ENQUIRY</span>
+                    <span>{data.enquiry_form?.button_text || 'SEND ENQUIRY'}</span>
                     <span className="absolute right-3 w-7 h-7 rounded-full bg-white text-[#c59a58] flex items-center justify-center shadow-sm">
                       <ArrowRight className="w-3.5 h-3.5" strokeWidth={2.4} />
                     </span>

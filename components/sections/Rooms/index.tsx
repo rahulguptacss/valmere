@@ -52,7 +52,7 @@ export default function Rooms({
   return (
     <section
       ref={containerRef}
-      className="relative overflow-hidden bg-[#fdfcf9] py-12 sm:py-16 md:py-20 lg:py-24"
+      className="relative overflow-hidden bg-[#fdfcf9] py-16 sm:py-20 lg:py-24"
     >
       <div className="mx-auto max-w-[1360px] px-4 sm:px-6 lg:px-8">
         {/* 2-Column Luxury Rooms Grid matching screenshot */}
@@ -60,7 +60,6 @@ export default function Rooms({
           {items.map((room: RoomItem, index: number) => {
             const imageSrc = room.image || room.image_main || (index % 2 === 0 ? '/rooms/1.webp' : '/rooms/2.webp');
             const href = room.href || `/rooms/${room.slug || 'ocean-view-suite'}`;
-            const ratingCount = room.rating || 5;
 
             return (
               <div
@@ -101,27 +100,15 @@ export default function Rooms({
                 {/* Horizontal Divider Line matching screenshot */}
                 <div className="w-full h-px bg-[#e7ded0] mb-3 sm:mb-3.5" />
 
-                {/* Bottom Row: Stars + Reviews on Left, View Details on Right */}
-                <div className="flex items-center justify-between pt-0.5">
-                  {/* Rating Stars + Reviews Count */}
-                  <div className="flex items-center gap-2">
-                    <div className="flex items-center gap-0.5 text-[#b98a57]" aria-label={`${ratingCount} out of 5 stars`}>
-                      {[...Array(ratingCount)].map((_, starI) => (
-                        <span key={starI} className="text-[13.5px] sm:text-[14.5px] leading-none">★</span>
-                      ))}
-                    </div>
-                    <span className="text-[12.5px] sm:text-[13px] text-[#616c65] font-normal ml-0.5">
-                      {room.reviews || '3 Reviews'}
-                    </span>
-                  </div>
-
+                {/* Bottom Row: View Details on Right */}
+                <div className="flex items-center justify-end pt-0.5">
                   {/* View Details Action with Circular Bronze Arrow Button */}
                   <Link
                     href={href}
                     className="group/btn inline-flex items-center gap-2.5 sm:gap-3 text-[#1f3d33] transition-colors duration-300"
                   >
                     <span className="font-serif text-[14.5px] sm:text-[15.5px] text-[#1f3d33] transition-colors duration-300 group-hover/btn:text-[#b98a57]">
-                      View Details
+                      {room.button_text || data.button_text || 'View Details'}
                     </span>
                     <span className="w-[30px] h-[30px] sm:w-[32px] sm:h-[32px] rounded-full bg-[#b98a57] text-white flex items-center justify-center transition-all duration-300 group-hover/btn:scale-105 group-hover/btn:bg-[#a67946] shadow-sm">
                       <ArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 transition-transform duration-300 group-hover/btn:translate-x-0.5" strokeWidth={1.8} />

@@ -27,7 +27,7 @@ export default function ThankYou({ data }: ThankYouProps) {
         </div>
 
         <span className="text-[11px] uppercase tracking-[0.25em] font-semibold text-[#c5a059] block mb-3">
-          Enquiry Confirmed
+          {data.badge || 'Enquiry Confirmed'}
         </span>
 
         <h1 className="font-serif text-3xl md:text-4xl text-[#243c30] leading-tight mb-4">
@@ -39,9 +39,10 @@ export default function ThankYou({ data }: ThankYouProps) {
         </p>
 
         <div className="p-4 rounded-2xl bg-[#edf3ea] border border-[#d6e5d1] text-xs text-[#243c30] mb-8 leading-relaxed">
-          <span className="font-semibold">Need immediate assistance?</span> Call our 24/7 guest desk at{' '}
-          <a href="tel:+100000000000" className="underline font-bold text-[#243c30]">
-            +100000000000
+          <span className="font-semibold">{data.assistance_label || 'Need immediate assistance?'}</span>{' '}
+          {data.assistance_text || 'Call our 24/7 guest desk at'}{' '}
+          <a href={`tel:${data.phone || '+100000000000'}`} className="underline font-bold text-[#243c30]">
+            {data.phone || '+100000000000'}
           </a>
         </div>
 
